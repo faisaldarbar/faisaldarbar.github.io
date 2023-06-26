@@ -1,6 +1,8 @@
 ---
-title: Howdy, I'm Faisal Darbar 
-date: 2023-06-25 12:00:00 +300
+layout: post
+title: "Howdy, I'm Faisal Darbar"
+subtitle: "Welcome to my website." 
+date: 2023-06-25 12:00:00 +3000
 categories: [Faisal Darbar]
 tags: [about]
 ---
