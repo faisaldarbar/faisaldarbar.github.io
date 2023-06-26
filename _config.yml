@@ -80,7 +80,7 @@ theme_mode: # [light|dark]
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: 'https://twitter.com/faisaldarbar/photo'
+avatar: 'https://en.gravatar.com/userimage/224939813/deb7d316f00d6812844a872329b0c91d.png?size=200'
 
 # boolean type, the global switch for TOC in posts.
 toc: true
