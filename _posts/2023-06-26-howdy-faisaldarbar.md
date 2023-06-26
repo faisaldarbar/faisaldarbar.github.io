@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Howdy, I'm Faisal Darbar"
-subtitle: "Welcome to my website." 
-date: 2023-06-25 12:00:00 +3000
+subtitle: "Welcome to my website."
 categories: [Faisal Darbar]
 tags: [about]
 ---
