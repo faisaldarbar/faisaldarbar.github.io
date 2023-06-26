@@ -1,6 +1,6 @@
 ---
 title: Howdy, I'm Faisal Darbar 
-date: 2023-06-26 12:00:00 +300
+date: 2023-06-25 12:00:00 +300
 categories: [Faisal Darbar]
 tags: [about]
 ---
