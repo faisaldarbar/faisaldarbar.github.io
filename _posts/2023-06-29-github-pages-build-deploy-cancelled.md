@@ -15,12 +15,11 @@ image: /images/github-build-deploy.png
 - Github Pages Build Successful Deploy Cancelled
 - Github Pages Build Successful Deploy Pending
 - Github Pages Deploy Waiting
-- Github Pages Deply is Waiting for Deployment Approval
+- Github Pages Deploy is Waiting for Deployment Approval
 - Github Pages Taking Forever to Deploy
 
 ### A SOLUTION
 
-1. Go to your repository settings, environments.
-2. Delete the environment and make another commit.
+1. Go to your repository settings, environments, delete the environment and make another commit.
 
 *Hope that helps!*
