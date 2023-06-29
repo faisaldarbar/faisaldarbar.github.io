@@ -2,7 +2,7 @@
 layout: post
 title: "Docker Learning Progress"
 subtitle: "My post to record my learning progress related to Docker."
-date: 2023-06-29 05:03:00 +0300
+date: 2023-06-29 05:03:00 +0000
 categories: [Learning, Docker]
 tags: [learn, docker, containers]
 image: /images/containers.jpg
