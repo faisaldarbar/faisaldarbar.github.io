@@ -20,6 +20,8 @@ image: /images/github-build-deploy.png
 
 ### A SOLUTION
 
-1. Go to your repository settings, environments, delete the environment and make another commit.
+1. Go to your repository settings, pages, unpublish your site.
+2. Go to your repository settings, environments, delete the environment. 
+3. Make another commit and your site will be published without any deployment errors.
 
 *Hope that helps!*
