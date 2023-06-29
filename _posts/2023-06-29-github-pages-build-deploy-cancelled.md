@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Github Build Deploy Cancelled"
-subtitle: "A simple solution to Github Build and Deploy Failures"
+title: "Github Pages Build Deploy Cancelled"
+subtitle: "A simple solution to Github Pages Build and Deploy Failures"
 date: 2023-06-29 08:14:00 +0300
 categories: [Github, Errors, Solutions]
 tags: [github, error, failed, solution]
