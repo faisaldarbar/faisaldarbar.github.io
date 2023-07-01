@@ -11,8 +11,8 @@ layout:
 tabs:
   # format: <filename_without_extension>: <value>
   home: Home
-  archives: Archives
   about: About
+  archives: Archives
 
 # the text displayed in the search bar & search results
 search:
@@ -79,11 +79,3 @@ df:
     strftime: "%b"
     dayjs: "MMM"
 
-# categories page
-categories:
-  category_measure:
-    singular: category
-    plural: categories
-  post_measure:
-    singular: post
-    plural: posts
