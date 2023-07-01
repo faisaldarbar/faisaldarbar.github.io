@@ -4,7 +4,7 @@ icon: fas fa-info-circle
 order: 1
 ---
 
-![Faisal Darbar](/images/howdy.png)
+<img style="width:100%;" id="image" src="/images/howdy.png">
 
 # Howdy, I'm Faisal Darbar
 
