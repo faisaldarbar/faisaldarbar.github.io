@@ -2,8 +2,9 @@
 # the default layout is 'page'
 icon: fas fa-info-circle
 order: 1
-image: /images/howdy.png
 ---
+
+![Faisal Darbar](/images/howdy.png)
 
 # Howdy, I'm Faisal Darbar
 
