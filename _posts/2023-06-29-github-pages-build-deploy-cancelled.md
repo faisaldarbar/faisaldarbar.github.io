@@ -3,7 +3,7 @@ layout: post
 title: "Github Pages Build Deploy Cancelled"
 subtitle: "A simple solution to Github Pages Build and Deploy Failures"
 date: 2023-06-29 08:14:00 +0300
-categories: [Github, Errors, Solutions]
+categories: [Github]
 tags: [github, error, failed, solution]
 image: /images/github-build-deploy.png
 ---
