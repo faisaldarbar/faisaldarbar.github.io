@@ -1,25 +1,33 @@
 #  The contact options.
 - type: facebook
   icon: 'fab fa-facebook'   # icons powered by <https://fontawesome.com/>
-  url:  'https://facebook.com/faisaldarbar'   # Fill with your Linkedin homepage
+  url:  'https://facebook.com/faisaldarbar'   # Fill with your Link
+
+- type: instagram
+  icon: 'fab fa-instagram'   # icons powered by <https://fontawesome.com/>
+  url:  'https://www.instagram.com/faisal.darbar/'   # Fill with your Link
 
 - type: linkedin
   icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
-  url:  'https://linkedin.com/in/faisaldarbar'    # Fill with your Linkedin homepage
+  url:  'https://linkedin.com/in/faisaldarbar'    # Fill with your Link
 
 - type: youtube
   icon: 'fab fa-youtube'   # icons powered by <https://fontawesome.com/>
-  url:  'https://www.youtube.com/@FaisalDarbar'    # Fill with your Linkedin homepage
+  url:  'https://www.youtube.com/@FaisalDarbar'    # Fill with your Link
 
 - type: tiktok
   icon: 'fab fa-tiktok'   # icons powered by <https://fontawesome.com/>
-  url:  'https://www.tiktok.com/@faisal.darbar'    # Fill with your Linkedin homepage
+  url:  'https://www.tiktok.com/@faisal.darbar'    # Fill with your Link
 
 - type: twitter
   icon: "fab fa-twitter"
 
 - type: github
   icon: "fab fa-github"
+
+- type: reddit
+  icon: 'fab fa-reddit'   # icons powered by <https://fontawesome.com/>
+  url:  'https://www.reddit.com/user/faisaldarbar'    # Fill with your Link
 
 - type: whatsapp
   icon: 'fab fa-whatsapp'   # icons powered by <https://fontawesome.com/>
@@ -29,10 +37,11 @@
   icon: "fas fa-envelope"
   noblank: true # open link in current tab
 
+- type: rss
+  icon: "fas fa-rss"
+  noblank: true
+
 # Uncomment and complete the url below to enable more contact options
-# - type: rss
-#   icon: "fas fa-rss"
-#   noblank: true
 #
 # - type: mastodon
 #   icon: 'fab fa-mastodon'   # icons powered by <https://fontawesome.com/>
