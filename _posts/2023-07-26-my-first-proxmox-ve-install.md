@@ -136,7 +136,7 @@ To create the `wpa_supplicant.conf` file for Wi-Fi configuration, follow these s
 
 Note: For critical environments, consider using a wired Ethernet connection for greater reliability and stability. Ensure only using an unmanaged switch considering the current network's limitations.
 
-### Increasing Proxmox Storage
+### **Increasing Proxmox Storage**:
 
 *Credits to <a href="https://www.youtube.com/watch?v=_u8qTN3cCnQ" target="_blank">NetworkChuck</a> for the inspiration.*
 
