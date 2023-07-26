@@ -134,4 +134,4 @@ To create the `wpa_supplicant.conf` file for Wi-Fi configuration, follow these s
 
   - If required change the static IP as and when necessary.
 
-Note: For critical environments, consider using a wired Ethernet connection for greater reliability and stability.
+Note: For critical environments, consider using a wired Ethernet connection for greater reliability and stability. Ensure only using an unmanaged switch considering the current network's limitations.
