@@ -135,3 +135,35 @@ To create the `wpa_supplicant.conf` file for Wi-Fi configuration, follow these s
   - If required change the static IP as and when necessary.
 
 Note: For critical environments, consider using a wired Ethernet connection for greater reliability and stability. Ensure only using an unmanaged switch considering the current network's limitations.
+
+### Increasing Proxmox Storage
+
+*Credits to <a href="https://www.youtube.com/watch?v=_u8qTN3cCnQ" target="_blank">NetworkChuck</a> for the inspiration.*
+
+In this section, I will guide you through the process of increasing storage in your Proxmox installation. Follow these steps to effectively manage your storage:
+
+1. **Removing the Local LVM Volume:**
+   Start by accessing the Proxmox GUI and navigating to the "Datacenter" section. Within the "Datacenter," proceed to the "Storage" tab and locate the "local-lvm" volume. Select it and choose the option to remove it.
+
+2. **Deleting the LVM Volume via the PVE Shell:**
+   Now, we'll switch to the Proxmox VE Shell. In the command line interface, execute the following command to delete the LVM volume:
+   ```bash
+   lvremove /dev/pve/data
+   ```
+
+3. **Resizing the LVM Volume:**
+   After removing the local LVM volume, it's time to resize the root LVM volume. Run the following command in the PVE Shell:
+   ```bash
+   lvresize -l +100%FREE /dev/pve/root
+   ```
+
+4. **Resizing the Filesystem:**
+   With the LVM volume resized, the next step is to resize the filesystem to make use of the additional space. Execute the following command:
+   ```bash
+   resize2fs /dev/mapper/pve-root
+   ```
+
+5. **Verifying Storage Changes:**
+   Once the process is complete, return to the storage section in the Proxmox GUI. Confirm that the "local-lvm" volume is no longer present, and the "local" storage should now reflect a substantial increase in available space.
+
+By following these steps, you have successfully increased the storage capacity of your Proxmox installation. Always exercise caution when making changes to storage configurations, and it's advisable to take backups before proceeding with any critical changes. Enjoy the enhanced storage capabilities in your Proxmox environment!
