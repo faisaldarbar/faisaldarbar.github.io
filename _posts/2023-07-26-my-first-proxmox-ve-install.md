@@ -136,23 +136,29 @@ To create the `wpa_supplicant.conf` file for Wi-Fi configuration, follow these s
 
 Note: For critical environments, consider using a wired Ethernet connection for greater reliability and stability. Ensure only using an unmanaged switch considering the current network's limitations.
 
-### **Increasing Proxmox Storage**:
+### **Increasing Root Storage**:
 
 *Credits to <a href="https://www.youtube.com/watch?v=_u8qTN3cCnQ" target="_blank">NetworkChuck</a> for the inspiration.*
 
-In this section, I will guide you through the process of increasing storage in your root file system. Follow these steps to effectively manage your storage:
+In this section, I will guide you through the process of increasing root storage. 
+
+If you go to your PVE node under the Datacenter and then go to summary in the left sidebar, you may notice that your HD space (root storage) does not correctly reflect the actual physical space on your drive. You can increase this by deleting `local-lvm` volume.
+
+⚠️ **Important:** Only do this if you have additional physical disks on your server which you can use to create a ZFS pool and use it as a logical volume (LV) for the prospective VMs you plan to create. 
+
+Then, follow these steps to effectively increase your root storage:
 
 1. **Removing the `local-lvm` Volume:**
    Start by accessing the Proxmox GUI and navigating to the "Datacenter" section. Within the "Datacenter," proceed to the "Storage" tab and locate the "local-lvm" volume. Select it and choose the option to remove it. 
 
-2. **Remove via the PVE Shell:**
-   Now, we'll switch to the Proxmox VE Shell. In the command line interface, execute the following command:
+2. **Remove the Logical Volume via the PVE Shell:**
+   Now, we'll switch to the PVE Shell. In the command line interface, execute the following command:
    ```bash
    lvremove /dev/pve/data
    ```
 
-3. **Resizing:**
-   After removing, it's time to resize the root. Run the following command in the PVE Shell:
+3. **Resizing the File System:**
+   After removing the Logical Volume, it's time to resize the root storage. Run the following command in the PVE Shell:
    ```bash
    lvresize -l +100%FREE /dev/pve/root
    ```
@@ -164,6 +170,6 @@ In this section, I will guide you through the process of increasing storage in y
    ```
 
 5. **Verifying Storage Changes:**
-   Once the process is complete, return to the storage section in the Proxmox GUI. Confirm that the "local-lvm" volume is no longer present, and the "local" root file system storage should now reflect a substantial increase in available space.
+   Once the process is complete, return to the storage section in the Proxmox GUI. Confirm that the "local-lvm" volume is no longer present, and the root storage should now reflect a substantial increase in available space.
 
-By following these steps, you have successfully increased the storage capacity of your Proxmox installation. Always exercise caution when making changes to storage configurations, and it's advisable to take backups before proceeding with any critical changes. Enjoy the enhanced storage capabilities in your Proxmox environment!
+By following these steps, you have successfully increased the storage capacity of your Proxmox VE installation. Always exercise caution when making changes to storage configurations, and it's advisable to take backups before proceeding with any critical changes. Enjoy the enhanced storage capabilities in your Proxmox environment!
