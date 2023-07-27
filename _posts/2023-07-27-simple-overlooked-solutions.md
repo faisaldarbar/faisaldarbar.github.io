@@ -50,7 +50,7 @@ If you're encountering issues with connecting to your Mobile Hotspot on Windows 
 
 ![Ethernet Properties](/images/ethernet-properties.png){: width="500" height="263" }
 
-> ⚠️ **Important:** Make sure **not** to select your Wi-Fi adapter, as it is the one responsible for connecting your Mobile Hotspot to the internet.
+⚠️ **Important:** Make sure **not** to select your Wi-Fi adapter, as it is the one responsible for connecting your Mobile Hotspot to the internet.
 
 By following these steps, you should be able to fix the issue with your Mobile Hotspot. Once you've completed these settings, try connecting your other devices to the Wi-Fi hotspot again.
 
