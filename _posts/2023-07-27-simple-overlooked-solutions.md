@@ -48,9 +48,9 @@ If you're encountering issues with connecting to your Mobile Hotspot on Windows 
 
 9. From the drop-down menu, select "Local Area Connection." This should be a Microsoft Wi-Fi Virtual Adapter responsible for enabling your computer to act as a Wi-Fi hotspot, allowing other devices to connect and access the internet.
 
-10. Make sure **NOT** to select your Wi-Fi adapter, as it is the one responsible for connecting your Mobile Hotspot to the internet.
+![Ethernet Properties](/images/ethernet-properties.png){: width="500" height="263" }
 
-![Ethernet Properties](/images/ethernet-properties.png)
+10. Make sure **NOT** to select your Wi-Fi adapter, as it is the one responsible for connecting your Mobile Hotspot to the internet.
 
 By following these steps, you should be able to fix the issue with your Mobile Hotspot. Once you've completed these settings, try connecting your other devices to the Wi-Fi hotspot again.
 
