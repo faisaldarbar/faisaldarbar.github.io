@@ -50,6 +50,8 @@ If you're encountering issues with connecting to your Mobile Hotspot on Windows 
 
 10. Make sure **NOT** to select your Wi-Fi adapter, as it is the one responsible for connecting your Mobile Hotspot to the internet.
 
+![ethernet-properties](images/ethernet-properties.png)
+
 By following these steps, you should be able to fix the issue with your Mobile Hotspot. Once you've completed these settings, try connecting your other devices to the Wi-Fi hotspot again.
 
 Hopefully, this simple addition to the standard solutions will help you establish a successful connection between your Windows 11 computer and your Mobile Hotspot. If you encounter any further difficulties, don't hesitate to seek additional assistance.  
