@@ -4,7 +4,7 @@ title: "Simple Overlooked Solutions"
 subtitle: "Unveiling Simple Overlooked Solutions: Unraveling the Power of Oversight"
 date: 2023-07-27 01:00:00 +0300
 categories: [Solutions]
-tags: [networking]
+tags: [networking, mobile hotspot]
 image: /images/simple-overlooked-solutions.jpg
 ---
 
