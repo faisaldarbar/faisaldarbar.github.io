@@ -10,7 +10,35 @@ image: /images/my-first-proxmox-ve-install.jpg
 
 ## My First Proxmox Virtual Environment (PVE) Type 1 Hypervisor Installation
 
-### **Objective**: 
+### Proxmox: An Introduction to Virtualization
+
+Proxmox is a powerful and free virtualization platform that allows you to run multiple operating systems and applications on a single physical computer.
+
+#### What is Proxmox?
+
+Normally, your computer can only run one operating system (like Windows or Linux) at a time. But with Proxmox, you can create virtual machines, which are like separate, self-contained computers within your main computer.
+
+#### The Virtual Playground
+
+Imagine your computer is a house, and each virtual machine is a different room inside that house. In each room, you can install and run a different operating system and use various software just like you would on a regular computer.
+
+For example, you can have one virtual machine running Windows to use Microsoft Office and play games, while another virtual machine runs Linux to experiment with programming or hosting a website.
+
+#### Managing Virtual Machines
+
+Proxmox makes it easy to manage these virtual machines. It provides a web-based interface where you can create, start, stop, and delete virtual machines. It also lets you adjust the resources allocated to each virtual machine, such as CPU, memory, and storage.
+
+#### Isolation and Security
+
+One of the benefits of using Proxmox is that it keeps things isolated. If something goes wrong in one virtual machine, it won't affect the others. It's like having different compartments in your computer, so problems in one room won't spread to the rest of the house.
+
+Additionally, Proxmox allows you to create backups of your virtual machines, so you can restore them if anything goes wrong or if you want to move them to another computer.
+
+#### Conclusion
+
+In summary, Proxmox is a tool that lets you create and manage virtual machines on your computer. It's like having multiple computers inside your main computer, each running its own operating system and software, which helps you keep things organized and secure. So, whether you want to experiment with new software, run different operating systems, or just have a more organized computing experience, Proxmox can be a valuable addition to your tech toolkit.
+
+### **My Installation - The Technical Part**: 
 Given the hardware and networking limitations in my homelab, I have opted to work with the available resources and set up my Proxmox server on a spare Laptop. The Server is connected to the network through Wi-Fi, and I have assigned a static IP address to ensure consistent connectivity. This will allow me to access the Proxmox web interface seamlessly from my main laptop.
 
 The following steps were taken.
