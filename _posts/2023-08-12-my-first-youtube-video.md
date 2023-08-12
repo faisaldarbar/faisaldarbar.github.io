@@ -20,11 +20,14 @@ Just like any exciting adventure, this one began with a single step. No scripts,
 
 **The Video: Unveiling Authenticity**
 
-<!-- blank line -->
-<figure class="video_container">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/Adr_BW8F0Ik" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</figure>
-<!-- blank line -->
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+    <iframe 
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
+        src="https://www.youtube.com/embed/Adr_BW8F0Ik" 
+        frameborder="0" 
+        allowfullscreen
+    ></iframe>
+</div>
 
 In this impromptu video, I'm laying it all out there. Unfiltered and unscripted, I'm sharing a piece of my genuine self with you. From this point on, I'll be navigating the world of YouTube, sharing my experiences, insights, and moments of authenticity.
 
