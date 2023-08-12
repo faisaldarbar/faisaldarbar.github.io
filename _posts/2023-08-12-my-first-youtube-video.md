@@ -23,7 +23,7 @@ Just like any exciting adventure, this one began with a single step. No scripts,
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
     <iframe 
         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
-        src="https://www.youtube.com/embed/Adr_BW8F0Ik" 
+        src="https://www.youtube.com/embed/Adr_BW8F0Ik?rel=0" 
         frameborder="0" 
         allowfullscreen
     ></iframe>
