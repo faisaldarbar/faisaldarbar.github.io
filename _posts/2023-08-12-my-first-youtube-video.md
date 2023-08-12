@@ -12,7 +12,7 @@ image: /images/my-first-youtube-video.png
 
 **Hey there, amazing readers!** 🌟
 
-I'm beyond thrilled to kickstart this brand-new journey with all of you. Welcome to my very first blog post, and what a way to begin—with my debut YouTube video! This is Faisal Darbar, and I'm here to share the story behind my first step into the world of content creation. 🎥
+I'm beyond thrilled to kickstart this brand-new journey with all of you. Welcome to my very first YouTube video! This is Faisal Darbar, and I'm here to share the story behind my first step into the world of content creation. 🎥
 
 ### **The Unscripted Beginning**
 
