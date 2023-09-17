@@ -25,10 +25,6 @@
 - type: github
   icon: "fab fa-github"
 
-- type: reddit
-  icon: 'fab fa-reddit'   # icons powered by <https://fontawesome.com/>
-  url:  'https://www.reddit.com/user/faisaldarbar'    # Fill with your Link
-
 - type: whatsapp
   icon: 'fab fa-whatsapp'   # icons powered by <https://fontawesome.com/>
   url:  'https://wa.me/919765011119'    # Fill with your Linkedin homepage
@@ -37,8 +33,12 @@
   icon: "fas fa-envelope"
   noblank: true # open link in current tab
 
-- type: rss
-  icon: "fas fa-rss"
+# - type: reddit
+#   icon: 'fab fa-reddit'   # icons powered by <https://fontawesome.com/>
+#   url:  'https://www.reddit.com/user/faisaldarbar'    # Fill with your Link
+
+# - type: rss
+#   icon: "fas fa-rss"
 
 # Uncomment and complete the url below to enable more contact options
 #
