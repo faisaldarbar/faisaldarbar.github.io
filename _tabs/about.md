@@ -2,6 +2,7 @@
 # the default layout is 'page'
 icon: fas fa-info-circle
 order: 1
+tags: [business, zoho books, microsoft, wordpress, azure, saas, proxmox, virtualization, cs50x, coding, linux, networking, aws, homelab, videography, video, davinci resolve]
 ---
 
 ![Faisal Darbar](/images/howdy.png)
