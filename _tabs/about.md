@@ -6,9 +6,7 @@ order: 1
 
 ![Faisal Darbar](/images/howdy.png)
 
-# Howdy, I'm Faisal Darbar
-
-##### Business Pro | Zoho Books Expert | Microsoft Certified: Azure | WordPress Dev | Learning Azure Admin & More | Aspiring Videographer & Content Creator
+#### Business Pro | Zoho Books Expert | Microsoft Certified: Azure | WordPress Dev | Learning Azure Admin & More | Aspiring Videographer & Content Creator
 
 Hello! I'm a dynamic business professional with a strong background in Zoho Books and SaaS administration. My journey in tech includes Microsoft Azure certifications, WordPress development, and a passion for continuous learning.
 
