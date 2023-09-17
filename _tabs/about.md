@@ -8,9 +8,15 @@ order: 1
 
 # Howdy, I'm Faisal Darbar
 
-##### Cloud Administrator / Developer: Expert in SaaS Business Systems Administration
+##### Business Pro | Zoho Books Expert | Microsoft Certified: Azure | WordPress Dev | Learning Azure Admin & More | Aspiring Videographer & Content Creator
 
-As a skilled ☁️ Cloud Administrator & Developer with expertise in SaaS Business Systems Administration, I bring a proven track record of optimizing business operations through technology. I specialize in streamlining operations using SaaS solutions and excel at creative problem solving and collaborating with cross-functional teams to achieve business objectives. My passion for cloud administration and development drives my commitment to delivering efficient solutions that meet business needs.
+Hello! I'm a dynamic business professional with a strong background in Zoho Books and SaaS administration. My journey in tech includes Microsoft Azure certifications, WordPress development, and a passion for continuous learning.
+
+Currently, I'm on a path to become an Azure administrator while diving into CS50x, coding, Linux,, Cisco networking, and AWS Cloud. I run a HomeLab with Proxmox, exploring the depths of virtualization.
+
+Beyond my tech interests, I'm nurturing my creative side, aspiring to be a videographer. I'm honing my shooting skills on an APSC camera and mastering editing and color grading with DaVinci Resolve. My goal is to become a versatile content creator who combines business acumen with storytelling through video.
+
+Let's connect and explore how we can collaborate or share insights in tech, business, or creative endeavors.
 
 ### MY CERTIFICATIONS
 
