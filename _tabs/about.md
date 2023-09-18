@@ -12,7 +12,7 @@ Currently, I'm on a path to become an Azure administrator while diving into CS50
 
 Beyond my tech interests, I'm nurturing my creative side, aspiring to be a videographer. I'm honing my shooting skills on an APSC camera and mastering editing and color grading with DaVinci Resolve. My goal is to become a versatile content creator who combines business acumen with storytelling through video.
 
-Let's connect and explore how we can collaborate or share insights in tech, business, or creative endeavors.
+Let's connect and explore how we can collaborate or share insights in tech, business, or creative endeavors. Thanks..
 
 ### MY CERTIFICATIONS
 
