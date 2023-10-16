@@ -14,11 +14,14 @@ Beyond my tech interests, I'm nurturing my creative side, aspiring to be a video
 
 Let's connect and explore how we can collaborate or share insights in tech, business, or creative endeavors. Thanks..
 
-### MY CERTIFICATIONS
+### MY CERTIFICATIONS & BADGES
 
 <div style="width: 150px; float:left; height:270px; margin:10px">
 <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="09e8f0b2-8657-43ec-bf6b-fe0ec8e52fed" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
 </div>
 <div style="width: 150px; float:left; height:270px; margin:10px">
 <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="21fbb61a-6145-48fc-947b-08638bdfcb4b" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+</div>
+<div style="width: 150px; float:left; height:270px; margin:10px">
+<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="bf99fd3c-c30a-4413-bb7f-88e740406977" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
 </div>
