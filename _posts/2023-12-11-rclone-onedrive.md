@@ -5,25 +5,23 @@ subtitle: "Access OneDrive on Debian 12"
 date: 2023-12-11 01:00:00 +0300
 categories: [Linux Reference]
 tags: [linux, debian, rclone]
-image: /images/diskpart.png
+image: /images/rclone.png
 ---
 
-# Rclone OneDrive on Debian
+# Mounting OneDrive in Debian 12 Using rclone
 
 ## Introduction
 
 Looking to seamlessly integrate your OneDrive with Debian? With the help of rclone, accessing and managing your OneDrive files becomes a breeze. This tutorial will walk you through the steps required to set up and mount your OneDrive storage on Debian. Say goodbye to cumbersome file transfers - let's streamline your cloud storage experience!
 
 
-## Mounting OneDrive in Debian Using rclone
-
-To mount OneDrive in Debian using `rclone`, follow these steps:
+## To mount OneDrive in Debian using `rclone`, follow these steps:
 
 1. **Create OneDrive Directory:**  
    Create a directory named `OneDrive` in your home directory.
 
    ```bash
-   mkdir ~/OneDrive
+   mkdir OneDrive
    ```
 
 2. **Install rclone:**  
@@ -57,7 +55,13 @@ To mount OneDrive in Debian using `rclone`, follow these steps:
    - Quit and close the configuration (q).
 
 5. **Automatically Mount OneDrive on Login:**  
-   Edit your `.profile` file and append the following command at the end:
+   Edit your `.profile` file 
+   
+   ```bash
+   nano ~/.profile
+   ```
+
+   Append the following command at the end:
 
    ```bash
    /usr/bin/rclone --vfs-cache-mode writes mount OneDrive: ~/OneDrive &
