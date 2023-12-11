@@ -1,0 +1,69 @@
+---
+layout: post
+title: "Rclone OneDrive on Debian"
+subtitle: "Access OneDrive on Debian 12"
+date: 2023-12-11 01:00:00 +0300
+categories: [Linux Reference]
+tags: [linux, debian, rclone]
+image: /images/diskpart.png
+---
+
+# Rclone OneDrive on Debian
+
+## Introduction
+
+Looking to seamlessly integrate your OneDrive with Debian? With the help of rclone, accessing and managing your OneDrive files becomes a breeze. This tutorial will walk you through the steps required to set up and mount your OneDrive storage on Debian. Say goodbye to cumbersome file transfers - let's streamline your cloud storage experience!
+
+
+## Mounting OneDrive in Debian Using rclone
+
+To mount OneDrive in Debian using `rclone`, follow these steps:
+
+1. **Create OneDrive Directory:**  
+   Create a directory named `OneDrive` in your home directory.
+
+   ```bash
+   mkdir ~/OneDrive
+   ```
+
+2. **Install rclone:**  
+   Install `rclone` using the package manager.
+
+   ```bash
+   sudo apt install rclone
+   ```
+
+3. **Configure rclone:**  
+   Run the configuration for `rclone`.
+
+   ```bash
+   rclone config
+   ```
+
+4. **Set Up OneDrive Remote:**  
+   - Press `n` for a new remote.
+   - Enter the name for the remote (e.g., "OneDrive").
+   - Select the number corresponding to the remote type for OneDrive.
+   - Authenticate using your Microsoft account:
+     - No client ID or client secret is required.
+     - Choose the Microsoft Cloud Global (1).
+     - Advanced config editing can be skipped (n).
+     - Use a web browser to authenticate (y).
+     - Log in to your Microsoft account in the browser.
+     - Choose OneDrive personal or business (1).
+     - Select OneDrive type (personal) and confirm (y).
+     - Confirm the found drive root type (y).
+     - Keep this OneDrive remote (y).
+   - Quit and close the configuration (q).
+
+5. **Automatically Mount OneDrive on Login:**  
+   Edit your `.profile` file and append the following command at the end:
+
+   ```bash
+   /usr/bin/rclone --vfs-cache-mode writes mount OneDrive: ~/OneDrive &
+   ```
+
+   Save the file, log out, and log back in to automatically mount OneDrive upon login.
+
+Now, your OneDrive should be mounted automatically whenever you log in to your Debian system.
+
