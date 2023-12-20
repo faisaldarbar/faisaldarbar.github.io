@@ -69,5 +69,11 @@ Looking to seamlessly integrate your OneDrive with Debian? With the help of rclo
 
    Save the file, log out, and log back in to automatically mount OneDrive upon login.
 
+   Sometimes, the mount command might execute before the system is fully ready. Try adding a delay before mounting in the .profile file:
+
+   ```bash
+   (sleep 10 && /usr/bin/rclone --vfs-cache-mode writes mount OneDrive: ~/OneDrive &) 
+   ```
+
 Now, your OneDrive should be mounted automatically whenever you log in to your Debian system.
 
