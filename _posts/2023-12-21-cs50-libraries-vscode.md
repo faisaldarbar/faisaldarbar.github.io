@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "CS50 Libraries in VS Code"
-subtitle: "Inclusion of CS50 Libraries in VS Code on Linux (Debian)"
+subtitle: "Inclusion of CS50 Libraries in Visual Studio Code"
 date: 2023-12-21 01:00:00 +0300
 categories: [VS Code Reference]
 tags: [cs50, library, vscode, cs50.h]
@@ -9,12 +9,13 @@ image: /images/libcs50.png
 ---
 
 
-# Inclusion of CS50 Libraries in VS Code on Linux (Debian)
+# Inclusion of CS50 Libraries in Visual Studio Code
+(Works on Debian 12)
 
 ## Introduction
-Setting up a C development environment on Linux (Debian) with essential tools like VS Code, GCC, C/C++ extension, and Code Runner extension is crucial for effective programming. This guide focuses on seamlessly incorporating the CS50 libraries into VS Code on Linux (Debian) to enhance your C programming experience.
+Setting up a C development environment on Linux with essential tools like VS Code, GCC, C/C++ extension, and Code Runner extension is crucial for effective programming. This guide focuses on seamlessly incorporating the CS50 libraries into VS Code to enhance your C programming experience.
 
-## Step-by-Step Guide: Inclusion of CS50 Libraries in VS Code on Linux (Debian)
+## Step-by-Step Guide:
 
 ### Prerequisites:
 - Ensure you have VS Code, GCC, the C/C++ extension, and Code Runner extension installed on your Linux system.
@@ -26,6 +27,11 @@ Setting up a C development environment on Linux (Debian) with essential tools li
 ### Include `cs50.h` and `cs50.c` Libraries in Your Project:
 - Copy both the downloaded `cs50.h` and `cs50.c` files into your project folder.
 
+### Edit Configuration UI for C/C++:
+- Press `Ctrl+Shift+P` to open the Command Palette.
+- Type "C/C++ edit configuration UI" and select it.
+- Scroll down to "Include Path" and add the path to your `cs50.h` library.
+
 ### Modify Code Runner Executor Map:
 - Click on the gear icon in the lower-left corner of VS Code to access settings.
 - Search for "code runner executor map" and select "Edit in settings.json".
@@ -35,14 +41,9 @@ Setting up a C development environment on Linux (Debian) with essential tools li
   ```
   Replace `/path/to/your/project` with the actual path to your project folder.
 
-### Edit Configuration UI for C/C++:
-- Press `Ctrl+Shift+P` to open the Command Palette.
-- Type "C/C++ edit configuration UI" and select it.
-- Scroll down to "Include Path" and add the path to your `cs50.h` library.
-
 ### Write and Run Your C Code:
 - Write your C code, including the `#include "cs50.h"` statement.
-- Use Code Runner to execute the code (Ctrl+Alt+N or click the play button in the top right corner).
+- Use Code Runner to execute the code (click the play button in the top right corner).
 
 **Note:** Ensure both `cs50.h` and `cs50.c` libraries are placed in the same location within your project folder for successful compilation and execution.
 
