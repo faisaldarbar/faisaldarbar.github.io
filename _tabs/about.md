@@ -6,7 +6,7 @@ order: 1
 
 ![Faisal Darbar](/images/howdy.png)
 
-Hello! I'm a dynamic business professional with a strong background in Zoho Books and SaaS administration. My journey in tech includes Microsoft Azure certifications, WordPress development, and a passion for continuous learning.
+Hellooo! I'm a dynamic business professional with a strong background in Zoho Books and SaaS administration. My journey in tech includes Microsoft Azure certifications, WordPress development, and a passion for continuous learning.
 
 Currently, I'm on a path to become an Azure administrator while diving into CS50x, coding, Linux, Cisco networking, and AWS Cloud. I run a HomeLab with Proxmox, exploring the depths of virtualization.
 
