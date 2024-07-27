@@ -29,6 +29,10 @@ Faisal Darbar operates as a sole proprietorship, providing personalized service 
 
 Ready to elevate your technology? Contact us directly via the chat widget at the bottom right corner of the page to discuss how we can assist you.
 
+**Scan this QR Code to Connect on WhatsApp**
+
+![Faisal Darbar](/images/wa-qr-code.png)
+
 ### CERTIFICATIONS & BADGES
 
 <div style="width: 150px; float:left; height:270px; margin:10px">
