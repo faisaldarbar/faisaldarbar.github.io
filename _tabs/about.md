@@ -6,7 +6,7 @@ order: 1
 
 ![Faisal Darbar](/images/howdy.png)
 
-### About Faisal Darbar
+### SERVICES
 
 At Faisal Darbar, we specialize in IT Consultancy, Support Services, and Software Solutions, dedicated to driving your business success through technology.
 
