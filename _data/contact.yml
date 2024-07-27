@@ -10,12 +10,9 @@
 - type: twitter
   icon: "fab fa-x-twitter"
 
-- type: github
-  icon: "fab fa-github"
-
 - type: whatsapp
   icon: 'fab fa-whatsapp'   # icons powered by <https://fontawesome.com/>
-  url:  'https://wa.me/919765011119'    # Fill with your Linkedin homepage
+  url:  'https://wa.me/+917756008966'    # Fill with your Linkedin homepage
 
 - type: email
   icon: "fas fa-envelope"
