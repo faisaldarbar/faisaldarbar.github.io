@@ -6,15 +6,30 @@ order: 1
 
 ![Faisal Darbar](/images/howdy.png)
 
-Hello! I'm a dynamic business professional with a strong background in Zoho Books and SaaS administration. My journey in tech includes Microsoft Azure certifications, WordPress development, and a passion for continuous learning.
+### About Faisal Darbar
 
-Currently, I'm on a path to become an Azure administrator while diving into CS50x, coding, Linux, Cisco networking, and AWS Cloud. I run a HomeLab with Proxmox, exploring the depths of virtualization.
+At Faisal Darbar, we specialize in IT Consultancy, Support Services, and Software Solutions, dedicated to driving your business success through technology.
 
-Beyond my tech interests, I'm nurturing my creative side, aspiring to be a videographer. I'm honing my shooting skills on an APSC camera and mastering editing and color grading with DaVinci Resolve. My goal is to become a versatile content creator who combines business acumen with storytelling through video.
+**Our Services:**
 
-Let's connect and explore how we can collaborate or share insights in tech, business, or creative endeavors. Thanks!!
+- **IT Consultancy**: Strategic advice to optimize your IT systems.
+- **Support Services**: Reliable support to ensure smooth operations.
+- **Software Solutions**: Custom development and integration to boost productivity.
 
-### MY CERTIFICATIONS & BADGES
+**Why Partner With Us?**
+
+- **Expertise**: Experienced professionals with industry certifications.
+- **Customized Solutions**: Tailored strategies for your unique needs.
+- **Commitment**: Focused on high-quality results and long-term success.
+- **Industry Partnerships**: Proudly partnered with leading tech companies as a consultant partner, ensuring access to the latest technologies and best practices.
+
+**Legal Structure:**
+
+Faisal Darbar operates as a sole proprietorship, providing personalized service and direct accountability.
+
+Ready to elevate your technology? Contact us directly via the chat widget at the bottom right corner of the page to discuss how we can assist you.
+
+### CERTIFICATIONS & BADGES
 
 <div style="width: 150px; float:left; height:270px; margin:10px">
 <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="09e8f0b2-8657-43ec-bf6b-fe0ec8e52fed" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
