@@ -20,10 +20,10 @@ timezone: Asia/Kolkata
 
 title: Faisal Darbar
 
-tagline: Official Website
+tagline: Innovate. Solve. Succeed.
 
 description: >- # used by seo meta and the atom feed
-  Welcome to the world of Faisal Darbar. Explore my website to learn about my journey, experiences, and interests. Join me on this adventure of self-discovery and inspiration. Start exploring now!
+  At Faisal Darbar, we specialize in IT Consultancy, Support Services, and Software Solutions, dedicated to driving your business success through technology.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: "https://faisaldarbar.github.io"
@@ -38,7 +38,7 @@ social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: Faisal Darbar
-  email: faisaldarbar@gmail.com # change to your email address
+  email: faisal@faisaldarbar.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
     - https://faisaldarbar.com
@@ -71,7 +71,7 @@ google_analytics:
 #     light  - Use the light color scheme
 #     dark   - Use the dark color scheme
 #
-theme_mode: # [light|dark]
+theme_mode: [light]
 
 # The CDN endpoint for images.
 # Notice that once it is assigned, the CDN url
