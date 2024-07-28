@@ -31,9 +31,9 @@ Ready to elevate your technology? Contact us directly via the chat widget at the
 
 **Scan this QR Code to Connect on WhatsApp**
 
-<p align="left">
+<div style="width: 150px; float:left; height:270px; margin:10px">
 <img src="/images/wa-qr-code.png" alt="QR Code" width="150" height="150">
-</p>
+</div>
 
 ### CERTIFICATIONS & BADGES
 
