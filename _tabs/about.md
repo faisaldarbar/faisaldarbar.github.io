@@ -34,7 +34,7 @@ Ready to elevate your technology? Contact us directly via the chat widget at the
 <div style="float:left;">
 <img src="/images/wa-qr-code.png" alt="QR Code" width="150" height="150">
 </div>
-
+<p>
 ### CERTIFICATIONS & BADGES
 
 <div style="width: 150px; float:left; height:270px; margin:10px">
