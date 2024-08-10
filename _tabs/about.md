@@ -8,7 +8,7 @@ order: 1
 
 ### ABOUT ME
 
-🚀 Visionary Business Professional | Software Consultant | Microsoft Certified | WordPress Developer | Cloud Maestro | Coding Enthusiast | Future-Forward Videographer & Content Creator
+🚀 Visionary Business Professional, Software Consultant, Microsoft Certified, WordPress Developer, Cloud Maestro, Coding Enthusiast, Future-Forward Videographer & Content Creator
 
 **More About Me:**
 
