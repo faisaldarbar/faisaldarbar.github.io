@@ -1,7 +1,7 @@
 #  The contact options.
 - type: facebook
   icon: 'fab fa-facebook'   # icons powered by <https://fontawesome.com/>
-  url:  'https://facebook.com/faisaldarbar.page'   # Fill with your Link
+  url:  'https://facebook.com/faisaldarbar'   # Fill with your Link
 
 - type: instagram
   icon: 'fab fa-instagram'
@@ -15,9 +15,9 @@
   icon: 'fab fa-youtube'   # icons powered by <https://fontawesome.com/>
   url:  'https://www.youtube.com/@FaisalDarbar'    # Fill with your Link
 
-- type: tiktok
-  icon: 'fab fa-tiktok'   # icons powered by <https://fontawesome.com/>
-  url:  'https://www.tiktok.com/@faisal.darbar'
+- type: website
+  icon: 'fab fa-globe'   # icons powered by <https://fontawesome.com/>
+  url:  'https://faisaldarbar.com'
 
 - type: twitter
   icon: "fab fa-x-twitter"
