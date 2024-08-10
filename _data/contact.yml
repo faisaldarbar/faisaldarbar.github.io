@@ -16,7 +16,7 @@
   url:  'https://www.youtube.com/@FaisalDarbar'    # Fill with your Link
 
 - type: website
-  icon: 'fab fa-globe'   # icons powered by <https://fontawesome.com/>
+  icon: 'fas fa-globe'   # icons powered by <https://fontawesome.com/>
   url:  'https://faisaldarbar.com'
 
 - type: twitter
