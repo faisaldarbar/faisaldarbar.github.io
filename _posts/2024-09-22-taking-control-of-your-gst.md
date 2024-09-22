@@ -20,5 +20,5 @@ Managing GST can be tricky, especially if you rely on someone else to file your 
 
 In the video, I dive deeper into the challenges I faced and share tips on how you can avoid them. Watch it to ensure you don’t make the same mistakes.
 
-[![Watch the Video](https://img.youtube.com/vi/1E-Kjc4rKQE/0.jpg)](https://www.youtube.com/watch?v=1E-Kjc4rKQE)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1E-Kjc4rKQE?si=yFaObSo6xOb6lk3A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
