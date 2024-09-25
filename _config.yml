@@ -18,12 +18,12 @@ timezone: Asia/Kolkata
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Faisal Darbar Docs
+title: Faisal Darbar Documentation
 
-tagline: Documentation Site
+tagline: Documentation Website
 
 description: >- # used by seo meta and the atom feed
-  Faisal Darbar's Documentation Site.
+  Faisal Darbar's Documentation Website.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: "https://faisaldarbar.github.io"
