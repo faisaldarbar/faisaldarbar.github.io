@@ -3,6 +3,10 @@
   icon: 'fab fa-facebook'   # icons powered by <https://fontawesome.com/>
   url:  'https://facebook.com/faisaldarbar'   # Fill with your Link
 
+- type: youtube
+  icon: 'fab fa-youtube'   # icons powered by <https://fontawesome.com/>
+  url:  'https://www.youtube.com/@FaisalDarbar'    # Fill with your Link
+
 - type: instagram
   icon: 'fab fa-instagram'
   url: 'https://www.instagram.com/faisal.darbar/'
@@ -11,23 +15,23 @@
   icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
   url:  'https://linkedin.com/in/faisaldarbar' 
 
-- type: youtube
-  icon: 'fab fa-youtube'   # icons powered by <https://fontawesome.com/>
-  url:  'https://www.youtube.com/@FaisalDarbar'    # Fill with your Link
-
-- type: website
-  icon: 'fas fa-globe'   # icons powered by <https://fontawesome.com/>
-  url:  'https://faisaldarbar.com'
-
 - type: twitter
   icon: "fab fa-x-twitter"
 
-- type: github
-  icon: "fab fa-github"
+# - type: github
+#   icon: "fab fa-github"
 
 - type: whatsapp
   icon: 'fab fa-whatsapp'   # icons powered by <https://fontawesome.com/>
   url:  'https://wa.me/message/A2UGFOUVAMUZC1'    # Fill with your Linkedin homepage
+
+- type: telegram
+  icon: 'fab fa-telegram'   # icons powered by <https://fontawesome.com/>
+  url:  'https://t.me/faisaldarbar_bot'    # Fill with your Link
+
+- type: website
+  icon: 'fas fa-globe'   # icons powered by <https://fontawesome.com/>
+  url:  'https://faisaldarbar.com'
 
 - type: email
   icon: "fas fa-envelope"
