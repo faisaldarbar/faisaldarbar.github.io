@@ -25,10 +25,10 @@ To begin, you'll need to install Proxmox VE on your host. Proxmox is a powerful,
 #### **Installation Steps:**
 
 1. **Download the ISO**:
-   - Visit the [Proxmox VE download page](https://www.proxmox.com/en/downloads) to download the latest ISO for Proxmox VE.
+   - Visit the Proxmox VE download page to download the latest ISO for Proxmox VE.
 
 2. **Create a Bootable USB**:
-   - I encountered issues when trying to use **Ventoy** to create a bootable USB for Proxmox. The installer couldn't find the ISO correctly. So, I used **Rufus** to create the bootable USB.
+   - I encountered issues when trying to use **Ventoy** to install Proxmox. The installer couldn't find the ISO correctly. So, I used **Rufus** to create the bootable USB.
    - Download and install **Rufus**, and create a bootable USB stick using the Proxmox ISO.
 
 3. **Install Proxmox**:
@@ -156,6 +156,7 @@ To further secure your Proxmox host, you can enable Two-Factor Authentication (2
      ```
    - Add the following line at the top:
      ```plaintext
+     # SSH to Use Google Authenticator
      auth required pam_google_authenticator.so
      ```
 
