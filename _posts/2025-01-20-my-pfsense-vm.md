@@ -20,7 +20,7 @@ This guide documents the step-by-step process I followed to set up pfSense in a 
 
 ### **Hardware Configuration:**
 - **Host Machine:** Lenovo ThinkStation P3 Tiny
-- **Processor:** Intel i5-14600 vPro
+- **Processor:** Intel® Core™ i5-14600 vPro® Processor (E-cores up to 3.90 GHz, P-cores up to 5.20 GHz)
 - **NICs:**
   - Intel i219 (single port) used for management.
   - Intel i350-T4 quad-port NIC passed through to pfSense VM.
@@ -44,7 +44,7 @@ This guide documents the step-by-step process I followed to set up pfSense in a 
 ### **Step 2: Creating the VM**
 - **VM Configuration:**
   - **Machine Type:** q35
-  - **BIOS:** OVMF (UEFI)
+  - **BIOS:** SeaBIOS
   - **Disks:** 32GB, SCSI with `write-back` cache.
   - **CPU:** 4 cores, `default` type (not `host`).
   - **Memory:** 4096MB (4GB).
