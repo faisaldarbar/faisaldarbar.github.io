@@ -5,7 +5,7 @@ subtitle: "Optimizing ZFS for Efficient Memory Usage in Proxmox"
 date: 2025-01-22 01:00:00 +0530
 categories: [Proxmox]
 tags: [zfs, memory, proxmox]
-image: /images/zfs-proxmox-memory-optimization.png
+image: /images/zfs-proxmox-memory.png
 ---
 
 
