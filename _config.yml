@@ -51,6 +51,9 @@ social:
     - https://github.com/faisaldarbar # change to your github homepage
     - https://x.com/faisaldarbar # change to your twitter homepage
 
+  # Add global Open Graph image for sharing on social media
+  social_preview_image: "/images/faisaldarbar.png"  # Change to the path of your image
+
 google_site_verification: # fill in to your verification string
 
 # ↑ --------------------------
