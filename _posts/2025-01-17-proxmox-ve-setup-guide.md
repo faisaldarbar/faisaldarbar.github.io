@@ -34,6 +34,7 @@ To begin, you'll need to install Proxmox VE on your host. Proxmox is a powerful,
 3. **Install Proxmox**:
    - Boot the server from the USB stick.
    - Follow the installation wizard, and when asked, select **ZFS** as the file system for your installation.
+   - Rewcommended **FQDN** hostname.yourdomainname.com
    - Make sure to configure the **IP address** and **DNS settings** correctly during installation to match your network setup.
 
 4. **Complete the Installation**:
