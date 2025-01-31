@@ -56,7 +56,46 @@ After installation, you can manage Proxmox via a web interface:
 
 ---
 
-### **3. Install `sudo` and Add a Non-Root User**
+### **3. Disable Enterprise Repositories and Enable pve-no-subscription Repo**
+
+Proxmox offers enterprise repositories by default, but for non-subscribed users, you should switch to the **pve-no-subscription** repository to ensure access to the necessary updates without subscription fees.
+
+#### **Steps to Disable the Enterprise Repositories:**
+
+1. Edit the repository configuration file:
+   ```bash
+   nano /etc/apt/sources.list.d/pve-enterprise.list
+   ```
+
+2. Comment out the existing line by adding a `#` at the beginning of the line:
+   ```plaintext
+   # deb https://enterprise.proxmox.com/debian/pve stretch pve-enterprise
+   ```
+
+3. Save and close the file.
+
+#### **Enable the pve-no-subscription Repository:**
+
+1. Add the pve-no-subscription repository by editing the `sources.list` file:
+   ```bash
+   nano /etc/apt/sources.list.d/pve-no-subscription.list
+   ```
+
+2. Add the following line to enable the repository:
+   ```plaintext
+   deb http://download.proxmox.com/debian/pve stretch pve-no-subscription
+   ```
+
+3. Save and close the file.
+
+4. Update the package list:
+   ```bash
+   apt update
+   ```
+
+---
+
+### **4. Install `sudo` and Add a Non-Root User**
 
 Before creating a non-root user, install the **`sudo`** package, as it may not be installed by default.
 
@@ -89,7 +128,7 @@ Before creating a non-root user, install the **`sudo`** package, as it may not b
 
 ---
 
-### **4. Disable Root Access via SSH**
+### **5. Disable Root Access via SSH**
 
 For security, it is recommended to disable `root` access via SSH.
 
@@ -112,7 +151,7 @@ For security, it is recommended to disable `root` access via SSH.
 
 ---
 
-### **5. Disable Root Access via the Proxmox GUI**
+### **6. Disable Root Access via the Proxmox GUI**
 
 To enhance security, it's also recommended to disable the `root` user from accessing the Proxmox web interface.
 
@@ -128,7 +167,7 @@ To enhance security, it's also recommended to disable the `root` user from acces
 
 ---
 
-### **6. Enable Two-Factor Authentication (2FA) for SSH**
+### **7. Enable Two-Factor Authentication (2FA) for SSH**
 
 To further secure your Proxmox host, you can enable Two-Factor Authentication (2FA) for SSH logins. 
 
@@ -168,7 +207,7 @@ To further secure your Proxmox host, you can enable Two-Factor Authentication (2
 
 ---
 
-### **7. Configure Google Authenticator**
+### **8. Configure Google Authenticator**
 
 Now that you’ve enabled 2FA, configure Google Authenticator for your user.
 
@@ -188,7 +227,7 @@ Now that you’ve enabled 2FA, configure Google Authenticator for your user.
 
 ---
 
-### **8. Test SSH Access with 2FA**
+### **9. Test SSH Access with 2FA**
 
 To ensure 2FA is working correctly, test logging in via SSH from another terminal or machine:
 
