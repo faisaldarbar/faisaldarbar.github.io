@@ -1,0 +1,196 @@
+---
+layout: post
+title: "Proxmox Backup Server"
+subtitle: "My Proxmox Backup Server Installation and Secure Configuration Guide"
+date: 2025-01-31 01:00:00 +0530
+categories: [Proxmox]
+tags: [proxmox, backup, server]
+image: /images/proxmox-backup-server.png
+---
+
+
+
+# **My Proxmox Backup Server (PBS) Installation and Secure Configuration Guide**  
+
+## **Introduction**  
+
+Just like with Proxmox VE, I prefer a fresh installation and configuration of Proxmox Backup Server (PBS) for a clean and consistent setup. While I would back it up if possible, PBS requires that the machine be either stopped or suspended for backup, meaning it may not be able to back itself up. However, I’ve heard that one could have another instance of PBS to back up the first.  
+
+Given this, documenting the entire process ensures reproducibility, security, and stability for each installation.  
+
+---  
+
+## **1. Installing Proxmox Backup Server (PBS) as a VM on Proxmox VE**  
+
+PBS is a dedicated backup solution for Proxmox environments, offering efficient and secure data storage. In this setup, PBS is installed as a virtual machine (VM) on Proxmox VE.  
+
+### **Installation Steps:**  
+
+1. **Download the ISO**:  
+   - Visit the Proxmox Backup Server download page and download the latest ISO.  
+
+2. **Create a New Virtual Machine (VM) in Proxmox VE**:  
+   - Log in to the Proxmox VE web interface.  
+   - Click **Create VM** and enter a name for your PBS VM.  
+   - Select the PBS ISO under **OS**.  
+   - Choose **UEFI** firmware (for better future compatibility) and **Q35 chipset** for hardware-accelerated virtualization.  
+   - Allocate at least **2 CPU cores** and **4GB of RAM** for the PBS VM.  
+   - Assign a **32GB virtual disk for the OS**.  
+   - Add an **additional 32GB unused disk**, which will be required later when you configure a datastore for backup storage.  
+   - Set the network interface to `vmbr0` for both Proxmox VE management and PBS management, ensuring PBS is on the same network as your Proxmox VE nodes.  
+
+3. **Install PBS**:  
+   - Start the VM and proceed with the installation.  
+   - Follow the installation wizard and select **ext4** as the filesystem (default).  
+   - Set the **FQDN** hostname in the format of your choice. Mine is `hostname.yourdomainname.com`.  
+   - Configure the **IP address** and **DNS settings** according to your network setup.  
+
+4. **Complete the Installation**:  
+   - Reboot the system and access the PBS web interface.  
+
+---  
+
+## **2. Accessing the PBS Web Interface**  
+
+After installation, PBS is managed via a web interface.  
+
+1. Open a browser and navigate to:  
+   ```plaintext
+   https://<PBS-IP>:8007
+   ```
+2. Log in using the `root` user and the password set during installation.  
+
+---  
+
+## **3. Configure Repositories**  
+
+Proxmox Backup Server offers enterprise repositories by default, but for non-subscribed users, you should switch to the **pbs-no-subscription** repository to ensure access to the necessary updates without subscription fees.
+
+#### **Enable the pve-no-subscription Repository:**
+
+1. Edit the repository configuration file:
+   ```bash
+   nano /etc/apt/sources.list
+   ```
+
+2. Update the existing text in the file to this:
+   ```plaintext
+   deb http://deb.debian.org/debian bookworm main contrib
+   deb http://deb.debian.org/debian bookworm-updates main contrib
+   
+   # Proxmox Backup Server pbs-no-subscription repository provided by proxmox.com,
+   # NOT recommended for production use
+   deb http://download.proxmox.com/debian/pbs bookworm pbs-no-subscription
+   
+   # security updates
+   deb http://security.debian.org/debian-security bookworm-security main contrib
+   ```
+
+3. Save and close the file.
+
+#### **Steps to Disable the Enterprise Repositories:**
+
+1. Go to the PBS GUI, Administration > Repositories Tab  and disable the Enterprise Repositories.
+
+---  
+
+## **4. Root User Access in PBS**  
+
+Unlike Proxmox VE, using the `root` user in PBS is necessary for full functionality. Disabling `root` login can cause issues such as:  
+- Loss of access to the built-in PBS shell in the web interface.  
+- Datastore permission problems.  
+
+Additionally, there is no option in the PBS GUI to create a fully functional PAM user—only PBS-specific users with admin rights.  
+
+For these reasons, **root access should remain enabled** in both SSH and the PBS web interface. However, you can **secure the root user with 2FA**.  
+
+---  
+
+## **5. Enable Two-Factor Authentication (2FA) for SSH and GUI**  
+
+To enhance security, enabling Two-Factor Authentication (2FA) is highly recommended for both SSH and the PBS web GUI.  
+
+### **Enable 2FA for SSH using Google Authenticator**  
+
+1. Install the module:  
+   ```bash
+   apt install libpam-google-authenticator
+   ```  
+2. Edit the SSH configuration:  
+   ```bash
+   nano /etc/ssh/sshd_config
+   ```  
+   Ensure these lines are present:  
+   ```plaintext
+   KbdInteractiveAuthentication yes
+   ChallengeResponseAuthentication yes
+   UsePAM yes
+   ```  
+3. Modify the PAM SSH configuration:  
+   ```bash
+   nano /etc/pam.d/sshd
+   ```  
+   Add this line at the top:  
+   ```plaintext
+   auth required pam_google_authenticator.so
+   ```  
+4. Restart SSH:  
+   ```bash
+   systemctl restart sshd
+   ```  
+
+### **Enable 2FA for the PBS Web GUI**  
+
+- Navigate to **Configuration > Access Control > Users**.  
+- Go to the **2FA tab** and enable Two-Factor Authentication.  
+- Follow the steps to set up Google Authenticator, similar to the SSH setup.  
+
+---  
+
+## **6. Linking PBS to Proxmox VE (PVE) for Backup**  
+
+Before linking PBS with Proxmox VE, you need to **create a directory in the storage disks and configure it as a datastore**.  
+
+### **Steps to Link PBS with Proxmox VE**  
+
+1. **Create a Datastore**:  
+   - On your PBS server, go to **Storage > Directory** and create a directory.  
+   - Select the unused disk and format it as **ext4**.  
+   - Name it and check the box to **add it as a datastore**.  
+
+2. **Add PBS as a Storage Repository in Proxmox VE**:  
+   - In the Proxmox VE web interface, navigate to **Datacenter > Storage**.  
+   - Click **Add** and select **Proxmox Backup Server**.  
+   - Enter:  
+     - **Storage ID** (can be the same as your PBS hostname).  
+     - **PBS IP address** as the server.  
+     - **PBS root username and password**.  
+     - **Datastore name** (e.g., `backup`).  
+   - Copy the **Fingerprint** from the PBS web interface dashboard and paste it in Proxmox VE.  
+
+---  
+
+## **7. Manually Backing Up the pfSense VM**  
+
+1. **Ensure that the pfSense VM is running.**  
+2. **In Proxmox VE:**  
+   - Select the **pfSense VM**.  
+   - Click **Backup**, then select **Backup Now**.  
+   - Choose the PBS storage repository created earlier.  
+   - Select **Stop** as the backup mode.  
+3. Click **Backup** to initiate the process.  
+
+---  
+
+## **8. Monitoring Backup Status**  
+
+To verify your backups, go to **PBS > Datastore > Backup Datastore** and check for the latest backup entries.  
+
+---  
+
+## **Conclusion**  
+
+This guide covers the essential steps to install, secure, and configure PBS as a VM on Proxmox VE. In future posts, we’ll explore **advanced PBS features**. 🚀 
+
+For the official PBS Documentation got to the PBS GUI and click on Documentation in the top right corner.
+

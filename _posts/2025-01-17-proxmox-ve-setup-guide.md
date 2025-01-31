@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Proxmox VE Setup Guide"
-subtitle: "My Proxmox VE Installation and Secure Configuration Guide"
+title: "Proxmox Virtual Environnment"
+subtitle: "My Proxmox Virtual Environnment Installation and Secure Configuration Guide"
 date: 2025-01-17 01:00:00 +0530
 categories: [Proxmox]
 tags: [proxmox, hypervisor, virtualization]
@@ -10,7 +10,7 @@ image: /images/proxmox-host.png
 
 
 
-# My Proxmox VE Installation and Secure Configuration Guide
+# My Proxmox Virtual Environnment Installation and Secure Configuration Guide
 
 ## Introduction
 
@@ -240,5 +240,5 @@ ssh username@<Proxmox-IP>
 
 ---
 
-That's all.
+For the official PVE Documentation got to the PVE GUI and click on Documentation in the top right corner.
 
