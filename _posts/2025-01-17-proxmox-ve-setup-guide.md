@@ -185,6 +185,7 @@ To further secure your Proxmox host, you can enable Two-Factor Authentication (2
      ```
    - Ensure the following lines are present:
      ```plaintext
+     KbdInteractiveAuthentication yes
      ChallengeResponseAuthentication yes
      UsePAM yes
      ```
