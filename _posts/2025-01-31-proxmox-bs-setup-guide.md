@@ -172,13 +172,13 @@ Before linking PBS with Proxmox VE, you need to **create a directory in the stor
 
 ## **7. Manually Backing Up the pfSense VM**  
 
-1. **Ensure that the pfSense VM is running.**  
+1. **Manually **STOP** the pfSense VM from the pfSense console.**
 2. **In Proxmox VE:**  
-   - Select the **pfSense VM**.  
+   - Select the stopped **pfSense VM**.  
    - Click **Backup**, then select **Backup Now**.  
    - Choose the PBS storage repository created earlier.  
    - Select **Stop** as the backup mode.  
-3. Click **Backup** to initiate the process.  
+3. Click **Backup** to initiate the process.   
 
 ---  
 
