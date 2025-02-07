@@ -139,6 +139,19 @@ To enhance security, enabling Two-Factor Authentication (2FA) is highly recommen
    systemctl restart sshd
    ```  
 
+### **Configure Google Authenticator**
+
+Now that you’ve enabled 2FA, configure Google Authenticator for your user.
+
+1. Run the following command to set up Google Authenticator:
+   ```bash
+   google-authenticator
+   ```
+
+2. Follow the prompts to:
+   - Scan the QR code with the Google Authenticator app on your phone.
+   - Save the emergency scratch codes in case you lose access to the app.
+
 ### **Enable 2FA for the PBS Web GUI**  
 
 - Navigate to **Configuration > Access Control > Users**.  
