@@ -62,33 +62,25 @@ Proxmox offers enterprise repositories by default, but for non-subscribed users,
 
 #### **Steps to Disable the Enterprise Repositories:**
 
-1. Edit the repository configuration file:
+1. Disable the enterprise repositories from the GUI.
+
+2. Alternatively, edit the repository configuration file:
    ```bash
    nano /etc/apt/sources.list.d/pve-enterprise.list
    ```
 
-2. Comment out the existing line by adding a `#` at the beginning of the line:
+3. Comment out the existing line by adding a `#` at the beginning of the line:
    ```plaintext
    # deb https://enterprise.proxmox.com/debian/pve stretch pve-enterprise
    ```
 
-3. Save and close the file.
+4. Save and close the file.
 
 #### **Enable the pve-no-subscription Repository:**
 
-1. Add the pve-no-subscription repository by editing the `sources.list` file:
-   ```bash
-   nano /etc/apt/sources.list.d/pve-no-subscription.list
-   ```
+1. Enable the no subscription repository from the GUI.
 
-2. Add the following line to enable the repository:
-   ```plaintext
-   deb http://download.proxmox.com/debian/pve stretch pve-no-subscription
-   ```
-
-3. Save and close the file.
-
-4. Update the package list:
+2. Update the package list:
    ```bash
    apt update
    ```
