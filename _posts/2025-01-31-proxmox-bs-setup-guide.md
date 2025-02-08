@@ -29,15 +29,50 @@ PBS is a dedicated backup solution for Proxmox environments, offering efficient 
 1. **Download the ISO**:  
    - Visit the Proxmox Backup Server download page and download the latest ISO.  
 
-2. **Create a New Virtual Machine (VM) in Proxmox VE**:  
-   - Log in to the Proxmox VE web interface.  
-   - Click **Create VM** and enter a name for your PBS VM.  
-   - Select the PBS ISO under **OS**.  
-   - Choose **UEFI** firmware (for better future compatibility) and **Q35 chipset** for hardware-accelerated virtualization.  
-   - Allocate at least **2 CPU cores** and **4GB of RAM** for the PBS VM.  
-   - Assign a **32GB virtual disk for the OS**.  
-   - Add an **additional 32GB unused disk**, which will be required later when you configure a datastore for backup storage.  
-   - Set the network interface to `vmbr0` for both Proxmox VE management and PBS management, ensuring PBS is on the same network as your Proxmox VE nodes.  
+2. **Create a New Virtual Machine (VM) in Proxmox VE:**  
+
+   - **General:**  
+     - **Name:** pbs 
+
+   - **OS:**  
+     - **ISO Image:** Select PBS ISO  
+
+   - **System:**  
+     - **Machine:** Q35  
+     - **BIOS:** UEFI  
+     - **Add EFI Disk:** Checked  
+     - **EFI Storage:** local-lvm
+     - **Pre-Enroll Keys:** Unchecked
+     - **QEMU Agent:** Checked  
+     - **SCSI Controller:** VirtIO SCSI Single  
+
+   - **Disks:**  
+     - **VirtIO0 (OS):**  
+       - **Bus/Device:** VirtIO Block  
+       - **Storage:** local-lvm  
+       - **Disk Size:** 16GB  
+       - **Discard:** Enabled  
+     - **SCSI0 (Datastore):**  
+       - **Bus/Device:** SCSI  
+       - **Storage:** local-lvm  
+       - **Disk Size:** 104GB  
+       - **Discard:** Enabled  
+
+   - **CPU:**  
+     - **Cores:** 2  
+     - **Type:** Host  
+
+   - **Memory:**  
+     - **Memory:** 4GB  
+     - **Ballooning:** Checked  
+
+   - **Network:**  
+     - **Bridge:** vmbr0  
+     - **Model:** VirtIO (paravirtualized)  
+     - **Firewall:** Checked (Optional - Enable if you need additional network security based on your network setup)  
+
+   - **Confirm:**  
+     - Review settings and complete VM creation  
 
 3. **Install PBS**:  
    - Start the VM and proceed with the installation.  
@@ -46,7 +81,10 @@ PBS is a dedicated backup solution for Proxmox environments, offering efficient 
    - Configure the **IP address** and **DNS settings** according to your network setup.  
 
 4. **Complete the Installation**:  
-   - Reboot the system and access the PBS web interface.  
+   - Reboot the system and access the PBS web interface.
+   - Stop the VM and remove the installation media.
+   - Preferably delete the ISO from local (pve) to save space on your disk.
+   - Ensure the **boot order** is set correctly in VM options, with the correct virtual disk as the primary boot device.
 
 ---  
 
@@ -68,29 +106,36 @@ Proxmox Backup Server offers enterprise repositories by default, but for non-sub
 
 #### **Enable the pve-no-subscription Repository:**
 
-1. Edit the repository configuration file:
-   ```bash
-   nano /etc/apt/sources.list
-   ```
+1. **Use the GUI:**  
+   - Navigate to **Datacenter > PBS-VM > Updates > Repositories**.  
+   - Disable the **enterprise repository**.  
+   - Add a new repository for **pbs-no-subscription**.
 
-2. Update the existing text in the file to this:
+2. **Verify via Terminal:**  
+   - Open the sources list:
+     ```bash
+     nano /etc/apt/sources.list
+     ```
+
+3. **Ensure the file contains the following:**  
    ```plaintext
-   deb http://deb.debian.org/debian bookworm main contrib
-   deb http://deb.debian.org/debian bookworm-updates main contrib
-   
-   # Proxmox Backup Server pbs-no-subscription repository provided by proxmox.com,
-   # NOT recommended for production use
-   deb http://download.proxmox.com/debian/pbs bookworm pbs-no-subscription
-   
+   deb http://ftp.debian.org/debian bookworm main contrib
+
+   deb http://ftp.debian.org/debian bookworm-updates main contrib
+
    # security updates
-   deb http://security.debian.org/debian-security bookworm-security main contrib
+   deb http://security.debian.org bookworm-security main contrib
+
+   deb http://download.proxmox.com/debian/pbs bookworm pbs-no-subscription
    ```
 
-3. Save and close the file.
+4. **Save and Close:**  
+   - Press `Ctrl+O` to save, `Enter` to confirm, and `Ctrl+X` to exit.
 
-#### **Steps to Disable the Enterprise Repositories:**
-
-1. Go to the PBS GUI, Administration > Repositories Tab  and disable the Enterprise Repositories.
+5. **Update the System:**  
+   ```bash
+   apt update && apt upgrade -y
+   ```
 
 ---  
 
@@ -130,8 +175,9 @@ To enhance security, enabling Two-Factor Authentication (2FA) is highly recommen
    ```bash
    nano /etc/pam.d/sshd
    ```  
-   Add this line at the top:  
+   Add this line at the bottom:  
    ```plaintext
+   # PAM SSH configuration for Google Authenticator
    auth required pam_google_authenticator.so
    ```  
 4. Restart SSH:  
