@@ -47,7 +47,7 @@ This guide documents the step-by-step process I followed to set up pfSense in a 
   - **Qemu Agent:** Enabled
   - **Disks:** 32GB, VirtIO Block, local-lvm, discard, backup, IO thread disabled.
   - **CPU:** 2 cores, `host` type.
-  - **Memory:** 4096MB (4GB).
+  - **Memory:** 2048MB (2GB). Since pfSense recommends ZFS, assigning more RAM than required can have a negative impact on your overall memory usage. This can always be adjusted later as needed.
   - **Network:** No network device added during creation due to NIC passthrough.
 
 ### **Step 2: Network Preparation**
