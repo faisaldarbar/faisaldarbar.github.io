@@ -147,6 +147,8 @@ For security, it is recommended to disable `root` access via SSH.
 
 To enhance security, it's also recommended to disable the `root` user from accessing the Proxmox web interface.
 
+But, before you do that create a PAM user from the GUI, go to Permissions and give that user Admin access, go back to Users and check the permissions, and then proceed with the following:
+
 1. **Login to Proxmox Web Interface** using the `root` account.
 
 2. In the Proxmox Web UI, go to **Datacenter** > **Permissions** > **User**.
@@ -163,6 +165,8 @@ To enhance security, it's also recommended to disable the `root` user from acces
 
 To further secure your Proxmox host, you can enable Two-Factor Authentication (2FA) for SSH logins. 
 
+But, before you do that enable 2FA for your PAM user from the GUI. So that you don't forget. Then proceed with the following:
+
 #### **Install Google Authenticator PAM Module:**
 
 1. Install the Google Authenticator PAM module:
@@ -170,7 +174,7 @@ To further secure your Proxmox host, you can enable Two-Factor Authentication (2
    apt install libpam-google-authenticator
    ```
 
-2. Configure SSH to use the Google Authenticator PAM module:
+2. Configure SSH to use the Google Authenticator PAM module: (using su - user)
    - Edit the SSH configuration file:
      ```bash
      nano /etc/ssh/sshd_config
@@ -182,12 +186,12 @@ To further secure your Proxmox host, you can enable Two-Factor Authentication (2
      UsePAM yes
      ```
 
-3. Edit the PAM configuration to include Google Authenticator:
+3. Edit the PAM configuration to include Google Authenticator: (using su - user)
    - Edit the PAM SSH configuration file:
      ```bash
      nano /etc/pam.d/sshd
      ```
-   - Add the following line at the top:
+   - Add the following line at the bottom:
      ```plaintext
      # SSH to Use Google Authenticator
      auth required pam_google_authenticator.so
