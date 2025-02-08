@@ -63,7 +63,7 @@ PBS is a dedicated backup solution for Proxmox environments, offering efficient 
      - **Type:** Host  
 
    - **Memory:**  
-     - **Memory:** 4GB  
+     - **Memory:** 4GB - Note: Running Proxmox Backup Server (PBS) with **2 GB RAM** is not recommended due to potential performance issues, slow backups, and increased swap usage. For stability and smooth operation, especially when handling deduplication and indexing, it's best to allocate **4 GB RAM**. Since the VM is only used occasionally and turned off after use, keeping it at **4 GB** ensures reliable performance without unnecessary slowdowns.
      - **Ballooning:** Checked  
 
    - **Network:**  
