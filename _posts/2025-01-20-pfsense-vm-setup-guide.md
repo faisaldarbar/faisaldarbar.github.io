@@ -35,13 +35,7 @@ This guide documents the step-by-step process I followed to set up pfSense in a 
 
 ## **2. pfSense VM Creation on Proxmox**
 
-### **Step 1: Network Preparation**
-- Passed through all four ports of the Intel i350 NIC to the pfSense VM.
-- Confirmed IOMMU groups and mapped devices correctly.
-- **Cables connected:**
-  - WAN cable from ISP router to i350 port 1.
-
-### **Step 2: Creating the VM**
+### **Step 1: Creating the VM**
 - **VM Configuration:**
   - **Machine Type:** q35
   - **BIOS:** SeaBIOS
@@ -53,6 +47,12 @@ This guide documents the step-by-step process I followed to set up pfSense in a 
     - Advanced settings: Enabled "All Functions" and selected the PCIe device option, but one of "All Functions" or "ROM Bar" may have been grayed out for mapped devices.
   - Did not start the VM immediately after creation.
   - Enabled "Autostart VM" after completing passthrough configuration.
+
+### **Step 2: Network Preparation**
+- Passed through all four ports of the Intel i350 NIC to the pfSense VM.
+- Confirmed IOMMU groups and mapped devices correctly.
+- **Cables connected:**
+  - WAN cable from ISP router to i350 port 1.
 
 ### **Step 3: pfSense Installation**
 - Uploaded the pfSense ISO to Proxmox.
