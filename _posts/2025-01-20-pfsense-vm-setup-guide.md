@@ -35,29 +35,85 @@ This guide documents the step-by-step process I followed to set up pfSense in a 
 
 ## **2. pfSense VM Creation on Proxmox**
 
+- Download the installer Netgate Installer - AMD64 ISO IPMI/Virtual Machines
+- Extract with 7-Zip since it's a .gz file.
+- Upload to Proxmox local (pve).
+
 ### **Step 1: Creating the VM**
 - **VM Configuration:**
   - **Machine Type:** q35
   - **BIOS:** SeaBIOS
-  - **Disks:** 32GB, SCSI with `write-back` cache.
-  - **CPU:** 4 cores, `default` type (not `host`).
+  - **SCSI Controller:** VirtIO SCSI Single
+  - **Qemu Agent:** Enabled
+  - **Disks:** 32GB, VirtIO Block, local-lvm, discard, backup, IO thread disabled.
+  - **CPU:** 2 cores, `host` type.
   - **Memory:** 4096MB (4GB).
   - **Network:** No network device added during creation due to NIC passthrough.
-  - **PCI Device:** Mapped i350 ports using PCI passthrough.
-    - Advanced settings: Enabled "All Functions" and selected the PCIe device option, but one of "All Functions" or "ROM Bar" may have been grayed out for mapped devices.
-  - Did not start the VM immediately after creation.
-  - Enabled "Autostart VM" after completing passthrough configuration.
 
 ### **Step 2: Network Preparation**
-- Passed through all four ports of the Intel i350 NIC to the pfSense VM.
-- Confirmed IOMMU groups and mapped devices correctly.
-- **Cables connected:**
-  - WAN cable from ISP router to i350 port 1.
+
+- **Enabled IOMMU:**  
+  - Switch to the root user:  
+    ```bash
+    su -
+    ```
+  - Edit the GRUB configuration file:  
+    ```bash
+    nano /etc/default/grub
+    ```
+  - Modify the `GRUB_CMDLINE_LINUX_DEFAULT` line to:  
+    ```bash
+    GRUB_CMDLINE_LINUX_DEFAULT="quiet intel_iommu=on"
+    ```
+  - Update GRUB and reboot:  
+    ```bash
+    update-grub
+    reboot
+    ```
+  - Verify IOMMU is enabled:  
+    ```bash
+    dmesg | grep -e DMAR -e IOMMU
+    ```
+
+- **Load VFIO Modules (for PCI Passthrough):**  
+  - Edit the modules file:  
+    ```bash
+    nano /etc/modules
+    ```
+  - Add the following lines:
+    ```
+    vfio
+    vfio_iommu_type1
+    vfio_pci
+    vfio_virqfd
+    ```
+  - Update the initramfs and reboot:  
+    ```bash
+    update-initramfs -u
+    reboot
+    ```
+
+- **PCI Device:**  
+  - Mapped **i350** ports using PCI passthrough.
+  - **Advanced settings:**
+    - Enabled **"ROM-Bar"**
+    - Enabled **"PCI-Express"**
+
+---
+
+### **Final Touches**
+
+- Did **not** start the VM immediately after creation.
+- Enabled **"Autostart VM"** after completing passthrough configuration in **pfSense VM Options**.
+
 
 ### **Step 3: pfSense Installation**
-- Uploaded the pfSense ISO to Proxmox.
-- Booted the VM from the ISO and completed the installation.
+- Started the VM.
 - Configured the WAN interface to obtain an IP address via DHCP (ISP router assigns it).
+- Configured the LAN interface to a static IP and enabled it as a DHCP server handing our IPs in a specified address range.
+- Did a few more settings.
+- Opened pfSense Admin page in a browser at the static IP.
+- Ran through the configuration wizard referring to video from Jim's Garage.
 - Disabled "Block RFC1918 Private Networks" as the ISP router assigns a private IP in my case.
 - Enabled "Block Bogon Networks" for additional security.
 
