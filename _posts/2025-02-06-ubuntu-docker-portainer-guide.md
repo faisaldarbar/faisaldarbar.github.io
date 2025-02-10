@@ -33,20 +33,51 @@ In this comprehensive guide, we'll walk through the steps to set up an Ubuntu Se
 
 ### VM Configuration:
 
-- **System:**
-  - **BIOS:** OVMF (UEFI)
-  - **QEMU Agent:** Enabled
+**General:**  
+- **Name:** docker  
 
-- **Disks:**
-  - **Bus/Device:** VirtIO Block
-  - **Discard:** Enabled (to allow TRIM for SSDs)
-  - **IO Thread:** Disabled (improves performance on multi-core systems)
-  - **Backup:** Enabled (to be handled via PBS)
+**OS:**  
+- **ISO Image:** Select Ubuntu Server ISO  
 
-- **Network:**
-  - **Bridge:** vmbr1 (connected to VMLAN)
-  - **Model:** VirtIO (paravirtualized network driver)
-  - **Firewall:** Enabled (firewalling will be managed via pfSense)
+**System:**  
+- **Machine:** Q35  
+- **BIOS:** UEFI  
+- **Add EFI Disk:** Checked  
+- **EFI Storage:** local-lvm  
+- **Pre-Enroll Keys:** Unchecked  
+- **QEMU Agent:** Checked  
+- **SCSI Controller:** VirtIO SCSI Single  
+
+**Disks:**  
+- **VirtIO0 (OS Disk):**  
+  - **Bus/Device:** VirtIO Block  
+  - **Storage:** local-lvm  
+  - **Disk Size:** 64GB *(Future-proofed for OS, updates, and Docker overhead)*  
+  - **Discard:** Enabled *(Allows TRIM for SSD lifespan and performance)*  
+
+- **SCSI0 (Persistent Storage):**  
+  - **Bus/Device:** SCSI  
+  - **Storage:** local-lvm  
+  - **Disk Size:** 100GB *(For Docker volumes, databases, and additional services)*  
+  - **Discard:** Enabled  
+
+**CPU:**  
+- **Cores:** 2 *(Starter config for basic services, can be increased later)*  
+- **Type:** Host  
+
+**Memory:**  
+- **Memory:** 2GB *(Sufficient for a start, scalable later)*  
+- **Ballooning:** Checked
+
+**Network:**  
+- **Bridge:** vmbr1 *(Connected to VLAN)*  
+- **Model:** VirtIO (paravirtualized)  
+- **Static IP:** Set *(Recommended for Pi-hole and Home Assistant)*  
+- **Firewall:** Checked *(Managed via pfSense, but can add VM-level rules if needed)*  
+
+**Confirm:**  
+Review settings and complete VM creation. 🚀  
+
 
 ---
 
