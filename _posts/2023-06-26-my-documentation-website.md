@@ -20,4 +20,4 @@ Welcome to my documentation hub—a curated space where **technology, finance, a
 
 Structured guides, best practices, and technical documentation to help you stay informed and ahead.  
 
-Stay curious, keep building. 🚀  
+Stay curious, and keep building. 🚀  
