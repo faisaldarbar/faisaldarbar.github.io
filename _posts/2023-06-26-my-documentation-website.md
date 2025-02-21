@@ -18,6 +18,6 @@ Welcome to my documentation hub—a curated space where **technology, finance, a
 - ☁️ **Cloud Computing & Automation**  
 - 📊 **Accounting & Taxation Insights**  
 
-Structured guides, best practices, and technical documentation to help you stay informed and ahead.  
+Structured guides, best practices, technical documentation and personal experiences to help you stay informed and ahead.  
 
 Stay curious, and keep building. 🚀  
