@@ -6,15 +6,17 @@ order: 1
 
 ![Faisal Darbar](/images/howdy.png)
 
-# 👋 About Me  
+# About Me  
+
+🚀 Exceptional Business Professional, IT, Networking and Software Consultant, Accounting and Taxation Enthusiast, Web Developer, Microsoft Certified, Cloud Explorer, Homelab Hobbyist, Coding Deep Diver, Videographer and Content Creator
 
 I’m passionate about **technology, coding, and creative problem-solving**. Here, you’ll find my thoughts, experiments, and experiences across:  
 
-- 🖥 **IT Infrastructure & Networking**
-- 💻 **Software Development & Web Solutions**
-- ☁️ **Cloud Computing & Automation**
-- 📊 **Business Accounting & Taxation**
-- 🎥 **Videography & Content Creation** 
+- 🖥 **IT Infrastructure and Networking**
+- 💻 **Software Development and Web Solutions**
+- ☁️ **Cloud Computing and Automation**
+- 📊 **Business Accounting and Taxation**
+- 🎥 **Videography and Content Creation**
 
 This space is for sharing, learning, and growing. If you're curious about any of these, stick around!  
 
