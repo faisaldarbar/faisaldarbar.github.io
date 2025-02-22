@@ -25,13 +25,13 @@
   icon: 'fab fa-whatsapp'   # icons powered by <https://fontawesome.com/>
   url:  'https://wa.me/919765011119'    # Fill with your Linkedin homepage
 
-- type: telegram
-  icon: 'fab fa-telegram'   # icons powered by <https://fontawesome.com/>
-  url:  'https://t.me/faisaldarbar_bot'    # Fill with your Link
+# - type: telegram
+#   icon: 'fab fa-telegram'   # icons powered by <https://fontawesome.com/>
+#   url:  'https://t.me/faisaldarbar_bot'    # Fill with your Link
 
 # - type: website
-#  icon: 'fas fa-globe'   # icons powered by <https://fontawesome.com/>
-#  url:  'https://faisaldarbar.com'
+#   icon: 'fas fa-globe'   # icons powered by <https://fontawesome.com/>
+#   url:  'https://faisaldarbar.com'
 
 - type: email
   icon: "fas fa-envelope"
@@ -41,8 +41,8 @@
 #   icon: 'fab fa-reddit'   # icons powered by <https://fontawesome.com/>
 #   url:  'https://www.reddit.com/user/faisaldarbar'    # Fill with your Link
 
-# - type: rss
-#   icon: "fas fa-rss"
+- type: rss
+  icon: "fas fa-rss"
 
 # Uncomment and complete the url below to enable more contact options
 #
