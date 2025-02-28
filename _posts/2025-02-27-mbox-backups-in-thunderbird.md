@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Ubuntu Dual Boot: BCDEDIT Fix"
-subtitle: "Ubuntu Dual Boot: BCDEDIT Fix"
-date: 2025-02-24 01:00:00 +0530
-categories: [Network]
-tags: [ubuntu, boot, bcedit]
+title: "MBOX Backups in Thunderbird"
+subtitle: "A Complete Guide to MBOX Backups in Thunderbird"
+date: 2025-02-27 01:00:00 +0530
+categories: [MBOX]
+tags: [mbox, thunderbird, backups]
 image: /images/mbox-backups-in-thunderbird.png
 ---
 
