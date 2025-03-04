@@ -20,7 +20,7 @@ I’m passionate about **technology, coding, and creative problem-solving**. Her
 
 This space is for sharing, learning, and growing. If you're curious about any of these, stick around!  
 
-🚀 Stay curious, keep building, and have fun along the way..
+🚀 Stay curious, keep building, and have fun along the way.
 
 
 ### CERTIFICATIONS & BADGES
