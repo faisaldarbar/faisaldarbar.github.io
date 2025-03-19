@@ -41,8 +41,12 @@
 #   icon: 'fab fa-reddit'   # icons powered by <https://fontawesome.com/>
 #   url:  'https://www.reddit.com/user/faisaldarbar'    # Fill with your Link
 
-- type: rss
-  icon: "fas fa-rss"
+# - type: rss
+#   icon: "fas fa-rss"
+
+- type: website
+  icon: 'fas fa-briefcase'   # icons powered by <https://fontawesome.com/>
+  url:  'https://ahlanbags.com'
 
 # Uncomment and complete the url below to enable more contact options
 #
