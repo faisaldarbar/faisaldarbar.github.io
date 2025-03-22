@@ -18,8 +18,8 @@
 - type: twitter
   icon: "fab fa-x-twitter"
 
-- type: github
-  icon: "fab fa-github"
+# - type: github
+#   icon: "fab fa-github"
 
 - type: whatsapp
   icon: 'fab fa-whatsapp'   # icons powered by <https://fontawesome.com/>
@@ -47,6 +47,10 @@
 - type: website
   icon: 'fas fa-briefcase'   # icons powered by <https://fontawesome.com/>
   url:  'https://ahlanbags.com'
+
+- type: website
+  icon: 'fas fa-microchip'   # icons powered by <https://fontawesome.com/>
+  url:  'https://aptxlabs.com'
 
 # Uncomment and complete the url below to enable more contact options
 #
