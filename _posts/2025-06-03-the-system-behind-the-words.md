@@ -10,7 +10,6 @@ pin: no
 ---
 
 
-# The System Behind the Words  
 *How I finally built a sustainable writing workflow using Notion—and how you can too.*
 
 We often talk about creativity like it’s magic. But the truth is, even magic needs a system.
