@@ -7,6 +7,7 @@ order: 1
 ![Faisal Darbar](/images/howdy.png)
 
 
+
 🚀 Exceptional Business Professional, IT, Networking and Software Consultant, Accounting and Taxation Enthusiast, Web Developer, Microsoft Certified, Cloud Explorer, Homelab Hobbyist, Coding Deep Diver, Aspiring Author, Videographer and Content Creator
 
 I’m passionate about **technology, coding, and creative problem-solving** — and now, writing and self-publishing. Here, you’ll find my thoughts, experiments, and experiences across:  
