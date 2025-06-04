@@ -8,14 +8,15 @@ order: 1
 
 # About Me  
 
-🚀 Exceptional Business Professional, IT, Networking and Software Consultant, Accounting and Taxation Enthusiast, Web Developer, Microsoft Certified, Cloud Explorer, Homelab Hobbyist, Coding Deep Diver, Videographer and Content Creator
+🚀 Exceptional Business Professional, IT, Networking and Software Consultant, Accounting and Taxation Enthusiast, Web Developer, Microsoft Certified, Cloud Explorer, Homelab Hobbyist, Coding Deep Diver, Aspiring Author, Videographer and Content Creator
 
-I’m passionate about **technology, coding, and creative problem-solving**. Here, you’ll find my thoughts, experiments, and experiences across:  
+I’m passionate about **technology, coding, and creative problem-solving** — and now, writing and self-publishing. Here, you’ll find my thoughts, experiments, and experiences across:  
 
 - 🖥 **IT Infrastructure and Networking**
 - 💻 **Software Development and Web Solutions**
 - ☁️ **Cloud Computing and Automation**
 - 📊 **Business Accounting and Taxation**
+- 📚 **Writing, Publishing, and the Author Journey**
 - 🎥 **Videography and Content Creation**
 
 This space is for sharing, learning, and growing. If you're curious about any of these, stick around!  
