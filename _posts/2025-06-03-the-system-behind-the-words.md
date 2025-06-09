@@ -36,6 +36,8 @@ To my surprise, that piece moved me more than anything I had written before.
 
 And it reminded me why I started writing in the first place.
 
+It will be featured in my upcoming book.
+
 ---
 
 ### So here’s my new verdict:
