@@ -28,7 +28,7 @@ In the end, the whole system felt useless. I barely wrote anything, except the o
 
 But then something happened.
 
-One day, I wrote something that didn’t belong in any system. It wasn’t part of a plan. It was just a memory that had stayed with me longer than I expected. A quiet moment.
+On the day of this blog post's edit, I wrote something that didn’t belong in any system. It wasn’t part of a plan. It was just a memory that had stayed with me longer than I expected. A quiet moment.
 
 I opened a blank Microsoft Word document, chose a clean font—Book Antiqua—and started writing. No structure. No outline. Just the truth, and the little advice from Stephen King that stayed with me: bring your toolbox, and trust the story to reveal itself.
 
