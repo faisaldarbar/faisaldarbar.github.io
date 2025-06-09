@@ -53,7 +53,7 @@ But don’t forget: sometimes the most powerful writing comes when you throw the
 
 As Stephen King says in *On Writing*, every writer needs a toolbox. But what you put in that toolbox—and when you choose to use it—is entirely up to you.
 
-**So the system behind the words is—no system**
+**So the system behind the words is—no system.**
 
 Make sure you give it a shot!
 
