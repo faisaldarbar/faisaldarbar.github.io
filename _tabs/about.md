@@ -34,4 +34,4 @@ This space is for sharing, learning, and growing. If you're curious about any of
 <div style="width: 150px; float:left; height:270px; margin:10px">
 <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="21fbb61a-6145-48fc-947b-08638bdfcb4b" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
 </div>
-<p>
+<div style="clear: both;"></div>
