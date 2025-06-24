@@ -203,4 +203,5 @@ jekyll-archives:
     tag: /tags/:name/
     category: /categories/:name/
 
-
+home:
+  pinned_only: false
