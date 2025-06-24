@@ -9,6 +9,11 @@ refactor: true
   {% assign posts = site.posts | where: "pin", "true" %}
 {% else %}
   {% assign posts = site.posts | where_exp: "post", "post.hidden != true" %}
+  {% assign posts = posts | sort: 'date' | reverse %}
+  {% assign pinned_posts = posts | where: "pin", true %}
+  {% assign normal_posts = posts | where_exp: "post", "post.pin != true" %}
+  {% assign posts = pinned_posts | concat: normal_posts %}
+
 {% endif %}
 
 <div id="post-list" class="flex-grow-1 px-xl-1">
