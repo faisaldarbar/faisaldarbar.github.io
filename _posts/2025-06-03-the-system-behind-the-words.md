@@ -10,7 +10,7 @@ pin: no
 ---
 
 
-I’m a new writer, trying to make something out of this new venture called writing
+I’m a new writer, trying to make something out of this new venture called writing.
 
 I’d heard so many times about this thing called *writer’s block*—where a writer begins to write, and someone asks them, “How many words have you written?” and they reply, “Seven,” —long pause— or “Eleven” —another long pause— For me, it was “Five.” 
 
