@@ -6,7 +6,7 @@ date: 2025-06-03 18:00:00 +0300
 categories: [Writing]
 tags: [system, writing, notion]
 image: /images/the-system-behind-the-words.png
-pin: no
+pin: yes
 ---
 
 
