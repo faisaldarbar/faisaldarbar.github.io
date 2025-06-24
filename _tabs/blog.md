@@ -5,5 +5,5 @@ permalink: /blog/
 layout: home
 tabs: true
 order: 2
-nav_exclude: true
+active: blog
 ---
