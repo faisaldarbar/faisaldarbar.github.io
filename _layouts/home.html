@@ -5,7 +5,12 @@ refactor: true
 
 {% include lang.html %}
 
-{% assign all_posts = site.posts | where_exp: 'post', 'post.hidden != true' %}
+{% if site.home.pinned_only %}
+  {% assign display_posts = site.posts | where: 'pin', 'true' %}
+{% else %}
+  {% assign display_posts = site.posts | where_exp: 'post', 'post.hidden != true' %}
+{% endif %}
+
 
 {% assign posts = '' | split: '' %}
 
