@@ -30,7 +30,6 @@ url: "https://faisaldarbar.com"
 # Code for Jeyyll Sitemap Plugin
 plugins:
   - jekyll-sitemap
-  - jekyll-seo-tag
 
 github:
   username: faisaldarbar # change to your github username
