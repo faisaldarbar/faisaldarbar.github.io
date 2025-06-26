@@ -1,0 +1,19 @@
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const currentPath = window.location.pathname.replace(/index\.html$/, '');
+    const navLinks = document.querySelectorAll('#sidebar .nav-link');
+
+    navLinks.forEach(link => {
+      const href = link.getAttribute('href') || '';
+      const normalizedHref = href.replace(/index\.html$/, '');
+
+      if (normalizedHref === currentPath) {
+        link.classList.add('active');
+        link.closest('.nav-item')?.classList.add('active');
+      } else {
+        link.classList.remove('active');
+        link.closest('.nav-item')?.classList.remove('active');
+      }
+    });
+  });
+</script>
