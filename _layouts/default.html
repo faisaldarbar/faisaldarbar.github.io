@@ -78,6 +78,28 @@ layout: compress
     {% include js-selector.html lang=lang %}
 
     {% include_cached search-loader.html lang=lang %}
+
+    <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const normalize = path => path.replace(/\/index\.html$/, "").replace(/\/$/, "");
+
+    const current = normalize(window.location.pathname);
+
+    document.querySelectorAll("#sidebar .nav-item").forEach(item => {
+      const link = item.querySelector("a.nav-link");
+      if (!link) return;
+
+      const href = normalize(link.getAttribute("href"));
+
+      if (href === current) {
+        item.classList.add("active");
+      } else {
+        item.classList.remove("active");
+      }
+    });
+  });
+</script>
+
     
   </body>
 </html>
