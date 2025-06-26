@@ -1,7 +1,5 @@
 ---
 layout: compress
-script_includes:
-  - scripts
 ---
 
 <!doctype html>
@@ -77,10 +75,9 @@ script_includes:
     {% endif %}
 
     <!-- JavaScripts -->
-    {% for _include in layout.script_includes %}
-  {% assign _include_path = _include | append: '.html' %}
-  {% include {{ _include_path }} %}
-{% endfor %}
+    {% include js-selector.html lang=lang %}
+
+    {% include_cached search-loader.html lang=lang %}
     
   </body>
 </html>
