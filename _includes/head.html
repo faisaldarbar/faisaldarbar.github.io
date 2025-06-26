@@ -1,0 +1,14 @@
+{%- capture title_text -%}
+  {%- if page.title and page.title != site.title -%}
+    {{ page.title }} | {{ site.title }}
+  {%- else -%}
+    {{ site.title }}
+  {%- endif -%}
+{%- endcapture -%}
+
+<title>{{ title_text | strip }}</title>
+
+{%- comment -%}
+  Everything else will fall back to the default theme includes,
+  so we don’t need to copy anything except the <title> override.
+{%- endcomment -%}
