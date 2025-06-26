@@ -75,8 +75,11 @@ layout: compress
     {% endif %}
 
     <!-- JavaScripts -->
-    <script src="{{ '/assets/js/app.min.js' | relative_url }}" defer></script>
-    
+    {% for _include in layout.script_includes %}
+      {% assign _include_path = _include | append: '.html' %}
+      {% include {{ _include_path }} %}
+    {% endfor %}
+
     {% include_cached search-loader.html lang=lang %}
     
   </body>
