@@ -19,8 +19,9 @@
   <nav class="flex-column flex-grow-1 w-100 ps-0">
     <ul class="nav">
       <!-- home -->
-      <li class="nav-item{% if page.url == '/' %} active{% endif %}">
-        <a href="{{ '/' | relative_url }}" class="nav-link">
+<li class="nav-item{% if page.layout == 'home' %}{{ " active" }}{% endif %}">
+
+      <a href="{{ '/' | relative_url }}" class="nav-link">
           <i class="fa-fw fas fa-home"></i>
           <span>{{ site.data.locales[include.lang].tabs.home | upcase }}</span>
         </a>
@@ -41,14 +42,15 @@
   </nav>
 
   <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100">
-    <button type="button" class="btn btn-link nav-link" aria-label="Switch Mode" id="mode-toggle">
-  <i class="fas fa-adjust"></i>
-</button>
+    {% unless site.theme_mode %}
+      <button type="button" class="btn btn-link nav-link" aria-label="Switch Mode" id="mode-toggle">
+        <i class="fas fa-adjust"></i>
+      </button>
 
-{% if site.data.contact.size > 0 %}
-  <span class="icon-border"></span>
-{% endif %}
-
+      {% if site.data.contact.size > 0 %}
+        <span class="icon-border"></span>
+      {% endif %}
+    {% endunless %}
 
     {% for entry in site.data.contact %}
       {% case entry.type %}
