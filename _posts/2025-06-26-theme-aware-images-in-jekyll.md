@@ -23,6 +23,13 @@ Disclaimer: This is currently undergoing testing.
 
 Making your website more visually consistent with your visitors' system preferences is a small touch that leaves a big impact. In this post, you'll learn how to create **theme-aware images** — images that automatically switch between **light and dark mode** depending on the user's browser or OS setting.
 
+<picture>
+  <source srcset="{{ page.theme_images.dark }}" media="(prefers-color-scheme: dark)">
+  <source srcset="{{ page.theme_images.light }}" media="(prefers-color-scheme: light)">
+  <img src="{{ page.theme_images.light }}" alt="{{ page.title }}" loading="lazy" width="600" height="315">
+</picture>
+
+
 ---
 
 ## 🌓 What Are Theme-Aware Images?
