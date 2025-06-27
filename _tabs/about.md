@@ -21,9 +21,37 @@ I’m passionate about **technology, coding, and creative problem-solving** — 
 - 📚 **Writing, Publishing, and the Author Journey**
 - 🎥 **Videography and Content Creation**
 
-This space is for sharing, learning, and growing. If you're curious about any of these, stick around!  
+This space is for sharing, learning, and growing. If you're curious about any of these, stick around!
 
-🚀 Stay curious, keep building, and have fun along the way.
+---
+
+## 🧩 My Ventures
+
+In addition to consulting and content creation, I’ve founded and currently manage the following businesses:
+
+### 👜 [Ahlan Bags](https://ahlanbags.com){:target="_blank" rel="noopener noreferrer"}
+
+Ahlan Bags is a retail brand offering high-quality handbags, backpacks, laptop bags, wallets, and accessories in Aurangabad. Established in 2009, it reflects my passion for style, quality, and business operations.
+
+I handle everything from product curation and inventory to digital strategy and customer service — all powered by my background in business and tech.
+
+### 🧪 [Aptxlabs](https://aptxlabs.com){:target="_blank" rel="noopener noreferrer"}
+
+Aptxlabs is my tech consulting and services company, where I deliver solutions in:
+
+- IT Infrastructure & Networking  
+- Web & Software Development  
+- Cloud & Automation  
+- Business & Tax Consulting  
+- Media Production
+
+It’s a fusion of my technical expertise and entrepreneurial spirit — helping businesses grow through smart, scalable technology.
+
+---
+
+These ventures are where I turn ideas into reality — designing systems, solving problems, and delivering real-world value.
+
+🚀 Want to collaborate or learn more? Get in touch!
 
 
 ### CERTIFICATIONS & BADGES
