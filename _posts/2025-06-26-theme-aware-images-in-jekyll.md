@@ -100,17 +100,6 @@ Try switching your browser or system between dark and light mode and watch the i
 
 ---
 
-## 🔁 Optional: Make It Reusable With an Include
-
-If you want to reuse this across many posts, create a Jekyll include:
-
-#### `_includes/theme-image.html`
-```liquid
-<picture>
-  <source srcset="{{ include.dark }}" media="(prefers-color-scheme: dark)">
-  <img src="{{ include.light }}" alt="{{ include.alt | escape }}" style="box-shadow: 0 4px 10px rgba(0,0,0,0.15); border-radius: 8px;">
-</picture>
-```
 
 #### Then use it like this in your posts:
 ```liquid
