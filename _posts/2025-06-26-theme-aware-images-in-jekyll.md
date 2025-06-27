@@ -100,18 +100,6 @@ Try switching your browser or system between dark and light mode and watch the i
 
 ---
 
-
-#### Then use it like this in your posts:
-```liquid
-{% include theme-image.html
-   light="/images/theme-aware-images-in-jekyll-light.png"
-   dark="/images/theme-aware-images-in-jekyll-dark.png"
-   alt="Theme-aware example image"
-%}
-```
-
----
-
 ## ✅ Conclusion
 
 Using `<picture>` and `prefers-color-scheme`, you can easily serve theme-specific images that improve readability and user experience — with no extra libraries or scripts.
