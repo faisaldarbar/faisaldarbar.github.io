@@ -3,7 +3,7 @@ layout: post
 title: "Ubuntu Dual Boot: BCDEDIT Fix"
 subtitle: "Ubuntu Dual Boot: BCDEDIT Fix"
 date: 2025-02-24 01:00:00 +0530
-categories: [Homelab, Linux Reference]
+categories: [Open Source, Linux Reference]
 tags: [ubuntu, boot, bcedit]
 image: /images/ubuntu-dual-boot-bcedit-fix.jpg
 ---
