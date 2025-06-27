@@ -45,7 +45,7 @@
 #   icon: "fas fa-rss"
 
 - type: website
-  icon: 'fas fa-briefcase'   # icons powered by <https://fontawesome.com/>
+  icon: 'fas fa-shopping-bag'   # icons powered by <https://fontawesome.com/>
   url:  'https://ahlanbags.com'
 
 - type: website
