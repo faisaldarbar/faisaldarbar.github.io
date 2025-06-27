@@ -3,7 +3,7 @@ layout: post
 title: "The System Behind the Words"
 subtitle: "Documentation needs a system. Writing needs your voice."
 date: 2025-06-03 18:00:00 +0300
-categories: [Writing]
+categories: [Writing, System]
 tags: [system, writing, notion]
 image: /images/the-system-behind-the-words.png
 pin: no
