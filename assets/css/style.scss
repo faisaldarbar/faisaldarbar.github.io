@@ -4,3 +4,15 @@
 @import 'main';
 
 /* append your custom style below */
+
+@media (min-width: 768px) {
+    .content {
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .content {
+        font-size: 1.15rem;
+    }
+}
