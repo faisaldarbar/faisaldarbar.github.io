@@ -5,13 +5,21 @@ subtitle: "How to Add Theme-Aware Images in Jekyll"
 date: 2025-06-26 18:00:00 +0300
 categories: [Web Development, HTML/CSS]
 tags: [dark mode, light mode, responsive images]
-image:
+image: /images/theme-aware-images-in-jekyll-light.png  # Used for SEO/meta
+theme_images:
   light: /images/theme-aware-images-in-jekyll-light.png
   dark: /images/theme-aware-images-in-jekyll-dark.png
 pin: no
 ---
 
 Disclaimer: This is currently undergoing testing.
+
+<picture>
+  <source srcset="{{ page.theme_images.dark }}" media="(prefers-color-scheme: dark)">
+  <source srcset="{{ page.theme_images.light }}" media="(prefers-color-scheme: light)">
+  <img src="{{ page.theme_images.light }}" alt="Theme-aware image" loading="lazy" width="600" height="315">
+</picture>
+
 
 Making your website more visually consistent with your visitors' system preferences is a small touch that leaves a big impact. In this post, you'll learn how to create **theme-aware images** — images that automatically switch between **light and dark mode** depending on the user's browser or OS setting.
 
