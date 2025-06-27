@@ -35,7 +35,7 @@ Ahlan Bags is a retail brand offering high-quality handbags, backpacks, laptop b
 
 I handle everything from product curation and inventory to digital strategy and customer service — all powered by my background in business and tech.
 
-### 🧪 [Aptxlabs](https://aptxlabs.com){:target="_blank" rel="noopener noreferrer"}
+### 💻 [Aptxlabs](https://aptxlabs.com){:target="_blank" rel="noopener noreferrer"}
 
 Aptxlabs is my tech consulting and services company, where I deliver solutions in:
 
