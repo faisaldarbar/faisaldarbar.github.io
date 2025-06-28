@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Ubuntu Docker Portatiner Guide"
+title: "Ubuntu Docker Portainer Setup Guide"
 subtitle: "My Ubuntu Server Docker Portainer Installation and Secure Configuration Guide"
 date: 2025-02-06 01:00:00 +0530
 categories: [Homelab, Docker]
