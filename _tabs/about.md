@@ -51,7 +51,15 @@ It’s a fusion of my technical expertise and entrepreneurial spirit — helping
 
 These ventures are where I turn ideas into reality — designing systems, solving problems, and delivering real-world value.
 
-🚀 Want to collaborate or learn more? Get in touch!
+🚀 Want to collaborate or learn more? 
+
+Get in touch using the links!
+
+<a href="/blog" style="text-decoration: none;">
+        <button style="padding: 0.85rem 1.7rem; font-size: 1rem; background-color: #007BFF; color: white; border: none; border-radius: 6px; cursor: pointer;">
+          Visit the Blog
+        </button>
+      </a>
 
 
 ### CERTIFICATIONS & BADGES
