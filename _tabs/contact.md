@@ -4,6 +4,12 @@ icon: fas fa-envelope
 order: 6
 ---
 
+---
+title: Contact
+icon: fas fa-envelope
+order: 4
+---
+
 <form id="my-form" action="https://formspree.io/f/mblyqqok" method="POST">
   <label for="email">Email:</label><br>
   <input type="email" name="email" id="email" required><br><br>
