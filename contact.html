@@ -1,11 +1,10 @@
 ---
 layout: page
-icon: fas fa-envelope
-order: 6
+title: Contact
+permalink: /contact/
 ---
 
-
-<p>Send me a message:</p>
+<h1>Contact Me</h1>
 
 <form id="my-form" action="https://formspree.io/f/mblyqqok" method="POST">
   <label for="email"><strong>Email</strong></label><br>
@@ -21,7 +20,7 @@ order: 6
   <p id="my-form-status"></p>
 </form>
 
-<!-- Scripts must come AFTER the form -->
+<!-- reCAPTCHA Script -->
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 <script type="text/javascript">
@@ -32,14 +31,12 @@ order: 6
       event.preventDefault();
       var status = document.getElementById("my-form-status");
 
-      // Ensure reCAPTCHA was passed
       var recaptchaToken = grecaptcha.getResponse();
       if (!recaptchaToken) {
         status.innerHTML = "<span style='color:red;'>Please verify you're not a robot.</span>";
         return;
       }
 
-      // Prepare form data with reCAPTCHA token
       var data = new FormData(form);
       data.append("g-recaptcha-response", recaptchaToken);
 
