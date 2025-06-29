@@ -3,7 +3,7 @@ layout: post
 title: "GitHub Pages Deploy Fix after v3 Deprecation"
 subtitle: "GitHub Pages Build and Deployment Workflow Fix for Jekyll Chirpy Theme after v3 Artifact Actions Deprecation"
 date: 2025-01-30 01:00:00 +0530
-categories: [Web Development, Github]
+categories: [Documentation, Web Development, Github]
 tags: [github, jekyll, chirpy]
 image: /images/github-pages-deploy-v3-depracation.png
 ---

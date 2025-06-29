@@ -3,7 +3,7 @@ layout: post
 title: "Rclone OneDrive on Debian"
 subtitle: "Access OneDrive on Debian 12"
 date: 2023-12-11 01:00:00 +0300
-categories: [Open Source, Linux Reference]
+categories: [Documentation, Open Source, Linux Reference]
 tags: [linux, debian, rclone]
 image: /images/rclone.png
 ---

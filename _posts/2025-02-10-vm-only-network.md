@@ -3,7 +3,7 @@ layout: post
 title: "VM-Only Network"
 subtitle: "VM-Only Network (VMLAN) with pfSense on Proxmox"
 date: 2025-02-10 01:00:00 +0530
-categories: [Homelab, Network]
+categories: [Documentation, Homelab, Network]
 tags: [network, vm, vmbr]
 image: /images/vm-only-network.jpg
 ---

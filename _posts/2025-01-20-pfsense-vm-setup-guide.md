@@ -3,7 +3,7 @@ layout: post
 title: "pfSense Virtual Machine"
 subtitle: "Setting Up pfSense and Network Configuration for Proxmox"
 date: 2025-01-20 01:00:00 +0530
-categories: [Homelab, pfSense]
+categories: [Documentation, Homelab, pfSense]
 tags: [pfsense, firewall, proxmox]
 image: /images/pfsense-vm.png
 ---
