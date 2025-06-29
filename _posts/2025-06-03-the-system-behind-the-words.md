@@ -5,7 +5,7 @@ subtitle: "Documentation needs a system. Writing needs your voice."
 date: 2025-06-03 18:00:00 +0300
 categories: [Writing, Systems]
 tags: [system, writing, notion]
-image: /images/the-system-behind-the-words.png
+image: /images/the-system-behind-the-words.jpg
 photo_credit: >
   Photo by <a href="https://unsplash.com/@true_zuzu" target="_blank" rel="noopener">Vitalii Onyshchuk</a> on
   <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a>
