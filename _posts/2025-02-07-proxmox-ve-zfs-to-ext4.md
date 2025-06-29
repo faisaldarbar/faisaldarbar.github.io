@@ -3,7 +3,7 @@ layout: post
 title: "Proxmox VE ZFS to EXT4"
 subtitle: "Rebuilding My Homelab: Transitioning from ZFS to EXT4 on Proxmox VE"
 date: 2025-02-07 01:00:00 +0530
-categories: [Documentation, Homelab, Proxmox]
+categories: [Documentation, Homelab - Proxmox]
 tags: [proxmox, zfs, ext4]
 image: /images/pve-zfs-to-ext4.png
 ---

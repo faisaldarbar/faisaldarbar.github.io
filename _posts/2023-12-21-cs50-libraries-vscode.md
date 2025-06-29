@@ -3,7 +3,7 @@ layout: post
 title: "CS50 Libraries in VS Code"
 subtitle: "Inclusion of CS50 Libraries in Visual Studio Code"
 date: 2023-12-21 01:00:00 +0300
-categories: [Documentation, Computer Science, VS Code Reference]
+categories: [Documentation, VS Code Reference]
 tags: [cs50, library, vscode, cs50.h]
 image: /images/libcs50.png
 ---

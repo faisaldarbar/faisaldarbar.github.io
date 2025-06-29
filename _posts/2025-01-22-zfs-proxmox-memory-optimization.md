@@ -3,7 +3,7 @@ layout: post
 title: "ZFS Proxmox Memory Optimization"
 subtitle: "Optimizing ZFS for Efficient Memory Usage in Proxmox"
 date: 2025-01-22 01:00:00 +0530
-categories: [Documentation, Homelab, Proxmox]
+categories: [Documentation, Homelab - Proxmox]
 tags: [zfs, memory, proxmox]
 image: /images/zfs-proxmox-memory-issue.png
 ---

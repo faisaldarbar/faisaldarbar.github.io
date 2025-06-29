@@ -3,7 +3,7 @@ layout: post
 title: "Debian 12 Setup Guide"
 subtitle: "My Debian 12 Desktop Setup and Security Guide"
 date: 2023-11-01 18:00:00 +0300
-categories: [Documentation, Open Source, Linux Reference]
+categories: [Documentation, Linux Reference]
 tags: [linux, debian, security, desktop, flatpak, ufw, firewall, clamav]
 image: /images/debian12.png
 ---

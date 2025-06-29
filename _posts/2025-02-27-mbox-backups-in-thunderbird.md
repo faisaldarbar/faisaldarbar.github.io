@@ -3,7 +3,7 @@ layout: post
 title: "MBOX Backups in Thunderbird"
 subtitle: "A Complete Guide to MBOX Backups in Thunderbird"
 date: 2025-02-27 01:00:00 +0530
-categories: [Documentation, Open Source, Thunderbird]
+categories: [Documentation, Thunderbird]
 tags: [mbox, thunderbird, backups]
 image: /images/mbox-backups-in-thunderbird.png
 ---

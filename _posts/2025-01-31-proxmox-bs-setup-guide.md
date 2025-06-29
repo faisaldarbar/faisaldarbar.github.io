@@ -3,7 +3,7 @@ layout: post
 title: "Proxmox Backup Server"
 subtitle: "My Proxmox Backup Server Installation and Secure Configuration Guide"
 date: 2025-01-31 01:00:00 +0530
-categories: [Documentation, Homelab, Proxmox]
+categories: [Documentation, Homelab - Proxmox]
 tags: [proxmox, backup, server]
 image: /images/proxmox-backup-server.png
 ---
