@@ -7,7 +7,6 @@ categories: [Writing, Systems]
 tags: [system, writing, notion]
   credit: >
     Photo by <a href="https://unsplash.com/@true_zuzu" target="_blank" rel="noopener">Vitalii Onyshchuk</a> on <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a>
-pin: no
 ---
 
 
