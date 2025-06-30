@@ -6,7 +6,7 @@ permalink: /privacy-policy/
 
 **Effective Date: June 30, 2025**
 
-This Privacy Policy describes how *Faisal Darbar* ("we", "our", or "us") collects, uses, and protects your personal information when you visit [faisaldarbar.com](https://faisaldarbar.com){:target="_blank" rel="noopener noreferrer"}.
+This Privacy Policy describes how **Faisal Darbar** ("we", "our", or "us") collects, uses, and protects your personal information when you visit [faisaldarbar.com](https://faisaldarbar.com){:target="_blank" rel="noopener noreferrer"}.
 
 ## What We Collect
 

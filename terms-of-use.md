@@ -24,7 +24,7 @@ We make no guarantees about the accuracy, completeness, or usefulness of the con
 
 ## 4. External Links
 
-This site may contain links to other websites. We are not responsible for their content or privacy practices.
+This site may contain links to other websites or services, including including tools like Google Analytics used to improve site performance and user experience.
 
 ## 5. Changes
 
