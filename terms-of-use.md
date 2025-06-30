@@ -32,4 +32,4 @@ These Terms may change over time. Updates will appear here with the new effectiv
 
 ## Contact
 
-If you have any questions, contact us at: [faisal@faisaldarbar.com](mailto:faisal@faisaldarbar.com)
+If you have any questions about these terms, email us at: [faisal@faisaldarbar.com](mailto:faisal@faisaldarbar.com)
