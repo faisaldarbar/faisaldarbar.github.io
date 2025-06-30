@@ -6,13 +6,13 @@ permalink: /privacy-policy/
 
 # Privacy Policy
 
-Effective Date: June 30, 2025
+**Effective Date: June 30, 2025**
 
-This Privacy Policy describes how *Faisal Darbar* ("we", "our", or "us") collects, uses, and protects your personal information when you visit [faisaldarbar.com](https://faisaldarbar.com).
+This Privacy Policy describes how *Faisal Darbar* ("we", "our", or "us") collects, uses, and protects your personal information when you visit [faisaldarbar.com](https://faisaldarbar.com){:target="_blank" rel="noopener noreferrer"}.
 
 ## What We Collect
 
-We collect your **email address** when you voluntarily subscribe to receive updates through our email newsletter, powered by [Kit (formerly ConvertKit)](https://convertkit.com).
+We collect your **email address** when you voluntarily subscribe to receive updates through our email newsletter, powered by [Kit (formerly ConvertKit)](https://convertkit.com){:target="_blank" rel="noopener noreferrer"}.
 
 We do **not** collect any other personal data, payment information, or sensitive information.
 
@@ -26,7 +26,7 @@ We do **not** sell, rent, or share your email address with any third parties.
 
 ## Third-Party Services
 
-We use **Kit (ConvertKit)** to manage email subscriptions. When you submit your email, you are subject to ConvertKit’s [Privacy Policy](https://convertkit.com/privacy) and [Terms of Service](https://convertkit.com/terms).
+We use **Kit (ConvertKit)** to manage email subscriptions. When you submit your email, you are subject to ConvertKit’s [Privacy Policy](https://convertkit.com/privacy){:target="_blank" rel="noopener noreferrer"} and [Terms of Service](https://convertkit.com/terms){:target="_blank" rel="noopener noreferrer"}.
 
 ## Cookies & Analytics
 
@@ -46,5 +46,3 @@ To exercise any of these rights, contact us at [faisal@faisaldarbar.com](mailto:
 If you have any questions about this policy, email us at:  
 📧 [faisal@faisaldarbar.com](mailto:faisal@faisaldarbar.com)  
 📍 B7, Sapphire Building, Green Valley, Rauzabagh, Chhatrapati Sambhajinagar, Maharashtra 431001, India
-
----
