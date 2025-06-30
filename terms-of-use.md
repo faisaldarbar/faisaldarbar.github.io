@@ -16,7 +16,7 @@ All content on this site, including blog posts, images, and code snippets, is fo
 
 By subscribing to our email list, you agree to receive periodic emails from us. You can unsubscribe at any time via the link in each email.
 
-We use a third-party service Kit (ConvertKit) to manage and deliver emails. Your information is handled according to their [Privacy Policy](https://convertkit.com/privacy){:target="_blank" rel="noopener noreferrer"} and [Terms of Use](https://convertkit.com/terms){:target="_blank" rel="noopener noreferrer"}.
+We use a third-party service **Kit** to manage and deliver emails. Your information is handled according to their [Privacy Policy](https://convertkit.com/privacy){:target="_blank" rel="noopener noreferrer"} and [Terms of Use](https://convertkit.com/terms){:target="_blank" rel="noopener noreferrer"}.
 
 ## 3. No Guarantees
 
