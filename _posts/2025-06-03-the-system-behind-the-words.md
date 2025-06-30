@@ -12,11 +12,13 @@ photo_credit: >
 ---
 
 
-I’m a new writer, trying to make something out of this new venture called writing.
+I’d heard so many times about this thing called writer’s block — where a writer begins to write, and someone asks them, “How many words have you written?” and they reply, “Seven.” Long pause. Or “Eleven.” Another pause.
 
-I’d heard so many times about this thing called *writer’s block*—where a writer begins to write, and someone asks them, “How many words have you written?” and they reply, “Seven,” —long pause— or “Eleven” —another long pause— For me, it was “Five.” 
+For me, it was “Five.”
 
 Makes me laugh now.
+
+I’m a new writer, trying to make something out of this new venture called writing.
 
 Writing doesn’t seem so hard—until you actually sit down and try to write.
 
@@ -24,8 +26,10 @@ So I thought I’d be smart about it. I figured I’d create a system alongside 
 
 ### Here’s the system I made using Notion:
 
-- **Journal Database** – a raw, personal space to pour in thoughts every day, unfiltered. But this didn’t really help. If you want to write, try to do it well in the first place—don’t leave everything for the editing stage.
+- **Journal Database** – a raw, personal space to pour in thoughts every day, unfiltered. But it didn’t really help. I realized that if I wanted to write well, I had to write with intention—not just dump and hope editing would save it later.
+
 - **Blog Database** – a place to refine ideas from the journal into public posts, hoping to grow my blog and share something useful. But even this didn’t make much sense. If the blogs are already published on my site, which has its own backups, what’s the point of maintaining a separate database?
+
 - **Book Projects Database** – a big-picture area where I grouped blog posts and themes into outlines for books. This, too, didn’t work. I’ve come to feel that writing must happen in pieces, in fragments. And after reading *On Writing* by Stephen King, I finally understood: writing isn’t about plotting everything in advance—it’s about discovering the story as you go.
 
 In the end, the whole system felt useless. I barely wrote anything, except the old version of this very blog post.
@@ -34,7 +38,7 @@ But then something happened.
 
 On the day of this blog post's edit, I wrote something that didn’t belong in any system. It wasn’t part of a plan. It was just a memory that had stayed with me longer than I expected. A quiet moment.
 
-I opened a blank Microsoft Word document, chose a clean font—Book Antiqua—and started writing. No structure. No outline. Just the truth, and the little advice from Stephen King that stayed with me: bring your toolbox, and trust the story to reveal itself.
+I opened a blank Word document, picked a clean font—Book Antiqua—and just started writing. No structure. No outline. Just the truth, and the little advice from Stephen King that stayed with me: bring your toolbox, and trust the story to reveal itself.
 
 To my surprise, that piece moved me more than anything I had written before.
 
