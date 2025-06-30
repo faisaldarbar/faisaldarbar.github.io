@@ -7,8 +7,8 @@ categories: [Writing, Systems]
 tags: [system, writing, notion]
 image: /images/the-system-behind-the-words.jpg
 photo_credit: >
-  Photo by <a href="https://unsplash.com/@true_zuzu" target="_blank" rel="noopener">Vitalii Onyshchuk</a> on
-  <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a>
+  Photo by <a href="https://unsplash.com/@andrewtneel?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank" rel="noopener">Andrew Neel</a> on <a href="https://unsplash.com/photos/macbook-pro-white-ceramic-mugand-black-smartphone-on-table-cckf4TsHAuw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash target="_blank" rel="noopener">Unsplash</a>
+      
 ---
 
 
