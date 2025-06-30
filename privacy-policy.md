@@ -4,8 +4,6 @@ title: Privacy Policy
 permalink: /privacy-policy/
 ---
 
-# Privacy Policy
-
 **Effective Date: June 30, 2025**
 
 This Privacy Policy describes how *Faisal Darbar* ("we", "our", or "us") collects, uses, and protects your personal information when you visit [faisaldarbar.com](https://faisaldarbar.com){:target="_blank" rel="noopener noreferrer"}.
@@ -30,7 +28,12 @@ We use **Kit (ConvertKit)** to manage email subscriptions. When you submit your 
 
 ## Cookies & Analytics
 
-This site does **not** use cookies or any form of analytics or tracking at this time.
+We use **Google Analytics** to understand how visitors interact with our site. Google Analytics may set cookies in your browser to collect non-personally identifiable information such as your IP address, device type, and pages visited.
+
+This data helps us improve the site’s content and user experience. All data is processed in accordance with Google’s [Privacy Policy](https://policies.google.com/privacy){:target="_blank" rel="noopener noreferrer"}.
+
+You can disable cookies or block Google Analytics by adjusting your browser settings or using a browser extension like [Google’s opt-out tool](https://tools.google.com/dlpage/gaoptout){:target="_blank" rel="noopener noreferrer"}.
+
 
 ## Your Rights
 
@@ -44,5 +47,4 @@ To exercise any of these rights, contact us at [faisal@faisaldarbar.com](mailto:
 ## Contact
 
 If you have any questions about this policy, email us at:  
-📧 [faisal@faisaldarbar.com](mailto:faisal@faisaldarbar.com)  
-📍 B7, Sapphire Building, Green Valley, Rauzabagh, Chhatrapati Sambhajinagar, Maharashtra 431001, India
+📧 [faisal@faisaldarbar.com](mailto:faisal@faisaldarbar.com)
