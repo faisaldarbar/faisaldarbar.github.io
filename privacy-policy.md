@@ -10,7 +10,7 @@ This Privacy Policy describes how **Faisal Darbar** ("we", "our", or "us") colle
 
 ## What We Collect
 
-We collect your **email address** when you voluntarily subscribe to receive updates through our email newsletter, powered by [Kit (formerly ConvertKit)](https://convertkit.com){:target="_blank" rel="noopener noreferrer"}.
+We collect your **email address** when you voluntarily subscribe to receive updates through our email newsletter, powered by [Kit (ConvertKit)](https://convertkit.com){:target="_blank" rel="noopener noreferrer"}.
 
 We do **not** collect any other personal data, payment information, or sensitive information.
 
@@ -24,7 +24,7 @@ We do **not** sell, rent, or share your email address with any third parties.
 
 ## Third-Party Services
 
-We use **Kit (ConvertKit)** to manage email subscriptions. When you submit your email, you are subject to ConvertKit’s [Privacy Policy](https://convertkit.com/privacy){:target="_blank" rel="noopener noreferrer"} and [Terms of Service](https://convertkit.com/terms){:target="_blank" rel="noopener noreferrer"}.
+We use **Kit** to manage email subscriptions. When you submit your email, you are subject to ConvertKit’s [Privacy Policy](https://convertkit.com/privacy){:target="_blank" rel="noopener noreferrer"} and [Terms of Service](https://convertkit.com/terms){:target="_blank" rel="noopener noreferrer"}.
 
 ## Cookies & Analytics
 
@@ -42,9 +42,6 @@ If you are located in a jurisdiction that grants you rights over your personal d
 - Corrections or deletions of your data.
 - To unsubscribe at any time via the link in our emails.
 
-To exercise any of these rights, contact us at [faisal@faisaldarbar.com](mailto:faisal@faisaldarbar.com).
-
 ## Contact
 
-If you have any questions about this policy, email us at:  
-📧 [faisal@faisaldarbar.com](mailto:faisal@faisaldarbar.com)
+If you have any questions about this policy, email us at: [faisal@faisaldarbar.com](mailto:faisal@faisaldarbar.com)
