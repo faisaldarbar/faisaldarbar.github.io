@@ -20,7 +20,9 @@ Makes me laugh now.
 
 Writing doesn’t seem so hard—until you actually sit down and try to write.
 
-So I thought I’d be smart about it. I figured I’d create a system alongside the writing. Something to help me stay organized and feel like I was doing it right. Here’s the system I made using Notion:
+So I thought I’d be smart about it. I figured I’d create a system alongside the writing. Something to help me stay organized and feel like I was doing it right. 
+
+### Here’s the system I made using Notion:
 
 - **Journal Database** – a raw, personal space to pour in thoughts every day, unfiltered. But this didn’t really help. If you want to write, try to do it well in the first place—don’t leave everything for the editing stage.
 - **Blog Database** – a place to refine ideas from the journal into public posts, hoping to grow my blog and share something useful. But even this didn’t make much sense. If the blogs are already published on my site, which has its own backups, what’s the point of maintaining a separate database?
