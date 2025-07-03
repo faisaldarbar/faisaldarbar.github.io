@@ -5,84 +5,24 @@
 
 /* append your custom style below */
 
-html {
-  font-size: 20px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html, body {
+  font-size: 18px !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+  line-height: 1.75 !important;
 }
 
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  font-size: 1rem;
-  line-height: 1.75;
-  color: #111;
-  background-color: #fff;
-}
-
-/* Improve content spacing */
-.post-content,
-.page__content {
-  font-size: 1rem;
-  line-height: 1.75;
+/* Apply to article content */
+.post-content, .page__content {
+  font-size: 1rem !important;
+  line-height: 1.75 !important;
   max-width: 720px;
   margin: 0 auto;
   padding: 0 1rem;
 }
 
-/* Headings */
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 600;
-  line-height: 1.3;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-}
-
-h1 {
-  font-size: 2rem;
-}
-h2 {
-  font-size: 1.5rem;
-}
-h3 {
-  font-size: 1.25rem;
-}
-
-/* Paragraph spacing */
-p {
-  margin-bottom: 1.2rem;
-}
-
-/* Link styling */
-a {
-  color: #1a8917; /* Medium green */
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
-  transition: border-color 0.2s ease;
-}
-
-a:hover {
-  border-color: #1a8917;
-}
-
-/* Lists */
-ul, ol {
-  margin-bottom: 1.5rem;
-  padding-left: 1.5rem;
-}
-
-/* Responsive font adjustment for mobile */
+/* Responsive scaling on mobile */
 @media screen and (max-width: 768px) {
   html {
-    font-size: 19px;
-  }
-
-  h1 {
-    font-size: 1.75rem;
-  }
-  h2 {
-    font-size: 1.4rem;
-  }
-  h3 {
-    font-size: 1.2rem;
+    font-size: 19px !important;
   }
 }
