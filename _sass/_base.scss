@@ -130,12 +130,12 @@ main {
 }
 
 .content {
-  font-size: 1.8rem;
+  font-size: 1.08rem;
   margin-top: 2rem;
   overflow-wrap: break-word;
 
   @include bp.xl {
-    font-size: 1.8rem;
+    font-size: 1.03rem;
   }
 
   a {

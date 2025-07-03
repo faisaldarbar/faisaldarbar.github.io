@@ -4,3 +4,11 @@
 @import 'main';
 
 /* append your custom style below */
+
+.content {
+  font-size: 1.8rem;
+
+  @include bp.xl {
+    font-size: 1.8rem;
+  }
+}
