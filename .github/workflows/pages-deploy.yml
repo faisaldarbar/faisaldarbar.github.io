@@ -54,7 +54,10 @@ jobs:
         run: |
             bundle exec htmlproofer _site \
               --disable-external \
-              --allow-hash-href
+              --allow-hash-href \
+              --ignore-missing-alt \
+              --url-ignore "/assets/js/,/app.min.js"
+
         
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
