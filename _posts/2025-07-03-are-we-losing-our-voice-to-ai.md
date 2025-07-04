@@ -25,7 +25,7 @@ We use AI tools to replace our own voice.
 
 A million thanks to Medium.com, which lays down the rules for us new writers. It gives us an <a href="https://medium.com/blog/state-of-medium-c54d1706a9b4" target="_blank" rel="noopener">ad-free platform</a> on which we write and share our stories—all while paying us to do so.
 
-We often feel that these rules related to making use of AI tools are against us because Medium asks us to disclose it in our story if we do.
+We often feel that these rules about using AI tools are working against us because Medium asks us to disclose it in our story if we do.
 
 It seems like we're being singled out.
 
@@ -41,7 +41,7 @@ If you take away the spots from the moon, would you still call it the moon? 
 
 If you take your profile picture and remove all the blemishes using filters, is that really you? 
 
-What will remain of our writing if AI replaces our words?
+What remains of our writing when AI replaces our words?
 
 ---
 
@@ -55,7 +55,7 @@ They also help keep low-value AI-generated content away from our paying readers.
 
 ---
 
-I used to work for a company as their Customer Services Manager and I wrote many emails. I would never send out an email without running it through ChatGPT first. 
+I used to work as a Customer Services Manager and wrote many emails. I would never send out an email without running it through ChatGPT first. 
 
 I was trying to create an image of myself that wasn't really me.
 
@@ -91,7 +91,7 @@ It's worth exploring, not shaming.
 
 I believe that we should write and publish in our own natural voices. 
 
-Let it be flawed—after all, it is our own. 
+Let it be flawed—after all, it's ours.
 
 As long as we get the point across, readers will understand.
 
@@ -103,7 +103,7 @@ As long as we get the point across, readers will understand.
 
 Now, someone could say, if you hire a professional human editor to do the job, that too wouldn't be you.
 
-A real human editor can add life to our composition.
+A human editor can breathe life into our composition.
 
 The real issue lies in using a machine that is programmed to follow a certain algorithm which takes away our voice.
 
