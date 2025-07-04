@@ -17,7 +17,7 @@ Here's one mistake we all tend to make as new writers. 
 
 We use AI tools to replace our own voice.
 
-## Medium.com Rules
+## Medium
 
 A million thanks to Medium.com, which lays down the rules for us new writers. It gives us an <a href="https://medium.com/blog/state-of-medium-c54d1706a9b4" target="_blank" rel="noopener">ad-free platform</a> on which we write and share our stories—all while paying us to do so.
 
@@ -41,7 +41,7 @@ Medium rules not only give us the framework to write but also make us find our o
 
 They also help keep low-value AI-generated content away from our paying readers.
 
-## My Personal Anecdote on Using AI at Work
+## A Personal Anecdote
 
 I used to work as a Customer Services Manager and wrote many emails. I would never send out an email without running it through ChatGPT first. 
 
