@@ -11,8 +11,6 @@ photo_credit: >
       
 ---
 
----
-
 How many mistakes have you made in life? Countless, right? 
 
 Here's one mistake we all tend to make as new writers. 
