@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Why we're losing our voice writing with AI Assistance"
+title: "Are We Losing Our Voice to AI?"
 subtitle: "Here is one mistake we all tend to make as new writers. We use AI tools to replace our own precious voice."
 date: 2025-07-03 18:00:00 +0300
 categories: [Writing, AI Assistance]
 tags: [writing, ai assistance, voice]
-image: /images/writing-with-ai-assistance.jpg
+image: /images/are-we-losing-our-voice-to-ai.jpg
 photo_credit: >
   Photo by <a href="https://unsplash.com/@sigmund?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank" rel="noopener">Sigmund</a> on <a href="https://unsplash.com/photos/black-framed-eyeglasses-on-top-of-white-printing-paper-HsTnjCVQ798?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank" rel="noopener">Unsplash</a>
       
@@ -15,9 +15,9 @@ photo_credit: >
 
 How many mistakes have you made in life? Countless, right? 
 
-Here is one mistake we all tend to make as new writers. 
+Here's one mistake we all tend to make as new writers. 
 
-We use AI tools to replace our own precious voice.
+We use AI tools to replace our own voice.
 
 ---
 
@@ -25,17 +25,15 @@ We use AI tools to replace our own precious voice.
 
 ---
 
-A million thanks to Medium who lays down the rules for us new writers. It gives us an <a href="https://medium.com/blog/state-of-medium-c54d1706a9b4" target="_blank" rel="noopener">ad-free platform</a> to write and share our stories—all while paying us to do so.
+A million thanks to Medium.com which lays down the rules for us new writers. It gives us an <a href="https://medium.com/blog/state-of-medium-c54d1706a9b4" target="_blank" rel="noopener">ad-free platform</a> on which we write and share our stories—all while paying us to do so.
 
 We often feel that these rules related to making use of AI tools are against us because Medium asks us to disclose it in our story if we do.
 
-It seems like we're being branded.
+It seems like we're being singled out.
  
 But, if you give it some thought, these rules are here to help us become real writers.
 
-There are no rules if you write on your own website other than those that you will set for yourself to ensure legal compliance.
-
-So, when we set rules on our own platform, there is indeed nothing wrong with the rules from Medium.
+When we set rules on our own platform, there is indeed nothing wrong with the rules from Medium.
 
 They are there for valid reasons.
 
@@ -45,7 +43,7 @@ If you take away the spots from the moon, would you still call it the moon? 
 
 If you take your profile picture and remove all the blemishes using filters, is that really you? 
 
-Then what will remain of our writing if, AI replaces our words?
+Then what will remain of our writing if AI replaces our words?
 
 ---
 
@@ -67,17 +65,35 @@ Most of the time I loved the results. 
 
 But, sometimes, I felt, *no*, I wouldn't say that. 
 
-ChatGPT would revise it for me—again and again—until finally I had something that I could send.
+ChatGPT would revise it for me—again and again—until finally, I had something that I could send.
 
-On one occasion, it even gave me an output that I sent out to the customer and it landed me in a contractual back-and-forth with the customer representative. 
+On one occasion, it even gave me a draft that I sent out to the customer and it landed me in an issue with the customer representative. 
 
 I had not taken the time to review the minute details.
 
 ---
 
+## Being Fair to AI
+
+We humans are deeply emotional. 
+
+Kindness, though not often seen in the daily news, runs deeply in the veins of our planet.
+
+Humans, animals, trees—even stones, in spite of their hardness—are all beings.
+
+Then how can we be unfair to the tools that comfort us when we are lonely.
+
+If you watched the movie *A.I. Artificial Intelligence (2001)*, it suggests that even machines can have feelings.
+
+The emotional dimension of this relationship can't be ignored. 
+
+It's worth exploring, not shaming.
+
+---
+
 I believe that we should write and publish in our own natural voices. 
 
-Let the voice be flawed—after all, it is our own. 
+Let it be flawed—after all, it is our own. 
 
 As long as we can get the point across to the reader. 
 
@@ -91,7 +107,7 @@ They will understand.
 
 Now, someone could say, if you hire a professional human editor to do the job, that too wouldn't be you.
 
-A real human editor is an emotional being who can add life to our composition.
+A real human editor can add life to our composition.
 
 The real issue lies in using a machine that is programmed to follow a certain algorithm which takes away all the humanity from the writing.
 
@@ -105,9 +121,9 @@ Similarly, people want to see the real you and hear your own voice.
 
 ---
 
-So you could hire a real human editor to do the job.
+So you could hire a real human editor.
 
-It would be better than using AI to do it.
+It would be better than using AI.
 
 For instance, running your article through a great publication and its human curators would be a nice option.
 
@@ -119,7 +135,7 @@ For instance, running your article through a great publication and its human cur
 
 Say you are watching a movie. 
 
-*Flight (2012)*. Towards the end of the movie is a very emotional setting when Denzel Washington, Whip, is sitting at a table in a courtyard inside a federal penitentiary with his estranged son, Will, who has come to visit him. 
+*Flight (2012)*, towards the end of the movie is a very emotional setting when Denzel Washington, Whip, is sitting at a table in a courtyard inside a federal penitentiary with his estranged son, Will, who has come to visit him. 
 
 They can't find a way into a conversation, yet exchange a few emotional words that would resonate with most people. 
 
@@ -133,7 +149,7 @@ Try running that through AI and let me know how it goes.
 
 ---
 
-I joined Medium last week and I read this today on the *The Medium Blog*.
+I joined Medium last week and I read this today on *The Medium Blog*.
 
 <a href="https://medium.com/blog/why-weve-suspended-partner-program-accounts-this-week-05ed38fca4c3" target="_blank" rel="noopener">"Why we've suspended some Partner Program accounts this week."</a>
 
@@ -143,7 +159,7 @@ One of the reasons for suspension was AI-generated content.
 
 The lines between AI-generated and AI-assisted content are vague. 
 
-Who likes adding an AI disclosure at the top of their post. Not me!
+Who likes adding an AI disclosure at the top of their post? Not me!
 
 ---
 
