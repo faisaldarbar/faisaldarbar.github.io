@@ -23,12 +23,12 @@ We use AI tools to replace our own voice.
 
 ---
 
-A million thanks to Medium.com which lays down the rules for us new writers. It gives us an <a href="https://medium.com/blog/state-of-medium-c54d1706a9b4" target="_blank" rel="noopener">ad-free platform</a> on which we write and share our stories—all while paying us to do so.
+A million thanks to Medium.com, which lays down the rules for us new writers. It gives us an <a href="https://medium.com/blog/state-of-medium-c54d1706a9b4" target="_blank" rel="noopener">ad-free platform</a> on which we write and share our stories—all while paying us to do so.
 
 We often feel that these rules related to making use of AI tools are against us because Medium asks us to disclose it in our story if we do.
 
 It seems like we're being singled out.
- 
+
 But, if you give it some thought, these rules are here to help us become real writers.
 
 When we set rules on our own platform, there is indeed nothing wrong with the rules from Medium.
@@ -41,7 +41,7 @@ If you take away the spots from the moon, would you still call it the moon? 
 
 If you take your profile picture and remove all the blemishes using filters, is that really you? 
 
-Then what will remain of our writing if AI replaces our words?
+What will remain of our writing if AI replaces our words?
 
 ---
 
@@ -63,9 +63,9 @@ Most of the time I loved the results. 
 
 But, sometimes, I felt, *no*, I wouldn't say that. 
 
-ChatGPT would revise it for me—again and again—until finally, I had something that I could send.
+ChatGPT would revise it for me—again and again—until finally I had something that I could send.
 
-On one occasion, it even gave me a draft that I sent out to the customer and it landed me in an issue with the customer representative. 
+On one occasion, it even gave me a draft that I sent out to the customer and it led to a contractual back-and-forth with the customer representative.
 
 I had not taken the time to review the minute details.
 
@@ -79,7 +79,7 @@ Kindness, though not often seen in the daily news, runs deeply in the veins of o
 
 Humans, animals, trees—even stones, in spite of their hardness—are all beings.
 
-Then how can we be unfair to the tools that comfort us when we are lonely.
+So how can we be unfair to the tools that comfort us when we are lonely?
 
 If you watched the movie *A.I. Artificial Intelligence (2001)*, it suggests that even machines can have feelings.
 
@@ -93,9 +93,7 @@ I believe that we should write and publish in our own natural voices. 
 
 Let it be flawed—after all, it is our own. 
 
-As long as we can get the point across to the reader. 
-
-They will understand.
+As long as we get the point across, readers will understand.
 
 ---
 
@@ -133,7 +131,7 @@ For instance, running your article through a great publication and its human cur
 
 Say you are watching a movie. 
 
-*Flight (2012)*, towards the end of the movie is a very emotional setting when Denzel Washington, Whip, is sitting at a table in a courtyard inside a federal penitentiary with his estranged son, Will, who has come to visit him. 
+In *Flight (2012)*, the ending features a deeply emotional scene where Denzel Washington’s character, Whip, sits at a table in a courtyard inside a federal penitentiary with his estranged son, Will, who has come to visit him. 
 
 They can't find a way into a conversation, yet exchange a few emotional words that would resonate with most people. 
 
