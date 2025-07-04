@@ -13,7 +13,7 @@ photo_credit: >
 
 ---
 
-How many mistakes did you make in life? Countless, right? 
+How many mistakes have you made in life? Countless, right? 
 
 Here is one mistake we all tend to make as new writers. 
 
@@ -25,33 +25,33 @@ We use AI tools to replace our own precious voice.
 
 ---
 
-A million thanks to Medium who lays down the rules for us new writers. Gives us an ad free platform to write and share our stories. All while paying us to do so.
+A million thanks to Medium who lays down the rules for us new writers. It gives us an <a href="https://medium.com/blog/state-of-medium-c54d1706a9b4" target="_blank" rel="noopener">ad-free platform</a> to write and share our stories—all while paying us to do so.
 
-We often feel that these rules related to making use of AI tools are against us because Medium asks us to disclose it in our story in case we do so.
+We often feel that these rules related to making use of AI tools are against us because Medium asks us to disclose it in our story if we do.
 
 It seems like we're being branded.
  
-But if you give it some thought these rules are here to help us become real writers.
+But, if you give it some thought, these rules are here to help us become real writers.
 
-There are no rules if you write on your own website other than those that you will set for yourself to ensure statutory compliance.
+There are no rules if you write on your own website other than those that you will set for yourself to ensure legal compliance.
 
-So when we set rules on our own platform there is indeed nothing wrong with the rules from Medium.
+So, when we set rules on our own platform, there is indeed nothing wrong with the rules from Medium.
 
 They are there for valid reasons.
 
 ---
 
-If you take away the spots from the moon, would you call it the moon? 
+If you take away the spots from the moon, would you still call it the moon? 
 
 If you take your profile picture and remove all the blemishes using filters, is that really you? 
 
-Then what will remain of our writing if AI replaces our words.
+Then what will remain of our writing if, AI replaces our words?
 
 ---
 
 Medium rules not only give us the framework to write but also make us find our own voice which we seem to have lost somewhere along the way. 
 
-They also help in keeping low-value AI-generated content away from our paying readers.
+They also help keep low-value AI-generated content away from our paying readers.
 
 ---
 
@@ -63,15 +63,13 @@ I used to work for a company as their Customer Services Manager and I wrote many
 
 I was trying to create an image of myself that wasn't really me.
 
-Most of the times I loved the results. 
+Most of the time I loved the results. 
 
-But, sometimes, I felt no, I wouldn't say that. 
+But, sometimes, I felt, *no*, I wouldn't say that. 
 
-ChatGPT would then revise it for me. 
+ChatGPT would revise it for me—again and again—until finally I had something that I could send.
 
-And then again, and again until finally I had something that I could send.
-
-At one instance, it even gave me an output that I sent out to the customer and it landed me in a contractual back-and-forth with the customer representative. 
+On one occasion, it even gave me an output that I sent out to the customer and it landed me in a contractual back-and-forth with the customer representative. 
 
 I had not taken the time to review the minute details.
 
@@ -79,7 +77,7 @@ I had not taken the time to review the minute details.
 
 I believe that we should write and publish in our own natural voices. 
 
-Let the voice be flawed after all it is our own. 
+Let the voice be flawed—after all, it is our own. 
 
 As long as we can get the point across to the reader. 
 
@@ -93,17 +91,17 @@ They will understand.
 
 Now, someone could say, if you hire a professional human editor to do the job, that too wouldn't be you.
 
-A real human editor is an emotional being. 
+A real human editor is an emotional being who can add life to our composition.
 
-The real issue lies with using a machine that is programmed to follow a certain algorithm which takes away all the humanity from the writing.
+The real issue lies in using a machine that is programmed to follow a certain algorithm which takes away all the humanity from the writing.
 
 ---
 
 Who wants to see a moon that is pure white and never wanes?
 
-People want to see the real you and hear your voice. 
+People want to see the moon as it really is with all its spots and blemishes.
 
-We are the root of all our studies.
+Similarly, people want to see the real you and hear your own voice.
 
 ---
 
@@ -111,7 +109,7 @@ So you could hire a real human editor to do the job.
 
 It would be better than using AI to do it.
 
-For instance, running your article through some great publication and their human curators, would be a nice option.
+For instance, running your article through a great publication and its human curators would be a nice option.
 
 ---
 
@@ -121,11 +119,11 @@ For instance, running your article through some great publication and their huma
 
 Say you are watching a movie. 
 
-The Flight 2012. Towards the end of the movie is a very emotional setting when Denzel Washington, Whip, is sitting at a table in a courtyard inside a federal penitentiary with his estranged son, Will, who has come to visit him. 
+*Flight (2012)*. Towards the end of the movie is a very emotional setting when Denzel Washington, Whip, is sitting at a table in a courtyard inside a federal penitentiary with his estranged son, Will, who has come to visit him. 
 
-They can't find a way into a conversation yet exchange a few emotional words that would resonate with most people. 
+They can't find a way into a conversation, yet exchange a few emotional words that would resonate with most people. 
 
-Why? Because the story has been written, edited and enacted by humans.
+Why? Because the story was written, edited, and enacted by humans.
 
 Try running that through AI and let me know how it goes.
 
@@ -135,9 +133,9 @@ Try running that through AI and let me know how it goes.
 
 ---
 
-I joined Medium last week and I read this today on the The Medium Blog.
+I joined Medium last week and I read this today on the *The Medium Blog*.
 
-Why we've suspended some Partner Program accounts this week. 
+<a href="https://medium.com/blog/why-weve-suspended-partner-program-accounts-this-week-05ed38fca4c3" target="_blank" rel="noopener">"Why we've suspended some Partner Program accounts this week."</a>
 
 One of the reasons for suspension was AI-generated content.
 
@@ -145,12 +143,12 @@ One of the reasons for suspension was AI-generated content.
 
 The lines between AI-generated and AI-assisted content are vague. 
 
-Who likes adding an AI disclosure on the top of their post. Not me!
+Who likes adding an AI disclosure at the top of their post. Not me!
 
 ---
 
-As Stephen King says in On Writing, "To write is human, to edit divine."
+As Stephen King says in *On Writing*, "To write is human, to edit divine."
 
-Why don't we take up this divine job of editing ourselves.
+Why don't we take up this divine job of editing ourselves?
 
 Let's put in some effort, shall we?
