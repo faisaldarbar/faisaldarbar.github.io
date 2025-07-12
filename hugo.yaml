@@ -1,11 +1,69 @@
-baseURL: https://faisaldarbar.com/hugo-papermod-fd-demo/
-languageCode: en-us
-title: My New Hugo Site
-theme: hugo-papermod-fd
+baseURL: "https://faisaldarbar.com/hugo-papermod-fd-demo/"
+languageCode: "en-us"
+title: "Faisal Darbar"
+theme: "hugo-papermod-fd"
 
+googleAnalytics: "G-D9FF5BK2C2"
+
+pagination:
+  pagerSize: 10
+
+params:
+  env: "production"
+  author: "Faisal Darbar"
+  defaultTheme: "auto"
+  showReadingTime: true
+  showCodeCopyButtons: true
+  ShowPostNavLinks: true
+  showBreadCrumbs: true
+  showToc: true
+  mainSections: [""]
+  ShowSearch: true
+  ShowSocialIcons: true
+  ShowCodeCopyButtons: true
+  ShowPostIcons: true
+  ShowFeaturedImageInList: true
+  ShowFeaturedImageInPost: true
+  images:
+    - "/images/og-image.png"
+
+  cover:
+    responsiveImages: false
+  
+  socialIcons:
+    - name: "facebook"
+      url: "https://facebook.com/faisaldarbar"
+    - name: "youtube"
+      url: "https://www.youtube.com/@FaisalDarbar"
+    - name: "instagram"
+      url: "https://www.instagram.com/faisaldarbar_"
+    - name: "x-twitter"
+      url: "https://x.com/faisaldarbar"
+    - name: "at"
+      url: "mailto:faisal@faisaldarbar.com"
+  
 menu:
   main:
-    - identifier: posts
-      name: Posts
-      url: /posts/
+    - name: "Home"
+      url: "/"
       weight: 1
+    - name: "About"
+      url: "/about/"
+      weight: 2
+    - name: "Blog"
+      url: "/posts/"
+      weight: 3
+    - name: "Search"
+      url: "/search/"
+      weight: 4
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
