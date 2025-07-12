@@ -17,6 +17,7 @@ params:
   ShowPostNavLinks: true
   showBreadCrumbs: true
   showToc: true
+  tocopen: true
   mainSections: [""]
   ShowSearch: true
   ShowSocialIcons: true
