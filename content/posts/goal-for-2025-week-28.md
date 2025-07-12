@@ -6,6 +6,12 @@ categories: ["Meta"]
 tags: ["Theme", "Setup"]
 ---
 
+## Command for local development
+```bash
+hugo server --baseURL http://localhost:1313/ --appendPort=false --disableFastRender
+
+```
+
 ## 🧭 What's the Plan?
 
 This week, the mission is to **cleanly separate the theme (design)** from the **site content**, and bring both under proper version control so the site is maintainable, scalable, and dev-friendly moving forward.

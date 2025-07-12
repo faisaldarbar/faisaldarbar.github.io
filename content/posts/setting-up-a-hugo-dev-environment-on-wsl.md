@@ -6,6 +6,7 @@ tags: ["hugo", "papermod", "wsl", "yaml", "submodules", "static-site"]
 categories: ["dev-notes"]
 ---
 
+
 ## 🚀 Overview
 
 This post is a detailed log of how I set up a local development workflow for the Hugo PaperMod theme — using **WSL on Windows**, cleanly structured folders, **YAML** over TOML, and **Git submodules** for a modular setup. It’s written to serve both as personal documentation and to help anyone trying the same path.
