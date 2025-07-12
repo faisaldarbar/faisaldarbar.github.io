@@ -85,7 +85,7 @@ Normally, when we use a theme as a submodule, we copy over theme files into the 
 
 But in this case, I’m building a theme for myself, for the first time ever — so I’m officially a dev now 😎
 
-I plan to share the theme on GitHub for others to use. That’s why I'm **keeping the theme and the content separate**, using the submodule approach.
+I plan to share the theme on GitHub for others to use. That’s why I'm **keeping the theme and the content separate**, using the submodule approach....
 
 ---
 
