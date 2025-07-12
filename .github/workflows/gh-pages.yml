@@ -3,7 +3,7 @@ name: Build and Deploy Hugo site to GitHub Pages
 on:
   push:
     branches:
-      - master  # or 'main' if that's your branch
+      - main  # or 'main' if that's your branch
 
 permissions:
   contents: read
