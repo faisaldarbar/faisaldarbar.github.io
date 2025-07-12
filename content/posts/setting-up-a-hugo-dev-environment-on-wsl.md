@@ -2,8 +2,8 @@
 title: "Setting Up a Hugo Dev Environment on WSL"
 date: 2025-07-11T02:30:00Z
 draft: false
+categories: ["Dev Docs"]
 tags: ["hugo", "papermod", "wsl", "yaml", "submodules", "static-site"]
-categories: ["dev-notes"]
 ---
 
 

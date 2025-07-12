@@ -1,9 +1,9 @@
 ---
-title: "Goal for 2025 Week 28 – Design and Content Migration"
+title: "Goal for 2025 Week 28 # 1 – Design and Content Migration"
 date: 2025-07-11T12:00:00Z
 draft: false
-categories: ["Meta"]
-tags: ["Theme", "Setup"]
+categories: ["Dev Docs"]
+tags: ["hugo theme", "papermod"]
 ---
 
 ## Command for local development
