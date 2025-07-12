@@ -1,7 +1,9 @@
 ---
-title: "Goal for 2025 Week 28 – Replicate Design to New Hugo Theme & Migrate Site Content"
+title: "Goal for 2025 Week 28 – Design and Content Migration"
 date: 2025-07-12T12:00:00Z
 draft: false
+categories: ["Meta"]
+tags: ["Theme", "Setup"]
 ---
 
 ## 🧭 What's the Plan?
