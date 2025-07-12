@@ -3,7 +3,7 @@ name: Deploy Hugo site to GitHub Pages
 on:
   push:
     branches:
-      - main  # or 'master', whichever is your default
+      - master  # or 'master', whichever is your default
 
 permissions:
   contents: write
