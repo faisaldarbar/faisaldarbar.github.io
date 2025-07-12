@@ -2,3 +2,10 @@ baseURL: https://example.org/
 languageCode: en-us
 title: My New Hugo Site
 theme: hugo-papermod-fd
+
+menu:
+  main:
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 1
