@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Setting Up a Hugo Dev Environment on WSL | My New Hugo Site</title>
+<meta name="keywords" content="hugo, papermod, wsl, yaml, submodules, static-site">
+<meta name="description" content="🚀 Overview
+This post is a detailed log of how I set up a local development workflow for the Hugo PaperMod theme — using WSL on Windows, cleanly structured folders, YAML over TOML, and Git submodules for a modular setup. It’s written to serve both as personal documentation and to help anyone trying the same path.
+
+🧱 Initial Setup
+Why WSL?
+I chose WSL (Windows Subsystem for Linux) to get a Unix-like development experience while still working inside Windows. This offers compatibility with tooling, and better support for tools like git, hugo, and snap.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/posts/setting-up-a-hugo-dev-environment-on-wsl/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/setting-up-a-hugo-dev-environment-on-wsl/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="My New Hugo Site (Alt + H)">My New Hugo Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Setting Up a Hugo Dev Environment on WSL
+    </h1>
+    <div class="post-meta"><span title='2025-07-12 02:30:00 +0000 UTC'>July 12, 2025</span>
+
+</div>
+  </header> 
+  <div class="post-content"><h2 id="-overview">🚀 Overview<a hidden class="anchor" aria-hidden="true" href="#-overview">#</a></h2>
+<p>This post is a detailed log of how I set up a local development workflow for the Hugo PaperMod theme — using <strong>WSL on Windows</strong>, cleanly structured folders, <strong>YAML</strong> over TOML, and <strong>Git submodules</strong> for a modular setup. It’s written to serve both as personal documentation and to help anyone trying the same path.</p>
+<hr>
+<h2 id="-initial-setup">🧱 Initial Setup<a hidden class="anchor" aria-hidden="true" href="#-initial-setup">#</a></h2>
+<h3 id="why-wsl">Why WSL?<a hidden class="anchor" aria-hidden="true" href="#why-wsl">#</a></h3>
+<p>I chose WSL (Windows Subsystem for Linux) to get a Unix-like development experience while still working inside Windows. This offers compatibility with tooling, and better support for tools like <code>git</code>, <code>hugo</code>, and <code>snap</code>.</p>
+<h3 id="steps-taken">Steps Taken:<a hidden class="anchor" aria-hidden="true" href="#steps-taken">#</a></h3>
+<ol>
+<li>
+<p><strong>Installed WSL (Ubuntu)</strong></p>
+<ul>
+<li>Set up via Microsoft Store</li>
+<li>Confirmed Linux shell was working properly</li>
+</ul>
+</li>
+<li>
+<p><strong>Created Project Folder in <code>/mnt/c/...</code></strong></p>
+<ul>
+<li>Reason: I wanted to keep source files inside Windows-accessible paths (e.g. <code>C:\Users\...</code>) for easier editing with VS Code</li>
+<li>Folder created: <code>/mnt/c/Users/faisa/dev/</code></li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="-installing-hugo-extended-edition">⚙️ Installing Hugo (Extended Edition)<a hidden class="anchor" aria-hidden="true" href="#-installing-hugo-extended-edition">#</a></h2>
+<h3 id="why">Why?<a hidden class="anchor" aria-hidden="true" href="#why">#</a></h3>
+<p>PaperMod (and many themes) require the <strong>extended</strong> version of Hugo for SCSS processing.</p>
+<h3 id="steps">Steps:<a hidden class="anchor" aria-hidden="true" href="#steps">#</a></h3>
+<ul>
+<li>
+<p>Installed via Snap for latest version:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo snap install hugo --channel<span style="color:#f92672">=</span>extended
+</span></span></code></pre></div></li>
+<li>
+<p>Verified version:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo version
+</span></span></code></pre></div></li>
+</ul>
+<hr>
+<h2 id="-creating-the-hugo-site-with-yaml-config">🛠️ Creating the Hugo Site with YAML Config<a hidden class="anchor" aria-hidden="true" href="#-creating-the-hugo-site-with-yaml-config">#</a></h2>
+<p>By default, Hugo uses <code>TOML</code>. I wanted to use <code>YAML</code> for its readability and preference across other tools.</p>
+<h3 id="attempt-1">Attempt 1:<a hidden class="anchor" aria-hidden="true" href="#attempt-1">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo new site hugo-papermod-fd-demo -f yaml
+</span></span></code></pre></div><p>This <strong>still created <code>hugo.toml</code></strong> due to older version being used. Eventually I discovered the correct flag:</p>
+<h3 id="-final-working-command">✅ Final Working Command:<a hidden class="anchor" aria-hidden="true" href="#-final-working-command">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo new site hugo-papermod-fd-demo --format yaml
+</span></span></code></pre></div><p>This successfully generated:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>hugo.yaml
+</span></span></code></pre></div><hr>
+<h2 id="-linking-the-theme">🎨 Linking the Theme<a hidden class="anchor" aria-hidden="true" href="#-linking-the-theme">#</a></h2>
+<p>I cloned a local copy of <code>hugo-papermod-fd</code> for customization.</p>
+<h2 id="-why-submodules-and-not-just-copying-files">💭 Why Submodules (and Not Just Copying Files)?<a hidden class="anchor" aria-hidden="true" href="#-why-submodules-and-not-just-copying-files">#</a></h2>
+<p>Normally when we use a Hugo theme as a submodule, it&rsquo;s part of building a site — and we often copy over files into our site directory to customize things.</p>
+<p>But here&rsquo;s the twist — like <em>Inception</em> (the movie) — a submodule is a <strong>repo within a repo</strong>.</p>
+<p>In my case, I’m not just building a site using a theme — I’m <strong>building and customizing the theme itself</strong> for the first time ever. So:</p>
+<ul>
+<li>I forked the original PaperMod theme</li>
+<li>Submoduled it into my site’s <code>themes/</code> directory</li>
+<li>I now make <strong>direct changes</strong> to the forked theme</li>
+<li>And test those changes using the demo site</li>
+</ul>
+<blockquote>
+<p>🧑‍💻 This makes me officially a dev now 😄</p></blockquote>
+<p>Eventually, I plan to share my customized theme on GitHub for others to use too.</p>
+<h3 id="objective">Objective:<a hidden class="anchor" aria-hidden="true" href="#objective">#</a></h3>
+<p>I didn’t want to copy the theme. I wanted <strong>live updates</strong>: whenever I edit the theme, my demo site should reflect it instantly.</p>
+<h3 id="-solution-git-submodules">✅ Solution: Git Submodules<a hidden class="anchor" aria-hidden="true" href="#-solution-git-submodules">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git submodule add ../hugo-papermod-fd themes/hugo-papermod-fd
+</span></span></code></pre></div><h3 id="-problem">❌ Problem:<a hidden class="anchor" aria-hidden="true" href="#-problem">#</a></h3>
+<p>Git blocked local file-based submodule links with:</p>
+<blockquote>
+<p><code>fatal: transport 'file' not allowed</code></p></blockquote>
+<h3 id="-fix">✅ Fix:<a hidden class="anchor" aria-hidden="true" href="#-fix">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git config --local protocol.file.allow always
+</span></span><span style="display:flex;"><span>GIT_ALLOW_PROTOCOL<span style="color:#f92672">=</span>file git submodule add ../hugo-papermod-fd themes/hugo-papermod-fd
+</span></span></code></pre></div><hr>
+<h2 id="-testing-the-site">🧪 Testing the Site<a hidden class="anchor" aria-hidden="true" href="#-testing-the-site">#</a></h2>
+<p>Started the server with:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo server --buildDrafts
+</span></span></code></pre></div><p>Visited: <a href="http://localhost:1313">http://localhost:1313</a></p>
+<p>🎉 Site opened successfully!</p>
+<hr>
+<h2 id="-first-post--yaml-front-matter">📝 First Post &amp; YAML Front Matter<a hidden class="anchor" aria-hidden="true" href="#-first-post--yaml-front-matter">#</a></h2>
+<p>Hugo generated a first post with YAML front matter, like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#a6e22e">---</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">title</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#e6db74">&#39;First Post&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">date</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#e6db74">2025-07-12T01:49:00Z</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">draft</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">---</span>
+</span></span></code></pre></div><p>✅ &mdash; delimiters + key: value = YAML</p>
+<h2 id="-why-submodules">🤔 Why Submodules?<a hidden class="anchor" aria-hidden="true" href="#-why-submodules">#</a></h2>
+<ul>
+<li>Keeps <strong>theme development and testing isolated</strong></li>
+<li>Clean Git structure: no need to copy/paste files</li>
+<li>Ensures updates to the theme reflect instantly in the demo site</li>
+<li>Standard Hugo practice for theme development</li>
+</ul>
+<hr>
+<h2 id="-summary">✅ Summary<a hidden class="anchor" aria-hidden="true" href="#-summary">#</a></h2>
+<p>This session helped me:</p>
+<ul>
+<li>Set up a clean and portable Hugo dev environment on WSL</li>
+<li>Choose YAML over TOML for ease</li>
+<li>Understand the role of submodules for theme development</li>
+<li>Get familiar with Hugo&rsquo;s CLI and file structure</li>
+<li>Resolve real-world issues (like file transport errors)</li>
+</ul>
+<hr>
+<h2 id="-next-steps">📌 Next Steps<a hidden class="anchor" aria-hidden="true" href="#-next-steps">#</a></h2>
+<ul>
+<li>Add some custom content to the demo site</li>
+<li>Start modifying the theme’s components inside <code>hugo-papermod-fd</code></li>
+<li>Push everything to GitHub (main repo and demo separately or with <code>gh-pages</code>)</li>
+</ul>
+<hr>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/hugo/">Hugo</a></li>
+      <li><a href="http://localhost:1313/tags/papermod/">Papermod</a></li>
+      <li><a href="http://localhost:1313/tags/wsl/">Wsl</a></li>
+      <li><a href="http://localhost:1313/tags/yaml/">Yaml</a></li>
+      <li><a href="http://localhost:1313/tags/submodules/">Submodules</a></li>
+      <li><a href="http://localhost:1313/tags/static-site/">Static-Site</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">My New Hugo Site</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
