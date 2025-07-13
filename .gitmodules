@@ -1,4 +1,3 @@
 [submodule "themes/hugo-papermodest"]
-    path = themes/hugo-papermodest
-    url = ../hugo-papermodest
-
+	path = themes/hugo-papermodest
+	url = https://github.com/faisaldarbar/hugo-PaperModest.git
