@@ -1,7 +1,7 @@
 baseURL: "https://faisaldarbar.com/"
 languageCode: "en-us"
 title: "Faisal Darbar"
-theme: "hugo-papermod-fd"
+theme: "hugo-papermodest"
 
 googleAnalytics: "G-D9FF5BK2C2"
 
