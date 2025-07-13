@@ -6,11 +6,6 @@ categories: ["Dev Docs"]
 tags: ["hugo theme", "papermod"]
 ---
 
-## Command for local development
-```bash
-hugo server --baseURL http://localhost:1313/ --appendPort=false --disableFastRender
-
-```
 
 ## 🧭 What's the Plan?
 
@@ -97,7 +92,7 @@ I plan to share the theme on GitHub for others to use. That’s why I'm **keepin
 
 ---
 
-## 🛠️ Bonus Tip
+## 🛠️ Bonus Tips
 
 Make sure to:
 
@@ -110,3 +105,10 @@ git push
 in both repos when you’re done.
 
 Let’s ship it! 🚀
+
+## Command for local development
+
+```bash
+hugo server --baseURL http://localhost:1313/ --appendPort=false --disableFastRender
+
+```
