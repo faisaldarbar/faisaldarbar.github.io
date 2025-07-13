@@ -1,5 +1,5 @@
 ---
-title: "Goal for 2025 Week 28 # 2 – Open-Sourcing PaperMod-FD Theme"
+title: "Open-Sourcing Hugo PaperMod-FD Theme"
 date: 2025-07-11T12:00:00Z
 draft: false
 categories: ["Dev Docs"]

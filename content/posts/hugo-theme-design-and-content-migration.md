@@ -1,5 +1,5 @@
 ---
-title: "Goal for 2025 Week 28 # 1 – Design and Content Migration"
+title: "Hugo Theme Design and Content Migration"
 date: 2025-07-11T12:00:00Z
 draft: false
 categories: ["Dev Docs"]
