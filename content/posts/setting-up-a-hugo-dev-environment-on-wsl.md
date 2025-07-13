@@ -58,7 +58,7 @@ By default, Hugo uses `TOML`. I wanted to use `YAML` for its readability and pre
 ### Attempt 1:
 
 ```bash
-hugo new site hugo-papermod-fd-demo -f yaml
+hugo new site hugo-papermodest-demo -f yaml
 ```
 
 This **still created `hugo.toml`** due to older version being used. Eventually I discovered the correct flag:
@@ -66,7 +66,7 @@ This **still created `hugo.toml`** due to older version being used. Eventually I
 ### ✅ Final Working Command:
 
 ```bash
-hugo new site hugo-papermod-fd-demo --format yaml
+hugo new site hugo-papermodest-demo --format yaml
 ```
 
 This successfully generated:
@@ -79,7 +79,7 @@ hugo.yaml
 
 ## 🎨 Linking the Theme
 
-I cloned a local copy of `hugo-papermod-fd` for customization.
+I cloned a local copy of `hugo-papermodest` for customization.
 
 ## 💭 Why Submodules (and Not Just Copying Files)?
 
@@ -105,7 +105,7 @@ I didn’t want to copy the theme. I wanted **live updates**: whenever I edit th
 ### ✅ Solution: Git Submodules
 
 ```bash
-git submodule add ../hugo-papermod-fd themes/hugo-papermod-fd
+git submodule add ../hugo-papermodest themes/hugo-papermodest
 ```
 
 ### ❌ Problem:
@@ -117,7 +117,7 @@ Git blocked local file-based submodule links with:
 
 ```bash
 git config --local protocol.file.allow always
-GIT_ALLOW_PROTOCOL=file git submodule add ../hugo-papermod-fd themes/hugo-papermod-fd
+GIT_ALLOW_PROTOCOL=file git submodule add ../hugo-papermodest themes/hugo-papermodest
 ```
 
 ---
@@ -174,7 +174,7 @@ This session helped me:
 ## 📌 Next Steps
 
 - Add some custom content to the demo site
-- Start modifying the theme’s components inside `hugo-papermod-fd`
+- Start modifying the theme’s components inside `hugo-papermodest`
 - Push everything to GitHub (main repo and demo separately or with `gh-pages`)
 
 ---

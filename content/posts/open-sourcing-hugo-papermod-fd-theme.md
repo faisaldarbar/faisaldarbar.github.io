@@ -1,15 +1,15 @@
 ---
-title: "Open-Sourcing Hugo PaperMod-FD Theme"
+title: "Open-Sourcing Hugo PaperModest Theme"
 date: 2025-07-11T12:00:00Z
 draft: false
 categories: ["Dev Docs"]
-tags: ["hugo theme", "papermod", "papermod-fd", "open source"]
+tags: ["hugo theme", "papermod", "papermodest", "open source"]
 ---
 
 
 ## Objective
 
-Open source and document my custom Hugo theme `PaperMod-FD`, ensuring it's usable by others but clearly marked as not actively maintained. My primary goal remains focused on writing for my main site, but I'm sharing this theme as a way of giving back.
+Open source and document my custom Hugo theme `PaperModest`, ensuring it's usable by others but clearly marked as not actively maintained. My primary goal remains focused on writing for my main site, but I'm sharing this theme as a way of giving back.
 
 ---
 
@@ -20,24 +20,24 @@ Open source and document my custom Hugo theme `PaperMod-FD`, ensuring it's usabl
 Ensure my live site correctly includes the theme submodule.
 
 ```bash
-git add .gitmodules themes/hugo-papermod-fd
-git commit -m "Add papermod-fd theme as submodule"
+git add .gitmodules themes/hugo-papermodest
+git commit -m "Add papermodest theme as submodule"
 ```
 
 ### 2. Theme Naming & Folder Structure
 
-- **Repo name:** `hugo-papermod-fd`
-- **Theme name:** `PaperMod-FD`
-- **Theme folder:** `themes/hugo-papermod-fd`
+- **Repo name:** `hugo-papermodest`
+- **Theme name:** `PaperModest`
+- **Theme folder:** `themes/hugo-papermodest`
 
 ### 3. Add `theme.toml`
 
 ```toml
-name = "PaperMod-FD"
+name = "PaperModest"
 license = "MIT"
-licenselink = "https://github.com/faisaldarbar/hugo-papermod-fd/blob/main/LICENSE"
+licenselink = "https://github.com/faisaldarbar/hugo-papermodest/blob/main/LICENSE"
 description = "A lightly customized fork of PaperMod for my personal site. Shared for others, but not actively maintained."
-homepage = "https://github.com/faisaldarbar/hugo-papermod-fd"
+homepage = "https://github.com/faisaldarbar/hugo-papermodest"
 tags = ["blog", "minimal", "fast", "responsive", "dark mode", "personal"]
 features = ["dark mode", "light mode", "optimized for reading"]
 min_version = "0.100.0"
@@ -63,7 +63,7 @@ The original project is licensed under the MIT license (below).
 Structure:
 
 ````md
-# PaperMod-FD
+# PaperModest
 
 A lightweight, slightly customized fork of the [PaperMod](https://github.com/adityatelange/hugo-PaperMod) Hugo theme — built and tailored for my personal website [faisaldarbar.com](https://faisaldarbar.com).
 
@@ -76,28 +76,26 @@ This theme works as of now, but I actively tweak it for my own needs. It may bre
 - TBA
 
 ## 🧪 Demo (Planned)
-[https://faisaldarbar.github.io/hugo-papermod-fd/](https://faisaldarbar.github.io/hugo-papermod-fd/)
+[https://faisaldarbar.github.io/hugo-papermodest/](https://faisaldarbar.github.io/hugo-papermodest/)
 
 ## 🔧 Usage
 ```bash
-git submodule add https://github.com/faisaldarbar/hugo-papermod-fd themes/hugo-papermod-fd
+git submodule add https://github.com/faisaldarbar/hugo-papermodest themes/hugo-papermodest
 ````
 
 In the config file:
 
 ```yaml
-theme: hugo-papermod-fd
+theme: hugo-papermodest
 ```
 
 ## 📜 License
 
 MIT – original theme by [Aditya Telange](https://github.com/adityatelange)
 
-````
-
 ### 6. Create Demo Site (Optional)
 - Set up a `gh-pages` branch to host a live demo
-- Or create a new repo `papermod-fd-demo` to host it separately
+- Or create a new repo `papermodest-demo` to host it separately
 
 ### 7. Add Disclaimer
 In `README.md`, add:
@@ -136,7 +134,7 @@ node_modules/
 
 ## 🏁 Goal Definition
 
-**Goal:** By end of Week 28, my `PaperMod-FD` theme should be:
+**Goal:** By end of Week 28, my `PaperModest` theme should be:
 
 - 📦 Packaged and documented for public use
 - 🪪 Clearly marked as not maintained
