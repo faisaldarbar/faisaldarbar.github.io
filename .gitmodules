@@ -1,3 +1,4 @@
-[submodule "themes/hugo-papermod-fd"]
-	path = themes/hugo-papermod-fd
-	url = ../hugo-papermod-fd
+[submodule "themes/hugo-papermodest"]
+    path = themes/hugo-papermodest
+    url = ../hugo-papermodest
+
