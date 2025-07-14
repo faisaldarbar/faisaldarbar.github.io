@@ -1,6 +1,6 @@
 ---
 title: "Open-Sourcing Hugo PaperModest Theme"
-date: 2025-07-11T12:00:00Z
+date: 2025-07-11T12:01:00Z
 draft: false
 categories: ["Dev Docs"]
 tags: ["hugo theme", "papermod", "papermodest", "open source"]

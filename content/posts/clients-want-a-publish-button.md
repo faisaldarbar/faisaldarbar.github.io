@@ -4,6 +4,12 @@ date: 2025-07-13T02:30:00Z
 description: "A no-fluff take on why the internet still runs on WordPress—even when developers beg for better options."
 categories: ["Dev Thoughts"]
 tags: [wordpress, jamstack, ghost, hugo, cms, developer-tools]
+
+cover:
+  image: "/images/clients-want-a-publish-button.png"
+  alt: "Developers Want Clean Code. Clients Want a Publish Button."
+  caption: "A design showcasing the contrast between developer needs and client expectations."
+
 ---
 
 > “Can my VA update the blog?”

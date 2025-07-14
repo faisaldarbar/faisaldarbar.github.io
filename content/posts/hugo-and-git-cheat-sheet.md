@@ -1,6 +1,6 @@
 ---
 title: "Hugo & Git Commands Cheat Sheet"
-date: 2025-07-13T02:30:00Z
+date: 2025-07-13T02:31:00Z
 categories: ["Dev Docs"]
 tags: ["hugo", "git", "workflow", "cheatsheet"]
 ---
