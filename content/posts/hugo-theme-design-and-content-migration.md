@@ -105,10 +105,3 @@ git push
 in both repos when you’re done.
 
 Let’s ship it! 🚀
-
-## Command for local development
-
-```bash
-hugo server --baseURL http://localhost:1313/ --appendPort=false --disableFastRender
-
-```
