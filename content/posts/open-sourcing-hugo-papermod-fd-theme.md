@@ -141,5 +141,4 @@ node_modules/
 - 🧪 Optionally viewable via a demo site
 - 🎁 Ready for anyone to fork and use
 
-Done!
 
