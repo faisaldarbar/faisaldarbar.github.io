@@ -68,3 +68,13 @@ outputs:
     - "HTML"
     - "RSS"
     - "JSON"
+
+params:
+  footer:
+    links:
+      - name: Privacy Policy
+        url: /legal/privacy-policy/
+      - name: Terms of Use
+        url: /legal/terms-of-use/
+      - name: Refund and Cancellation Policy
+        url: /legal/refund-and-cancellation-policy/

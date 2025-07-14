@@ -1,0 +1,196 @@
+{{- if not (.Param "hideFooter") }}
+<footer class="footer" style="text-align: center;">
+
+  {{- if .Site.Params.socialIcons }}
+  <div class="social-icons" style="margin-bottom: 1rem;">
+    {{- $solidIcons := slice "at" }}
+    {{- range .Site.Params.socialIcons }}
+      {{- $icon_name := (trim .name " " | lower) }}
+      <a
+        href="{{ trim .url " " }}"
+        {{ if ne $icon_name "at" }}target="_blank" rel="noopener"{{ end }}
+        style="border-bottom: none;"
+        title="{{ (.title | default .name) | title }}"
+        {{ if eq $icon_name "linkedin" }} data-proofer-ignore {{ end }}
+      >
+        <i class="{{ if in $solidIcons $icon_name }}fas{{ else }}fab{{ end }} fa-{{ $icon_name }}"></i>
+      </a>
+    {{- end }}
+  </div>
+{{- end }}
+
+  <!-- Text content -->
+  <div class="footer-text">
+
+  {{- with site.Params.footer.links }}
+    <div class="footer-legal-links" style="margin-bottom: 0.3rem; font-size: 0.9rem;">
+      {{ $last := sub (len .) 1 }}
+      {{ range $i, $link := . }}
+        <a href="{{ $link.url }}" style="margin: 0 0.3rem;">{{ $link.name }}</a>{{ if lt $i $last }} | {{ end }}
+      {{ end }}
+    </div>
+  {{- end }}
+
+  {{- if not site.Params.footer.hideCopyright }}
+    {{- if site.Copyright }}
+      <span>{{ site.Copyright | markdownify }}</span>
+    {{- else }}
+      <span>&copy; {{ now.Year }} <a href="{{ "" | absLangURL }}">{{ site.Title }}</a></span>
+    {{- end }}
+    {{- print " · " }}
+  {{- end }}
+
+  {{- with site.Params.footer.text }}
+    {{ . | markdownify }}
+    {{- print " · " }}
+  {{- end }}
+
+  <span>
+    Powered by
+    <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a>
+    &
+    <a href="https://github.com/faisaldarbar/hugo-PaperModest" rel="noopener" target="_blank">PaperModest</a>
+  </span>
+
+</div>
+
+  <!-- Inline CSS for social icon styling -->
+  <style>
+    .social-icons a {
+      display: inline-block;
+      margin: 0 0.5rem;
+      font-size: 1.5rem;
+      color: inherit;
+      text-decoration: none !important;
+      transition: color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      color: #007acc;
+    }
+  </style>
+
+</footer>
+{{- end }}
+
+
+{{- if (not site.Params.disableScrollToTop) }}
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+{{- end }}
+
+{{- partial "extend_footer.html" . }}
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+
+{{- if (not site.Params.disableScrollToTop) }}
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+{{- end }}
+
+{{- if (not site.Params.disableThemeToggle) }}
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+{{- end }}
+
+{{- if (and (eq .Kind "page") (ne .Layout "archives") (ne .Layout "search") (.Param "ShowCodeCopyButtons")) }}
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = '{{- i18n "code_copy" | default "copy" }}';
+
+        function copyingDone() {
+            copybutton.innerHTML = '{{- i18n "code_copied" | default "copied!" }}';
+            setTimeout(() => {
+                copybutton.innerHTML = '{{- i18n "code_copy" | default "copy" }}';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            // td containing LineNos
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            // table containing LineNos and code
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            // code blocks not having highlight as parent class
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+{{- end }}
