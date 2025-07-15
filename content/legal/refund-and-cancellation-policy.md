@@ -7,7 +7,6 @@ type: page
 permalink: /legal/terms-of-use/
 ---
 
-# Refund and Cancellation Policy  
 **Effective Date: June 30, 2025**
 
 This Refund and Cancellation Policy outlines our practices regarding any potential paid services, digital products, or subscriptions in the future. As of the effective date, **faisaldarbar.com** does **not** sell any digital or physical products, offer paid memberships, or accept payments of any kind.
