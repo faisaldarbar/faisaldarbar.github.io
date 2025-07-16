@@ -10,7 +10,7 @@ cover:
   alt: "The System Behind the Words"
   caption: "Photo by Andrew Neel on Unsplash"
 
-canonical_url: "https://parameters.faisaldarbar.com/the-system-behind-the-words-b49bb757b929"
+canonicalURL: "https://parameters.faisaldarbar.com/the-system-behind-the-words-b49bb757b929"
 
 ---
 
