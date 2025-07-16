@@ -8,6 +8,19 @@ googleAnalytics: "G-D9FF5BK2C2"
 pagination:
   pagerSize: 10
 
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+
 params:
   env: "production"
   author: "Faisal Darbar"
@@ -21,16 +34,16 @@ params:
   mainSections: ["posts"]
   ShowSearch: true
   ShowSocialIcons: true
-  ShowCodeCopyButtons: true
   ShowPostIcons: true
   ShowFeaturedImageInList: true
   ShowFeaturedImageInPost: true
+
   images:
     - "/images/og-image.png"
 
   cover:
     responsiveImages: false
-  
+
   socialIcons:
     - name: "facebook"
       url: "https://facebook.com/faisaldarbar"
@@ -42,7 +55,16 @@ params:
       url: "https://x.com/faisaldarbar"
     - name: "at"
       url: "mailto:faisal@faisaldarbar.com"
-  
+
+  footer:
+    links:
+      - name: Privacy Policy
+        url: /legal/privacy-policy/
+      - name: Terms of Use
+        url: /legal/terms-of-use/
+      - name: Refund and Cancellation Policy
+        url: /legal/refund-and-cancellation-policy/
+
 menu:
   main:
     - name: "Home"
@@ -57,24 +79,3 @@ menu:
     - name: "Search"
       url: "/search/"
       weight: 4
-
-markup:
-  goldmark:
-    renderer:
-      unsafe: true
-
-outputs:
-  home:
-    - "HTML"
-    - "RSS"
-    - "JSON"
-
-params:
-  footer:
-    links:
-      - name: Privacy Policy
-        url: /legal/privacy-policy/
-      - name: Terms of Use
-        url: /legal/terms-of-use/
-      - name: Refund and Cancellation Policy
-        url: /legal/refund-and-cancellation-policy/
