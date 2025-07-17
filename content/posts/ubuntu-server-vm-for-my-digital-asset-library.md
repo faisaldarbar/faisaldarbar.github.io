@@ -191,10 +191,63 @@ SSH is now fully configured and working securely between WSL and the Ubuntu Serv
 
 ---
 
+### 🔥 UFW Firewall Configuration
+
+For enhanced security, set up the Uncomplicated Firewall (UFW) and configure some basic rules to limit access:
+
+```bash
+sudo apt update
+sudo apt install ufw
+```
+
+To secure the server while allowing essential services, I configured UFW (Uncomplicated Firewall) with the following rules:
+
+```bash
+sudo ufw limit 22/tcp
+sudo ufw allow 80/tcp
+sudo ufw allow 443/tcp
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
+sudo ufw enable
+```
+
+This sets up:
+
+- 🔐 **SSH (port 22)**: Limited to prevent brute-force attacks
+- 🌐 **HTTP (port 80)**: Allowed for serving Hugo locally
+- 🔒 **HTTPS (port 443)**: Allowed for future use (e.g., self-signed certs or proxy setups)
+- ❌ All other incoming traffic: Denied
+- ✅ All outgoing traffic: Allowed
+
+Check the status:
+
+```bash
+sudo ufw status
+```
+
+Example output:
+
+```text
+Status: active
+
+To                         Action      From
+--                         ------      ----
+22/tcp                     LIMIT       Anywhere
+80/tcp                     ALLOW       Anywhere
+443/tcp                    ALLOW       Anywhere
+22/tcp (v6)                LIMIT       Anywhere (v6)
+80/tcp (v6)                ALLOW       Anywhere (v6)
+443/tcp (v6)               ALLOW       Anywhere (v6)
+```
+
+UFW is now running with safe, minimal exposure.
+
+
 ### 📌 Next Steps
 
 - [x] Verify SSH key-based login from WSL
 - [x] Setup the server with a static IP
+- [x] Secure the server with a firewall
 - [ ] Configure Hugo and start asset organization
 
 ---
