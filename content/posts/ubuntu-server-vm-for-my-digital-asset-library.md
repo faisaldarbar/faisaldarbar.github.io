@@ -80,8 +80,6 @@ I'm building a private, searchable asset library for YouTube video production, c
 
 ---
 
----
-
 ### 🔐 SSH Key Info (WSL → Ubuntu Server VM)
 
 - **Private key location (WSL host):**  
@@ -90,7 +88,7 @@ I'm building a private, searchable asset library for YouTube video production, c
 - **Public key location (WSL host):**  
   `~/.ssh/id_ssh_wsl_fd-hp_to_ubuntu-server_pve.pub`
 
-- **GitHub label (if added):**  
+- **GitHub label:**  
   `SSH - WSL (FD-HP) to Ubuntu-Server@PVE`
 
 - **Use:**  
