@@ -20,10 +20,11 @@ I’m building a private, searchable asset library for YouTube video production,
 
 ### 💻 Hardware & Host Setup
 
-- **Host System:** Lenovo ThinkStation P3 Tiny  
+- **Host System:** Lenovo ThinkStation P3 Tiny
 - **Hypervisor:** Proxmox VE
 
 **Primary VMs already present:**
+
 - pfSense (handles LAN, DHCP, firewall)
 - Proxmox Backup Server (PBS)
 
@@ -55,7 +56,7 @@ I’m building a private, searchable asset library for YouTube video production,
 
 ---
 
-### 🧭 Installation Walkthrough
+### 🔍 Installation Walkthrough
 
 - Booted Ubuntu Server 24.04 ISO in VM
 - Selected guided install → full disk usage (750 GB assigned)
@@ -66,6 +67,41 @@ I’m building a private, searchable asset library for YouTube video production,
 - Completed install → reboot
 - Removed installation ISO by detaching CD/DVD device in Proxmox Hardware tab
 - VM booted to login screen
+
+---
+
+### 🛁 Static IP Configuration via pfSense
+
+To ensure the Ubuntu Server VM always receives the same IP address, I created a **DHCP static lease** in pfSense:
+
+- **Reserved IP:** `10.0.1.10`
+- Chosen outside the DHCP pool range (`10.0.1.100 – 10.0.1.200`) but within the `10.0.1.0/24` subnet.
+- Static lease assigned based on the VM's MAC address (viewable in Proxmox or with `ip a`)
+
+After applying the lease in pfSense, I rebooted the VM.
+
+To confirm the IP assignment, I ran:
+
+```bash
+ip a
+```
+
+Confirmed that the interface (e.g., `enp6s18`) received the static IP:
+
+```text
+inet 10.0.1.10/24 ...
+```
+
+Then updated my SSH config on WSL to reflect the new IP:
+
+```bash
+Host ubuntu-server-pve
+    HostName 10.0.1.10
+    User faisal
+    IdentityFile ~/.ssh/id_ssh_wsl_fd-hp_to_ubuntu-server_pve
+```
+
+SSH connectivity continues to work seamlessly using the updated IP.
 
 ---
 
@@ -82,12 +118,14 @@ ssh-keygen -t ed25519 -f ~/.ssh/id_ssh_wsl_fd-hp_to_ubuntu-server_pve -C "SSH - 
 ```
 
 This created:
+
 - **Private key:** `~/.ssh/id_ssh_wsl_fd-hp_to_ubuntu-server_pve`
 - **Public key:** `~/.ssh/id_ssh_wsl_fd-hp_to_ubuntu-server_pve.pub`
 
 #### 2. Key Added to GitHub
 
 I added the **public key** to my GitHub account under SSH keys:
+
 - **Label:** `SSH - WSL (FD-HP) to Ubuntu-Server@PVE`
 
 During the Ubuntu Server installation, GitHub keys were automatically imported via cloud-init. This made SSH access work immediately after boot.
@@ -99,28 +137,16 @@ During the Ubuntu Server installation, GitHub keys were automatically imported v
 To simplify the SSH command, I added this block to `~/.ssh/config` on WSL:
 
 ```bash
-# Alias for Ubuntu Server on Proxmox
 Host ubuntu-server-pve
-    HostName 10.0.1.100
+    HostName 10.0.1.10
     User faisal
     IdentityFile ~/.ssh/id_ssh_wsl_fd-hp_to_ubuntu-server_pve
-
-# Optional direct IP entry
-Host 10.0.1.100
-    User faisal
-    IdentityFile ~/.ssh/id_ssh_wsl_fd-hp_to_ubuntu-server_pve
-
 ```
 
 Now I can connect using:
 
 ```bash
 ssh ubuntu-server-pve
-```
-or
-
-```bash
-ssh faisal@10.0.1.100
 ```
 
 #### 4. SSHD Config (on Ubuntu Server)
@@ -147,7 +173,7 @@ SSH is now fully configured and working securely between WSL and the Ubuntu Serv
 ### 📌 Next Steps
 
 - [x] Verify SSH key-based login from WSL
-- [ ] Setup the server with a static IP
+- [x] Setup the server with a static IP
 - [ ] Configure Hugo and start asset organization
 
 ---
