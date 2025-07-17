@@ -328,23 +328,13 @@ UFW is now running with safe, minimal exposure.
 
 ---
 
-### 🌍 Serve the Site on LAN
+### 🌍 Allow Hugo's port in UFW
 
-1. **Allow Hugo's port in UFW (default 1313)**
+1. **Default 1313**
 
    ```bash
    sudo ufw allow 1313
    ```
-
-2. **Run Hugo Server**
-
-   ```bash
-   hugo server --buildDrafts --bind 0.0.0.0 --baseURL http://10.0.1.10:1313/
-   ```
-
-   Access from browser on LAN: [http://10.0.1.10:1313/](http://10.0.1.10:1313/)
-
----
 
 ### 🧾 Commit and Push Site to GitHub
 
@@ -369,13 +359,6 @@ git commit -m "Initialize Hugo site with PaperModest theme"
 git push origin main
 ```
 
-### 📌 Next Steps
-
-- [x] Verify SSH key-based login from WSL
-- [x] Setup the server with a static IP
-- [x] Secure the server with a firewall
-- [x] Configure Hugo and start asset organization
-
 ---
 
 ### 🌐 Network Topology Recap
@@ -395,7 +378,19 @@ VMLAN (vmbr1):   10.0.1.0/24
 
 ### 🗒️ Notes
 
-- Videos will be stored within the VM (likely `/srv/videos` or similar)
+- Videos will be stored within the VM (likely `/videos` or similar)
 - Most of SSD (750 GB) is allocated to this VM
 - Hugo site is private (no public internet access)
 - Future improvements may include VLAN tagging or VPN access
+
+---
+
+### 🌍 Serve the Site on LAN
+
+1. **Run Hugo Server**
+
+   ```bash
+   hugo server --buildDrafts --bind 0.0.0.0 --baseURL http://10.0.1.10:1313/
+   ```
+
+   Access from browser on LAN: [http://10.0.1.10:1313/](http://10.0.1.10:1313/)
