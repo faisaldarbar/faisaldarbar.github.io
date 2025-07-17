@@ -6,24 +6,24 @@ categories: ["Homelab Docs"]
 tags: [ubuntu, server, vm, proxmox]
 
 cover:
-  image: "/images/ubuntu-server-vm.png"
+  image: "/images/ubuntu-server-vm.jpg"
   alt: "Ubuntu Server VM"
-  caption: "Photo by Faisal Darbar on faisaldarbar.com"
+  caption: "Photo by Florian Krumm on Unsplash"
 
 ---
 
-## **Project Context**
+### 📁 Project Context
 
-I'm building a private, searchable asset library for YouTube video production, consisting of tagged A-roll and B-roll 4K clips. The system will run on a VM inside Proxmox VE hosted on a Lenovo ThinkStation P3 Tiny. The site will be managed with Hugo (PaperModest theme) and only accessed locally.
+I’m building a private, searchable asset library for YouTube video production, consisting of tagged A-roll and B-roll 4K clips. The system will run on a VM inside Proxmox VE hosted on a Lenovo ThinkStation P3 Tiny. The site will be managed with Hugo (PaperModest theme) and only accessed locally.
 
 ---
 
-## **Hardware & Host Setup**
+### 💻 Hardware & Host Setup
 
-**Host System:** Lenovo ThinkStation P3 Tiny  
-**Hypervisor:** Proxmox VE  
+- **Host System:** Lenovo ThinkStation P3 Tiny  
+- **Hypervisor:** Proxmox VE
+
 **Primary VMs already present:**
-
 - pfSense (handles LAN, DHCP, firewall)
 - Proxmox Backup Server (PBS)
 
@@ -31,74 +31,130 @@ I'm building a private, searchable asset library for YouTube video production, c
 
 ---
 
-## **VM Configuration Summary**
+### ⚙️ VM Configuration Summary
 
-- **VM Host**: Proxmox VE  
-- **Machine Type**: Q35  
-- **BIOS**: UEFI (OVMF) with EFI disk on `local-lvm`, no pre-enrolled keys  
-- **SCSI Controller**: VirtIO SCSI single  
-- **Disk Bus/Device**: VirtIO Block  
-- **Disk Cache**: Write back  
-- **I/O Thread**: Enabled  
-- **CPU**: 1 socket, 4 cores (host type chosen for better passthrough/performance)  
-- **Memory**: 8192 MB RAM  
-
----
-
-## **Network Setup**
-
-- **Bridge**: `vmbr1` (VM-only LAN, 10.0.1.0/24)  
-- **Model**: VirtIO  
-- **IP assignment**: DHCP via pfSense  
-- **Expected VM IP**: 10.0.1.100 (assigned by pfSense)  
-- **Gateway/DNS**: 10.0.1.1 (pfSense)  
+- **VM Host:** Proxmox VE
+- **Machine Type:** Q35
+- **BIOS:** UEFI (OVMF) with EFI disk on local-lvm, no pre-enrolled keys
+- **SCSI Controller:** VirtIO SCSI single
+- **Disk Bus/Device:** VirtIO Block
+- **Disk Cache:** Write back
+- **I/O Thread:** Enabled
+- **CPU:** 1 socket, 4 cores (host type chosen for better passthrough/performance)
+- **Memory:** 8192 MB RAM
 
 ---
 
-## **Installation Walkthrough**
+### 🌐 Network Setup
 
-1. Booted Ubuntu Server 24.04 ISO in VM  
-2. Selected guided install → full disk usage (750 GB assigned)  
-3. Created user: `faisal`, password set  
-4. Chose to enable Ubuntu Pro  
-5. Enabled **OpenSSH server** for remote access  
-6. Fetched existing GitHub SSH key (associated with Ubuntu desktop originally)  
-7. Later, generated a new SSH key via WSL (Windows Subsystem for Linux):  
-   - **Type**: ED25519  
-   - **GitHub label**: `SSH - WSL (FD-HP) to Ubuntu-Server@PVE`  
-8. Chose not to install featured snaps  
-9. Completed install → reboot  
-10. Removed installation ISO:  
-    - Detached CD/DVD device in Proxmox Hardware tab  
-11. VM booted to login screen  
+- **Bridge:** vmbr1 (VM-only LAN, 10.0.1.0/24)
+- **Model:** VirtIO
+- **IP assignment:** DHCP via pfSense
+- **Expected VM IP:** 10.0.1.100 (assigned by pfSense)
+- **Gateway/DNS:** 10.0.1.1 (pfSense)
 
 ---
 
-## **Next Steps**
+### 🧭 Installation Walkthrough
 
-- [ ] Setup the server with a static IP 
-
----
-
-### 🔐 SSH Key Info (WSL → Ubuntu Server VM)
-
-- **Private key location (WSL host):**  
-  `~/.ssh/id_ssh_wsl_fd-hp_to_ubuntu-server_pve`
-
-- **Public key location (WSL host):**  
-  `~/.ssh/id_ssh_wsl_fd-hp_to_ubuntu-server_pve.pub`
-
-- **GitHub label:**  
-  `SSH - WSL (FD-HP) to Ubuntu-Server@PVE`
-
-- **Use:**  
-  Secure passwordless SSH access from WSL (`faisal@FD-HP`) to Ubuntu Server VM (`10.0.1.100`)
+- Booted Ubuntu Server 24.04 ISO in VM
+- Selected guided install → full disk usage (750 GB assigned)
+- Created user: `faisal`, password set
+- Enabled Ubuntu Pro
+- Enabled OpenSSH server for remote access
+- Chose not to install featured snaps
+- Completed install → reboot
+- Removed installation ISO by detaching CD/DVD device in Proxmox Hardware tab
+- VM booted to login screen
 
 ---
 
-## **Network Topology Recap**
+### 🔐 SSH Access Setup (WSL → Ubuntu Server VM)
+
+To enable secure, passwordless SSH access from my WSL environment (`faisal@FD-HP`) to the Ubuntu Server VM (`10.0.1.100`), I followed these steps:
+
+#### 1. SSH Key Generation
+
+From WSL:
+
+```bash
+ssh-keygen -t ed25519 -f ~/.ssh/id_ssh_wsl_fd-hp_to_ubuntu-server_pve -C "SSH - WSL (FD-HP) to Ubuntu-Server@PVE"
+```
+
+This created:
+- **Private key:** `~/.ssh/id_ssh_wsl_fd-hp_to_ubuntu-server_pve`
+- **Public key:** `~/.ssh/id_ssh_wsl_fd-hp_to_ubuntu-server_pve.pub`
+
+#### 2. Key Added to GitHub
+
+I added the **public key** to my GitHub account under SSH keys:
+- **Label:** `SSH - WSL (FD-HP) to Ubuntu-Server@PVE`
+
+During the Ubuntu Server installation, GitHub keys were automatically imported via cloud-init. This made SSH access work immediately after boot.
+
+> 🔁 Later, I **renamed** the key file locally for better identification. Since the key had already been added to GitHub, renaming didn’t break anything.
+
+#### 3. SSH Config Setup (WSL)
+
+To simplify the SSH command, I added this block to `~/.ssh/config` on WSL:
+
+```bash
+# Alias for Ubuntu Server on Proxmox
+Host ubuntu-server-pve
+    HostName 10.0.1.100
+    User faisal
+    IdentityFile ~/.ssh/id_ssh_wsl_fd-hp_to_ubuntu-server_pve
+
+# Optional direct IP entry
+Host 10.0.1.100
+    User faisal
+    IdentityFile ~/.ssh/id_ssh_wsl_fd-hp_to_ubuntu-server_pve
 
 ```
+
+Now I can connect using:
+
+```bash
+ssh ubuntu-server-pve
+```
+or
+
+```bash
+ssh faisal@10.0.1.100
+```
+
+#### 4. SSHD Config (on Ubuntu Server)
+
+To ensure the server only accepts key-based logins:
+
+In `/etc/ssh/sshd_config`:
+
+```bash
+PasswordAuthentication no
+PubkeyAuthentication yes
+```
+
+Restart SSH service:
+
+```bash
+sudo systemctl restart ssh
+```
+
+SSH is now fully configured and working securely between WSL and the Ubuntu Server VM.
+
+---
+
+### 📌 Next Steps
+
+- [x] Verify SSH key-based login from WSL
+- [ ] Setup the server with a static IP
+- [ ] Configure Hugo and start asset organization
+
+---
+
+### 🌐 Network Topology Recap
+
+```text
 ISP Router:      172.16.0.1
 Proxmox VE:      172.16.0.5
 pfSense WAN:     172.16.0.x
@@ -111,9 +167,9 @@ VMLAN (vmbr1):   10.0.1.0/24
 
 ---
 
-## **Notes**
+### 🗒️ Notes
 
-- Videos will be stored within the VM (likely `/srv/videos` or similar)  
-- Most of SSD (750 GB) is allocated to this VM  
-- Hugo site is private (no public internet access)  
+- Videos will be stored within the VM (likely `/srv/videos` or similar)
+- Most of SSD (750 GB) is allocated to this VM
+- Hugo site is private (no public internet access)
 - Future improvements may include VLAN tagging or VPN access
