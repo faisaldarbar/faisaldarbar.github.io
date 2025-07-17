@@ -80,6 +80,24 @@ I'm building a private, searchable asset library for YouTube video production, c
 
 ---
 
+---
+
+### 🔐 SSH Key Info (WSL → Ubuntu Server VM)
+
+- **Private key location (WSL host):**  
+  `~/.ssh/id_ssh_wsl_fd-hp_to_ubuntu-server_pve`
+
+- **Public key location (WSL host):**  
+  `~/.ssh/id_ssh_wsl_fd-hp_to_ubuntu-server_pve.pub`
+
+- **GitHub label (if added):**  
+  `SSH - WSL (FD-HP) to Ubuntu-Server@PVE`
+
+- **Use:**  
+  Secure passwordless SSH access from WSL (`faisal@FD-HP`) to Ubuntu Server VM (`10.0.1.100`)
+
+---
+
 ## **Network Topology Recap**
 
 ```
