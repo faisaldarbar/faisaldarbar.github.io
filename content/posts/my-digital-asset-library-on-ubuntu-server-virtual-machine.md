@@ -389,7 +389,11 @@ VMLAN (vmbr1):   10.0.1.0/24
 
 1. **Run Hugo Server**
 
+   From the local network:
+
    ```bash
+   ssh ubuntu-server-pve
+   cd projects/digital-assets-library/
    hugo server --buildDrafts --bind 0.0.0.0 --baseURL http://10.0.1.10:1313/
    ```
 
