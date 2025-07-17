@@ -1,20 +1,20 @@
 ---
-title: "Ubuntu Server VM For My Digital Asset Library"
+title: "My Digital Asset Library on Ubuntu Server Virtual Machine"
 date: 2025-07-16T02:30:00Z
-description: "Detailed documentation of the Ubuntu Server VM setup for hosting a private video asset library using Hugo and Proxmox VE."
+description: "Documentation of the Ubuntu Server Virtual Machine setup for hosting a Private Digital Asset Library using Hugo and Proxmox VE."
 categories: ["Homelab Docs"]
-tags: [ubuntu, server, vm, proxmox]
+tags: [ubuntu, server, vm, proxmox, digital asset library]
 
 cover:
-  image: "/images/ubuntu-server-vm.jpg"
-  alt: "Ubuntu Server VM"
+  image: "/images/digital-asset-library.jpg"
+  alt: "My Digital Asset Library"
   caption: "Photo by Florian Krumm on Unsplash"
 
 ---
 
 ### 📁 Project Context
 
-I’m building a private, searchable asset library for YouTube video production, consisting of tagged A-roll and B-roll 4K clips. The system will run on a VM inside Proxmox VE hosted on a Lenovo ThinkStation P3 Tiny. The site will be managed with Hugo (PaperModest theme) and only accessed locally.
+I’m building a private, searchable digital asset library for YouTube video production, consisting of tagged A-roll and B-roll 4K clips. The system will run on a VM inside Proxmox VE hosted on a Lenovo ThinkStation P3 Tiny. The site will be managed with Hugo (PaperModest theme) and only accessed locally.
 
 ---
 
@@ -242,13 +242,139 @@ To                         Action      From
 
 UFW is now running with safe, minimal exposure.
 
+### 🧱 GitHub Repository & SSH Key Setup
+
+1. **Create a Private GitHub Repo**
+
+   - Repo name: `digital-assets-library`
+
+2. **Generate SSH Key (Ubuntu server to GitHub)**
+
+   ```bash
+   ssh-keygen -t ed25519 -C "ubuntu-server-pve to github" -f ~/.ssh/id_ssh_ubuntu-server-pve_to_github
+   
+   ```
+
+3. **Add the public key to GitHub**
+
+   - Copy it: `cat ~/.ssh/id_ssh_ubuntu-server-pve_to_github.pub`
+   - Go to GitHub → Settings → SSH and GPG keys → Add new SSH key
+
+4. **Configure SSH for GitHub** (optional for clarity)
+
+   ```bash
+   nano ~/.ssh/config
+   ```
+
+   Add:
+
+   ```
+   Host github.com
+     HostName github.com
+     User git
+     IdentityFile ~/.ssh/id_ssh_ubuntu-server-pve_to_github
+   ```
+
+5. **Test connection**
+
+   ```bash
+   ssh -T git@github.com
+   ```
+
+6. **Clone repo**
+
+   ```bash
+   git clone git@github.com:faisaldarbar/digital-assets-library.git
+   cd digital-assets-library
+   ```
+
+---
+
+### 🚀 Hugo Installation and Project Setup
+
+1. **Install Hugo Extended (v0.147.0)**
+
+   ```bash
+   wget https://github.com/gohugoio/hugo/releases/download/v0.147.0/hugo_extended_0.147.0_linux-amd64.tar.gz
+   tar -xvzf hugo_extended_0.147.0_linux-amd64.tar.gz
+   sudo mv hugo /usr/local/bin/
+   hugo version
+   ```
+
+2. **Create Hugo Site in Cloned Repo**
+
+   ```bash
+   hugo new site . --force --format yaml
+   ```
+
+---
+
+### 🎨 Add PaperModest Theme
+
+1. **Add as Git Submodule** (read-only)
+
+   ```bash
+   git submodule add https://github.com/ianrodrigues/hugo-PaperModest.git themes/PaperModest
+   ```
+
+2. **Edit **``
+
+   ```yaml
+   theme: PaperModest
+   baseURL: http://10.0.1.10:1313/
+   languageCode: en-us
+   title: "Digital Assets Library"
+   ```
+
+---
+
+### 🌍 Serve the Site on LAN
+
+1. **Allow Hugo's port in UFW (default 1313)**
+
+   ```bash
+   sudo ufw allow 1313
+   ```
+
+2. **Run Hugo Server**
+
+   ```bash
+   hugo server --buildDrafts --bind 0.0.0.0 --baseURL http://10.0.1.10:1313/
+   ```
+
+   Access from browser on LAN: [http://10.0.1.10:1313/](http://10.0.1.10:1313/)
+
+---
+
+### 🧾 Commit and Push Site to GitHub
+
+Git Identity Configuration before committing to GitHub:
+
+```bash
+git config --global user.name "Your Name"
+git config --global user.email "your_email@example.com"
+```
+
+Verify:
+
+```bash
+git config --list
+```
+
+From inside the Hugo site directory:
+
+```bash
+git add .
+git commit -m "Initialize Hugo site with PaperModest theme"
+git push origin main
+```
 
 ### 📌 Next Steps
 
 - [x] Verify SSH key-based login from WSL
 - [x] Setup the server with a static IP
 - [x] Secure the server with a firewall
-- [ ] Configure Hugo and start asset organization
+- [x] Configure Hugo and start asset organization
 
 ---
 
