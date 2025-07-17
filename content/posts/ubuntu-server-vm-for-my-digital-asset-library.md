@@ -105,6 +105,27 @@ SSH connectivity continues to work seamlessly using the updated IP.
 
 ---
 
+### 🧪 Network Isolation Test (pfSense Down)
+
+To verify fallback access:
+
+- **Shutdown pfSense**
+- Connected laptop directly to **ISP router** (`172.16.x.x` range)
+- **Started Ubuntu Server VM**
+  - Boot process paused at:  
+    `A start job is running for Wait for Network to be Configured`  
+    (via `systemd-networkd-wait-online.service`)
+  - Waited ~2 minutes, then boot proceeded normally
+- Logged into the server via **Proxmox console**
+- Ran `ip a` to confirm:
+  - Interface `enp6s18` was **up**, but no IP assigned (expected without pfSense)
+- **SSH was not possible** due to lack of IP and network isolation
+
+✅ **Conclusion:**  
+Even without pfSense, I can still access the Ubuntu Server through Proxmox console. This validates a reliable fallback path if the firewall is ever down or corrupted.
+
+---
+
 ### 🔐 SSH Access Setup (WSL → Ubuntu Server VM)
 
 To enable secure, passwordless SSH access from my WSL environment (`faisal@FD-HP`) to the Ubuntu Server VM (`10.0.1.100`), I followed these steps:
