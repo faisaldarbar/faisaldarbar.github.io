@@ -9,11 +9,11 @@ permalink: /legal/privacy-policy/
 
 **Effective Date: June 30, 2025**
 
-This Privacy Policy describes how **Faisal Darbar** ("we", "our", or "us") collects, uses, and protects your personal information when you visit [faisaldarbar.com](https://faisaldarbar.com){:target="_blank" rel="noopener noreferrer"}.
+This Privacy Policy describes how **Faisal Darbar** ("we", "our", or "us") collects, uses, and protects your personal information when you visit [faisaldarbar.com](https://faisaldarbar.com).
 
 ## What We Collect
 
-We collect your **email address** when you voluntarily subscribe to receive updates through our email newsletter, powered by [Kit (ConvertKit)](https://convertkit.com){:target="_blank" rel="noopener noreferrer"}.
+We collect your **email address** when you voluntarily subscribe to receive updates through our email newsletter, powered by Kit (ConvertKit).
 
 We do **not** collect any other personal data, payment information, or sensitive information.
 
@@ -27,15 +27,15 @@ We do **not** sell, rent, or share your email address with any third parties.
 
 ## Third-Party Services
 
-We use **Kit** to manage email subscriptions. When you submit your email, you are subject to ConvertKit’s [Privacy Policy](https://convertkit.com/privacy){:target="_blank" rel="noopener noreferrer"} and [Terms of Service](https://convertkit.com/terms){:target="_blank" rel="noopener noreferrer"}.
+We use **Kit** to manage email subscriptions. When you submit your email, you are subject to ConvertKit’s Privacy Policy and Terms of Service.
 
 ## Cookies & Analytics
 
 We use **Google Analytics** to understand how visitors interact with our site. Google Analytics may set cookies in your browser to collect non-personally identifiable information such as your IP address, device type, and pages visited.
 
-This data helps us improve the site’s content and user experience. All data is processed in accordance with Google’s [Privacy Policy](https://policies.google.com/privacy){:target="_blank" rel="noopener noreferrer"}.
+This data helps us improve the site’s content and user experience. All data is processed in accordance with Google’s Privacy Policy.
 
-You can disable cookies or block Google Analytics by adjusting your browser settings or using a browser extension like [Google’s opt-out tool](https://tools.google.com/dlpage/gaoptout){:target="_blank" rel="noopener noreferrer"}.
+You can disable cookies or block Google Analytics by adjusting your browser settings or using a browser extension like Google’s opt-out tool.
 
 
 ## Your Rights
