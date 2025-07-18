@@ -195,7 +195,7 @@ If you'd like to **completely hide** this folder from Windows (so it doesn't app
 
 ---
 
-#### 🔧 Update Your Samba Configuration
+🔧 Update Your Samba Configuration
 
 1. Open your Samba configuration file:
 
@@ -222,7 +222,7 @@ If you'd like to **completely hide** this folder from Windows (so it doesn't app
 
 ---
 
-### ✅ Result
+✅ Result
 
 * `lost+found` will be **completely hidden** from Windows clients.
 * It remains fully accessible and functional on the Linux system (as required).
