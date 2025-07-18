@@ -181,41 +181,52 @@ sudo ufw allow 'Samba'
   - Username: `faisal`
   - Password: [Your Samba password]
 
-## 🫥 Optional: Hide `lost+found` Folder from Windows Clients
+You're right — Markdown blocks should be formatted clearly **without mixing** triple backticks (\`\`\`) with normal text unless you're including **code inside the Markdown**.
 
-When you format an ext4 partition, Linux automatically creates a `lost+found` directory at the root. This is used by the filesystem to store recovered file fragments during disk checks (e.g., `fsck`). It's safe to leave it in place, but it may appear in your Samba share and clutter your view.
+Here's a **clean and correct `.md` snippet** for your documentation, with proper formatting:
 
-If you'd like to hide it from Windows clients:
+---
 
-#### 🔧 Steps to Hide `lost+found` in Samba
+## 🫥 Optional: Fully Hide `lost+found` from Windows Clients via Samba
 
-1. **Open your Samba configuration file**:
+When you format a drive with the ext4 filesystem, Linux creates a `lost+found` folder at the root. This is used internally by the system for recovering file fragments during disk checks (`fsck`). While it's essential for the filesystem, it's not useful for end users — and may clutter your view when accessing the share from Windows.
+
+If you'd like to **completely hide** this folder from Windows (so it doesn't appear even with "Show hidden files" enabled), use Samba's `veto files` option.
+
+---
+
+#### 🔧 Update Your Samba Configuration
+
+1. Open your Samba configuration file:
+
    ```bash
    sudo nano /etc/samba/smb.conf
    ```
 
-2. **In your `[data]` share section, add the following line**:
-   ```ini
-   hide files = /lost+found/
-   ```
+2. In your `[data]` share section, add the `veto files` line (and remove or comment out any `hide files` line if present):
 
-   Example:
    ```ini
    [data]
    path = /data
    valid users = faisal
    read only = no
    browsable = yes
-   hide files = /lost+found/
+   veto files = /lost+found/
    ```
 
-3. **Restart the Samba service to apply the change**:
+3. Save and exit the file, then restart Samba:
+
    ```bash
    sudo systemctl restart smbd
    ```
 
-After this, the `lost+found` folder will no longer appear when accessing the share from Windows, but it will still exist and function normally on the server.
+---
 
+### ✅ Result
+
+* `lost+found` will be **completely hidden** from Windows clients.
+* It remains fully accessible and functional on the Linux system (as required).
+* This is a safe and clean way to reduce visual clutter in your Samba share.
 
 Done! ✅
 
