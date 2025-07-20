@@ -7,8 +7,8 @@ tags: [gst, gstr-3b, accounting, zoho books, input tax credit, reverse charge, r
 
 cover:
   image: "/images/manual-accounting-journals-in-zoho-books.jpg"
-  alt: "Picture of a Floppy Disk"
-  caption: "Photo by benjamin lehman on Unsplash"
+  alt: "Manual Accounting Journals"
+  caption: "Photo by Jakub Żerdzicki on Unsplash"
 
 ---
 
