@@ -62,7 +62,7 @@ params:
         url: /legal/privacy-policy/
       - name: Terms of Use
         url: /legal/terms-of-use/
-      - name: Refund and Cancellation Policy
+      - name: Refund Policy
         url: /legal/refund-and-cancellation-policy/
 
 menu:
