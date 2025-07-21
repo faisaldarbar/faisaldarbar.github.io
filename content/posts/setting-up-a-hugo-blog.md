@@ -6,7 +6,7 @@ categories: ["Dev Docs"]
 tags: [hugo, papermod]
 
 cover:
-  image: "/images/setting-up-a-hugo-blog.png"
+  image: "/images/hugo.png"
   alt: "Setting Up a Hugo Blog with PaperMod"
   caption: "Logo by Steve Francia from Wikimedia Commons, licensed under Apache 2.0"
 

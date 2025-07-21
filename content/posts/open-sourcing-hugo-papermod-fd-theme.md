@@ -5,6 +5,11 @@ description: "I'm sharing this theme as a way of giving back"
 categories: ["Dev Docs"]
 tags: ["hugo theme", "papermod", "papermodest", "open source"]
 
+cover:
+  image: "/images/hugo.png"
+  alt: "Open-Sourcing Hugo PaperModest Theme"
+  caption: "Logo by Steve Francia from Wikimedia Commons, licensed under Apache 2.0"
+
 ---
 
 

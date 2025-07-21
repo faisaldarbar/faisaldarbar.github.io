@@ -5,6 +5,11 @@ description: "Moving from Hugo PaperMod to my own Theme Hugo PaperModest"
 categories: ["Dev Docs"]
 tags: ["hugo theme", "papermod"]
 
+cover:
+  image: "/images/hugo.png"
+  alt: "Hugo Theme Design and Content Migration"
+  caption: "Logo by Steve Francia from Wikimedia Commons, licensed under Apache 2.0"
+
 ---
 
 
