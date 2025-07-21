@@ -4,6 +4,7 @@ date: 2025-02-10T02:30:00Z
 description: "A dedicated network for Virtual Machines (VMs) - (VMLAN) with pfSense on Proxmox"
 categories: ["Homelab Docs"]
 tags: [network, vm, vmbr]
+draft: true
 
 cover:
   image: "/images/vm-only-network.jpg"

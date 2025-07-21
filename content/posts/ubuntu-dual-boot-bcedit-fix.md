@@ -4,6 +4,7 @@ date: 2025-02-24T02:30:00Z
 description: "If your dual-boot setup always boots into Windows"
 categories: ["Windows Docs"]
 tags: [windows, linux, dual-boot, bcedit]
+draft: true
 
 cover:
   image: "/images/ubuntu-dual-boot-bcedit-fix.jpg"

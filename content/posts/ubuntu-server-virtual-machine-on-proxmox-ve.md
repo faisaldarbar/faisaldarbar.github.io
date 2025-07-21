@@ -4,6 +4,7 @@ date: 2025-07-16T02:30:00Z
 description: "Documentation of my server setup for internal use and reference."
 categories: ["Homelab Docs"]
 tags: [ubuntu, server, vm, proxmox]
+draft: true
 
 cover:
   image: "/images/ubuntu-server-virtual-machine.jpg"

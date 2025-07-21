@@ -4,6 +4,7 @@ date: 2025-01-22T02:30:00Z
 description: "Optimizing ZFS for Efficient Memory Usage in Proxmox"
 categories: ["Homelab Docs"]
 tags: [zfs, memory, proxmox]
+draft: true
 
 cover:
   image: "/images/zfs-proxmox-memory-issue.png"
