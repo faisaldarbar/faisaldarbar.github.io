@@ -5,7 +5,7 @@ description: "A living list of commands I use while working on my Hugo blog"
 categories: ["Dev Docs"]
 tags: ["hugo", "git", "workflow", "cheatsheet"]
 
-over:
+cover:
   image: "/images/hugo-and-git-cheat-sheet.png"
   alt: "Hugo & Git Commands Cheat Sheet"
   caption: "Photo by Faisal Darbar on faisaldarbar.com"
