@@ -4,7 +4,6 @@ date: 2025-07-17T02:30:00Z
 description: "Setting Up a Samba Share on Ubuntu Server with LVM and Windows Access"
 categories: ["Homelab Docs"]
 tags: [samba, ubuntu, server, lvm]
-draft: true
 
 cover:
   image: "/images/samba-setup-guide.jpg"

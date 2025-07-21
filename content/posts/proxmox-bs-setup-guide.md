@@ -4,7 +4,6 @@ date: 2025-01-31T02:30:00Z
 description: "My Proxmox Backup Server Installation and Secure Configuration Guide"
 categories: ["Homelab Docs"]
 tags: [proxmox, backup, server]
-draft: true
 
 cover:
   image: "/images/proxmox-backup-server.jpg"

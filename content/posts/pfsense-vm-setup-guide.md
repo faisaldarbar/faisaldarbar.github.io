@@ -4,7 +4,6 @@ date: 2025-01-20T02:30:00Z
 description: "Setting Up pfSense and Network Configuration for Proxmox"
 categories: ["Homelab Docs"]
 tags: [pfsense, firewall, proxmox]
-draft: true
 
 cover:
   image: "/images/pfsense-vm.png"

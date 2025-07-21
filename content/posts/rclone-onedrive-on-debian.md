@@ -4,7 +4,6 @@ date: 2023-12-11T02:30:00Z
 description: "Seamlessly integrate your OneDrive with Debian"
 categories: ["Linux Docs"]
 tags: [linux, debian, rclone, onedrive]
-draft: true
 
 cover:
   image: "/images/rclone.png"

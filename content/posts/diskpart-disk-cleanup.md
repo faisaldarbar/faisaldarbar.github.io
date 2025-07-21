@@ -4,7 +4,6 @@ date: 2023-10-15T02:30:00Z
 description: "Manage disks and partitions in Windows"
 categories: ["Windows Docs"]
 tags: [windows, diskpart, format, cleanup]
-draft: true
 
 cover:
   image: "/images/diskpart.jpg"

@@ -4,7 +4,6 @@ date: 2025-01-17T02:30:00Z
 description: "My Proxmox Virtual Environnment (PVE) Installation and Secure Configuration Guide"
 categories: ["Homelab Docs"]
 tags: [proxmox, hypervisor, virtualization]
-draft: true
 
 cover:
   image: "/images/proxmox-host.png"

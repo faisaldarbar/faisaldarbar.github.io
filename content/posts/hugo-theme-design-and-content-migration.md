@@ -4,7 +4,6 @@ date: 2025-07-11T12:00:00Z
 description: "Moving from Hugo PaperMod to my own Theme Hugo PaperModest"
 categories: ["Dev Docs"]
 tags: ["hugo theme", "papermod"]
-draft: true
 
 ---
 
