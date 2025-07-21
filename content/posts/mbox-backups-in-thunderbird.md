@@ -4,6 +4,7 @@ date: 2025-02-27T02:30:00Z
 description: "A Complete Guide to MBOX Backups in Thunderbird"
 categories: ["FOSS Docs"]
 tags: [mbox, thunderbird, backups]
+draft: true
 
 cover:
   image: "/images/mbox-backups-in-thunderbird.jpg"

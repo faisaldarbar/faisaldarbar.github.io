@@ -4,6 +4,7 @@ date: 2025-07-07T02:30:00Z
 description: "This guide documents the setup used for deploying a Hugo blog with the PaperMod Theme"
 categories: ["Dev Docs"]
 tags: [hugo, papermod]
+draft: true
 
 cover:
   image: "/images/setting-up-a-hugo-blog.png"

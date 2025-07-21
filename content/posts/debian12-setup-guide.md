@@ -4,6 +4,7 @@ date: 2023-11-01T02:30:00Z
 description: "A walk through and focus on security and essential configurations"
 categories: ["Linux Docs"]
 tags: [linux, debian, security, desktop, flatpak, ufw, firewall, clamav]
+draft: true
 
 cover:
   image: "/images/debian12.png"

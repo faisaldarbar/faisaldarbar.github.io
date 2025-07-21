@@ -4,6 +4,7 @@ date: 2025-07-11T12:01:00Z
 description: "I'm sharing this theme as a way of giving back"
 categories: ["Dev Docs"]
 tags: ["hugo theme", "papermod", "papermodest", "open source"]
+draft: true
 
 ---
 

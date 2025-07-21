@@ -4,7 +4,6 @@ date: 2025-07-03T02:30:00Z
 description: "Here's one mistake we all tend to make as new writers. We use AI tools to replace our own voice."
 categories: ["Writing"]
 tags: [writing, ai, voice]
-draft: true
 
 cover:
   image: "/images/are-we-losing-our-voice-to-ai.jpg"

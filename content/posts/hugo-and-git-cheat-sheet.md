@@ -4,6 +4,7 @@ date: 2025-07-13T02:31:00Z
 description: "A living list of commands I use while working on my Hugo blog"
 categories: ["Dev Docs"]
 tags: ["hugo", "git", "workflow", "cheatsheet"]
+draft: true
 ---
 
 Sometimes we forget the simple things. Here's a living list of commands I use while working on my Hugo blog with a custom theme and GitHub workflow.

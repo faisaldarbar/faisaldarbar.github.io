@@ -4,6 +4,7 @@ date: 2023-12-21T02:30:00Z
 description: "This guide focuses on seamlessly incorporating the CS50 libraries into VS Code to enhance your C programming experience"
 categories: ["Dev Docs"]
 tags: [cs50, library, vscode, cs50.h]
+draft: true
 
 cover:
   image: "/images/libcs50.jpg"
