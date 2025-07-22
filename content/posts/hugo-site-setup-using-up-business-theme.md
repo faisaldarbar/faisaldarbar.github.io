@@ -182,3 +182,57 @@ The site was initially deployed to GitHub Pages at `https://aptxlabs.github.io/f
 
 Once DNS propagation completed, the site became accessible via the custom domain over HTTPS with all resources loading correctly.
 
+## 🛡️ Securing the Website Against External Dependency Failures
+
+After setting up and deploying the Hugo site using the Up Business theme, we implemented an important improvement to ensure long-term stability and independence from the original theme developer.
+
+### ✅ What We Did
+
+We **vendored** the theme using Hugo Modules, which means we pulled the full theme source code into our project under a local `_vendor/` directory. This was done with:
+
+```bash
+hugo mod vendor
+```
+
+We then updated the root-level `hugo.yaml` configuration to tell Hugo to use the local vendored copy:
+
+```yaml
+module:
+  vendored: true
+```
+
+Finally, we committed the entire `_vendor/` folder to our Git repository to make the site self-contained.
+
+### 🧠 Why We Did It
+
+By default, Hugo modules (like themes) are pulled from external Git repositories during the build process. This creates a dependency on the availability and integrity of those repos.
+
+While we were already using a pinned version of the theme (via Go Modules), there were still edge cases where the theme being deleted from GitHub — or the Go proxy failing — could cause a future clean build to fail.
+
+By vendoring the theme:
+
+- ✅ We removed all reliance on the upstream theme repository.
+- ✅ The site builds and runs completely offline.
+- ✅ We are protected from upstream changes, deletions, or GitHub outages.
+- ✅ Our production deployments (e.g. via GitHub Actions) are now fully isolated and stable.
+
+This makes the website **future-proof** and ensures that it will continue working exactly as expected — even years from now, regardless of what happens to the original theme project.
+
+### 🧪 How We Verified It
+
+After vendoring, we ran:
+
+```bash
+hugo server
+```
+
+— while disconnected from the internet — and confirmed that the site loaded correctly. This validated that all assets and theme logic are being served locally, not fetched from the web.
+
+---
+
+This additional step isn’t required for all projects, but it's **highly recommended for production sites** or any site where long-term reliability matters.
+
+By making this change, we've eliminated a potential point of failure and taken full ownership of our project stack.
+
+
+
