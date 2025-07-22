@@ -6,9 +6,9 @@ categories: ["Dev Docs"]
 tags: ["hugo theme", "papermod"]
 
 cover:
-  image: "/images/hugo.png"
+  image: "/images/hugo-theme-design-and-content-migration.jpg"
   alt: "Hugo Theme Design and Content Migration"
-  caption: "Logo by Steve Francia from Wikimedia Commons, licensed under Apache 2.0"
+  caption: "Photo by Thomas Jensen on Unsplash"
 
 ---
 

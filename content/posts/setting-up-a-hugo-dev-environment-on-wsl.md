@@ -6,9 +6,9 @@ categories: ["Dev Docs"]
 tags: ["hugo", "papermod", "wsl", "yaml", "submodules", "static-site"]
 
 cover:
-  image: "/images/hugo.png"
+  image: "/images/setting-up-a-hugo-dev-environment-on-wsl.jpg"
   alt: "Setting Up a Hugo Dev Environment on WSL"
-  caption: "Logo by Steve Francia from Wikimedia Commons, licensed under Apache 2.0"
+  caption: "Photo by Gabriel Heinzer on Unsplash"
 
 ---
 
