@@ -188,13 +188,13 @@ After setting up and deploying the Hugo site using the Up Business theme, we imp
 
 ### ✅ What We Did
 
-We **vendored** the theme using Hugo Modules, which means we pulled the full theme source code into our project under a local `_vendor/` directory. This was done with:
+We **vendored** the theme using Hugo Modules, which means we pulled the full theme source code into our project under a local `_vendor/` directory. This was done with the command:
 
 ```bash
 hugo mod vendor
 ```
 
-We then updated the root-level `hugo.yaml` configuration to tell Hugo to use the local vendored copy:
+We then added this to the **root-level** `hugo.yaml` configuration (since we have two of those files in the repo) to tell Hugo to use the local vendored copy:
 
 ```yaml
 module:
