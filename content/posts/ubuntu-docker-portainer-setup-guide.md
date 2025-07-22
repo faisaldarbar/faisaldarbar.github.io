@@ -16,19 +16,6 @@ In this comprehensive guide, we'll walk through the steps to set up an Ubuntu Se
 
 ---
 
-## Table of Contents
-
-1. [Creating the VM in Proxmox](#1-creating-the-vm-in-proxmox)
-2. [Network Configuration with pfSense](#2-network-configuration-with-pfsense)
-3. [Installing Ubuntu Server](#3-installing-ubuntu-server)
-4. [Setting Static IP Address](#4-setting-static-ip-address)
-5. [Installing Docker](#5-installing-docker)
-6. [Installing Portainer](#6-installing-portainer)
-7. [Troubleshooting and Issues Encountered](#7-troubleshooting-and-issues-encountered)
-8. [Backing Up the VM Using Proxmox Backup Server](#8-backing-up-the-vm-using-proxmox-backup-server)
-
----
-
 ## 1. Creating the VM in Proxmox
 
 ### VM Configuration:

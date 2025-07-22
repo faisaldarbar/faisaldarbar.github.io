@@ -71,7 +71,7 @@ Structure:
 ````md
 # PaperModest
 
-A lightweight, slightly customized fork of the [PaperMod](https://github.com/adityatelange/hugo-PaperMod) Hugo theme — built and tailored for my personal website [faisaldarbar.com](https://faisaldarbar.com).
+A lightweight, slightly customized fork of the <a href="https://github.com/adityatelange/hugo-PaperMod" target="_blank" rel="noopener">PaperMod</a> Hugo theme — built and tailored for my personal website <a href="https://faisaldarbar.com" target="_blank" rel="noopener">faisaldarbar.com</a>.
 
 ## 🚧 Status
 This theme works as of now, but I actively tweak it for my own needs. It may break without notice.  
@@ -82,7 +82,7 @@ This theme works as of now, but I actively tweak it for my own needs. It may bre
 - TBA
 
 ## 🧪 Demo (Planned)
-[https://faisaldarbar.github.io/hugo-papermodest/](https://faisaldarbar.github.io/hugo-papermodest/)
+I have planned a demo for this theme. Once that happens, you will find a link right here.
 
 ## 🔧 Usage
 ```bash
@@ -97,7 +97,7 @@ theme: hugo-papermodest
 
 ## 📜 License
 
-MIT – original theme by [Aditya Telange](https://github.com/adityatelange)
+MIT – original theme by <a href="https://github.com/adityatelange" target="_blank" rel="noopener">Aditya Telange</a>
 
 ### 6. Create Demo Site (Optional)
 - Set up a `gh-pages` branch to host a live demo

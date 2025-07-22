@@ -150,7 +150,7 @@ git push
 
 Your site is now live at:
 
-👉 [https://fsahealthcare.com](https://fsahealthcare.com)
+👉 <a href="https://fsahealthcare.com" target="_blank" rel="noopener">https://fsahealthcare.com</a>
 
 The site was initially deployed to GitHub Pages at `https://aptxlabs.github.io/fsahealthcare/`, and has since been moved to the custom domain using the following steps:
 

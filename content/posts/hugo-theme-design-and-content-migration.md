@@ -21,7 +21,7 @@ This week, the mission is to **cleanly separate the theme (design)** from the **
 
 ## ✅ Current Setup Recap
 
-- I've forked the [PaperMod theme](https://github.com/adityatelange/hugo-PaperMod) and started working on my **own version**: `hugo-papermodest`
+- I've forked the <a href="https://github.com/adityatelange/hugo-PaperMod" target="_blank" rel="noopener">PaperMod theme</a> and started working on my **own version**: `hugo-papermodest`
 - I created a **demo/testing site** using: `hugo new site hugo-papermodest-demo --format yaml`
 - The forked theme is added as a **git submodule** to the demo using:
 

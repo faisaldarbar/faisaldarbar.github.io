@@ -9,7 +9,7 @@ permalink: /legal/terms-of-use/
 
 **Effective Date: June 30, 2025**
 
-Welcome to [faisaldarbar.com](https://faisaldarbar.com), a personal blog owned and operated by **Faisal Darbar**. By accessing this site, you agree to the following terms:
+Welcome to <a href="https://faisaldarbar.com" target="_blank" rel="noopener">faisaldarbar.com</a>, a personal blog owned and operated by **Faisal Darbar**. By accessing this site, you agree to the following terms:
 
 ## 1. Content
 

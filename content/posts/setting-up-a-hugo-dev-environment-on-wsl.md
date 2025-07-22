@@ -136,7 +136,7 @@ Started the server with:
 hugo server --buildDrafts
 ```
 
-Visited: [http://localhost:1313](http://localhost:1313)
+Visited: <a href="http://localhost:1313" target="_blank" rel="noopener"><strong>http://localhost:1313</strong></a>
 
 🎉 Site opened successfully!
 

@@ -93,7 +93,7 @@ hugo server --buildDrafts
 ```
 
 Preview at:\
-[**http://localhost:1313**](http://localhost:1313)
+<a href="http://localhost:1313" target="_blank" rel="noopener"><strong>http://localhost:1313</strong></a>
 
 ---
 
@@ -155,7 +155,7 @@ git push -u origin main
 
 ## 🌐 10. Deploy to Cloudflare Pages
 
-1. Go to [Cloudflare Pages](https://pages.cloudflare.com/)
+1. Go to <a href="https://pages.cloudflare.com/" target="_blank" rel="noopener">Cloudflare Pages</a>
 2. Click **Create Project**
 3. Authorize GitHub and select your repo
 4. Build settings:
