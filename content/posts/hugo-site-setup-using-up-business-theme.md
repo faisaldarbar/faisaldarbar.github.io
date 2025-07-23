@@ -184,11 +184,11 @@ Once DNS propagation completed, the site became accessible via the custom domain
 
 ## 🛡️ Securing the Website Against External Dependency Failures
 
-After setting up and deploying the Hugo site using the Up Business theme, we implemented an important improvement to ensure long-term stability and independence from the original theme developer.
+After setting up and deploying the Hugo site using the **Up Business** theme, we implemented an important improvement to ensure **long-term stability** and **independence** from the original theme developer.
 
 ### ✅ What We Did
 
-We **vendored** the theme using Hugo Modules, which means we pulled the full theme source code into our project under a local `_vendor/` directory. This was done with the command:
+We **vendored the theme** using Hugo Modules, meaning we pulled the full theme source code into our project under a local `_vendor/` directory using the command:
 
 ```bash
 hugo mod vendor
@@ -211,34 +211,76 @@ Finally, we committed the entire `_vendor/` folder to our Git repository to make
 
 ### 🧠 Why We Did It
 
-By default, Hugo modules (like themes) are pulled from external Git repositories during the build process. This creates a dependency on the availability and integrity of those repos.
+By default, Hugo Modules (including themes) are fetched from **external Git repositories** during the build process. This introduces a dependency on the **availability** and **stability** of those upstream sources.
 
-While we were already using a pinned version of the theme (via Go Modules), there were still edge cases where the theme being deleted from GitHub — or the Go proxy failing — could cause a future clean build to fail.
+Even though we were using a pinned version of the theme (via `go.mod`), edge cases remained where:
+
+- The theme repo could be deleted from Github
+- GitHub or the Go proxy could be temporarily unavailable
+- A clean machine or CI runner might not be able to fetch the module
+
+### ✅ Benefits of Vendoring
 
 By vendoring the theme:
 
-- ✅ We removed all reliance on the upstream theme repository.
-- ✅ The site builds and runs completely offline.
-- ✅ We are protected from upstream changes, deletions, or GitHub outages.
-- ✅ Our production deployments (e.g. via GitHub Actions) are now fully isolated and stable.
+- ✅ We **removed all reliance** on the upstream Git repo
+- ✅ The site now **builds and runs fully offline**
+- ✅ We're protected from **theme updates or deletions**
+- ✅ CI/CD and production builds are **isolated and reproducible**
+- ✅ Even with `go.mod` and `go.sum` deleted, the site continues to work — proving that `_vendor/` is truly self-sufficient
 
 This makes the website **future-proof** and ensures that it will continue working exactly as expected — even years from now, regardless of what happens to the original theme project.
 
 ### 🧪 How We Verified It
 
-After vendoring, we ran:
+We ran the following test:
 
-```bash
-hugo server
-```
+1. Deleted `go.mod` and `go.sum`
+   
+   ```bash
+   rm go.mod go.sum
+   ```
 
-— while disconnected from the internet — and confirmed that the site loaded correctly. This validated that all assets and theme logic are being served locally, not fetched from the web.
+2. Cleared all Hugo and Go caches:
+   
+   ```bash
+   rm -rf ~/.cache/hugo
+   rm -rf ~/.cache/go-build
+   go clean -modcache
+   ```
+
+3. Deleted `public/`, `resources/`, and `.hugo_build.lock`
+   
+   ```bash
+   rm -rf public/ resources/ .hugo_build.lock
+   ```
+
+4. Disconnected from the internet
+
+   ```bash
+   ping google.com
+   ```
+
+5. Ran:
+
+   ```bash
+   hugo server
+   ```
+
+✅ The site **built and served correctly**, confirming that **all required code and assets** were available locally in `_vendor/`.
 
 ---
 
-This additional step isn’t required for all projects, but it's **highly recommended for production sites** or any site where long-term reliability matters.
+### 🤩 Final Thoughts
 
-By making this change, we've eliminated a potential point of failure and taken full ownership of our project stack.
+This step isn't mandatory for every Hugo project, but it’s **highly recommended** for:
+
+- Production deployments
+- Long-term archival
+- Projects where upstream stability is a concern
+
+By vendoring, we’ve **eliminated a potential point of failure** and taken full ownership of our project stack — making the website truly **future-proof**.
+
 
 
 
