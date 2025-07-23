@@ -28,8 +28,8 @@ Make sure you have the following installed:
 ```bash
 # Create new site
 
-git clone --branch demo https://github.com/writeonlycode/hugo-up-business.git fsahealthcare
-cd fsahealthcare
+git clone --branch demo https://github.com/writeonlycode/hugo-up-business.git aptxlabs
+cd aptxlabs
 
 # Install dependencies
 npm install
@@ -45,7 +45,7 @@ You should now be able to view the site at `http://localhost:1313/`.
 ## 🛠 Set Up GitHub Repository
 
 1. **Create a new repository** under your GitHub organization:  
-   👉 https://github.com/aptxlabs/fsahealthcare
+   👉 https://github.com/aptxlabs/aptxlabs
 
 2. **Enable GitHub Pages**:
    - Go to **Settings** → **Pages**
@@ -54,9 +54,9 @@ You should now be able to view the site at `http://localhost:1313/`.
 3. **Initialize Git** in your Hugo site directory:
 
    ```bash
-   cd fsahealthcare
+   cd aptxlabs
    git init
-   git remote add origin https://github.com/aptxlabs/fsahealthcare.git
+   git remote add origin https://github.com/aptxlabs/aptxlabs.git
    ```
 
 4. **Rename the default branch to `main` (if needed):**
@@ -68,7 +68,7 @@ You should now be able to view the site at `http://localhost:1313/`.
 5. Update the remote URL
 
    ```bash
-   git remote set-url origin https://github.com/aptxlabs/fsahealthcare.git
+   git remote set-url origin https://github.com/aptxlabs/aptxlabs.git
    ```
 
 6. Confirm the change
@@ -80,8 +80,8 @@ You should now be able to view the site at `http://localhost:1313/`.
    It should now show
 
    ```bash
-   origin  https://github.com/aptxlabs/fsahealthcare.git (fetch)
-   origin  https://github.com/aptxlabs/fsahealthcare.git (push)
+   origin  https://github.com/aptxlabs/aptxlabs.git (fetch)
+   origin  https://github.com/aptxlabs/aptxlabs.git (push)
    ```
 
 7. **Add, commit, and push the source code:**
@@ -103,7 +103,7 @@ You should now be able to view the site at `http://localhost:1313/`.
 config > _default > hugo.yaml
 
 ```yaml
-baseURL: "https://aptxlabs.github.io/fsahealthcare/"
+baseURL: "https://aptxlabs.github.io/aptxlabs/"
 ```
 
 3. Update the `deploy.yml` build command:
@@ -150,34 +150,34 @@ git push
 
 Your site is now live at:
 
-👉 <a href="https://fsahealthcare.com" target="_blank" rel="noopener">FSA Healthcare</a>
+👉 <a href="https://aptxlabs.com" target="_blank" rel="noopener">Aptxlabs</a>
 
-The site was initially deployed to GitHub Pages at `https://aptxlabs.github.io/fsahealthcare/`, and has since been moved to the custom domain using the following steps:
+The site was initially deployed to GitHub Pages at `https://aptxlabs.github.io/aptxlabs/`, and has since been moved to the custom domain using the following steps:
 
 - **DNS Configuration**:
 
-  - Added the following **A records** to point the apex domain (`fsahealthcare.com`) to GitHub Pages:
+  - Added the following **A records** to point the apex domain (`aptxlabs.com`) to GitHub Pages:
     ```
     185.199.108.153
     185.199.109.153
     185.199.110.153
     185.199.111.153
     ```
-  - Added a **CNAME record** to point `www.fsahealthcare.com` to:
+  - Added a **CNAME record** to point `www.aptxlabs.com` to:
     ```
     aptxlabs.github.io
     ```
 
 - **GitHub Pages Settings**:
 
-  - Set the **Custom domain** to `fsahealthcare.com`
+  - Set the **Custom domain** to `aptxlabs.com`
   - Enabled **Enforce HTTPS**
 
 - **Hugo Configuration**:
 
   - Updated the `baseURL` in `config/_default/hugo.yaml` to:
     ```yaml
-    baseURL: "https://fsahealthcare.com/"
+    baseURL: "https://aptxlabs.com/"
     ```
 
 Once DNS propagation completed, the site became accessible via the custom domain over HTTPS with all resources loading correctly.
