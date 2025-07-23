@@ -194,11 +194,17 @@ We **vendored** the theme using Hugo Modules, which means we pulled the full the
 hugo mod vendor
 ```
 
-We then added this to the **root-level** `hugo.yaml` configuration (since we have two of those files in the repo) to tell Hugo to use the local vendored copy:
+We then added `vendored: true` under `module:` to the **root-level** `hugo.yaml` configuration (since we have two of those files in the repo) to tell Hugo to use the local vendored copy:
 
 ```yaml
 module:
+  hugo_version:
+    min: "0.147.8"
+  
   vendored: true
+
+  imports:
+    - path: github.com/writeonlycode/hugo-up-business
 ```
 
 Finally, we committed the entire `_vendor/` folder to our Git repository to make the site self-contained.
