@@ -150,7 +150,7 @@ git push
 
 Your site is now live at:
 
-👉 <a href="https://aptxlabs.com" target="_blank" rel="noopener">Aptxlabs</a>
+👉 <a href="https://aptxlabs.github.io/aptxlabs/" target="_blank" rel="noopener">Aptxlabs</a>
 
 The site was initially deployed to GitHub Pages at `https://aptxlabs.github.io/aptxlabs/`, and has since been moved to the custom domain using the following steps:
 
