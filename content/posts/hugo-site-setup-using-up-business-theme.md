@@ -16,11 +16,55 @@ cover:
 
 Make sure you have the following installed:
 
-- Hugo (extended version)
-- Git
-- Node.js and npm
-- VS Code or any terminal-based Git interface
+### Hugo (extended version)
 
+Always update your packages before an install.
+
+```bash
+sudo apt update
+```
+Download and install the extended version of Hugo
+
+```bash
+wget https://github.com/gohugoio/hugo/releases/download/v0.147.9/hugo_extended_0.147.9_linux-amd64.deb
+sudo apt install ./hugo_extended_0.147.9_linux-amd64.deb
+```
+### Git
+
+```bash
+sudo apt update
+sudo apt install git
+```
+
+Configure Git:
+
+```bash
+git config --global user.name "Your Name"
+git config --global user.email "your@example.com"
+```
+
+### Node.js and npm
+
+Instead of using apt, which installs outdated versions, use NodeSource to install the current LTS version (more stable for dev work):
+
+```bash
+# Add NodeSource repository for Node 20 (LTS as of mid-2025)
+curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+sudo apt-get install -y nodejs
+```
+This installs both node and npm.
+
+Verify Installation
+
+```bash
+node -v
+npm -v
+```
+From your project root
+
+```bash
+npm install
+```
 ---
 
 ## 🚀 Create and Set Up the Site
