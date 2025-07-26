@@ -20,6 +20,10 @@ Let’s be honest: the tools we _want_ to use as developers rarely match what th
 
 ---
 
+{{< youtube NJwWlLss52o >}}
+
+---
+
 ## The Stack We Dream Of
 
 We care about clean code, fast builds, and deploy pipelines that make us feel smart.
