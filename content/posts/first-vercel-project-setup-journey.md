@@ -14,7 +14,7 @@ cover:
 
 ### ✅ Step 1: **Signed Up on Vercel**
 
-* Visited [vercel.com](https://vercel.com)
+* Visited vercel.com
 * Signed up using GitHub
 * Granted Vercel permission to access all repositories (default option)
 * Vercel automatically fetched all repos under the GitHub account
@@ -123,7 +123,7 @@ Before we move forward with building our own SaaS from scratch, here’s how I c
 
 ### 🔻 Vercel: Delete the Project
 
-* Go to [Vercel Dashboard](https://vercel.com/dashboard)
+* Go to Vercel Dashboard
 * Select the project (`next-js-saas-starter`)
 * Click **Settings** → **General**
 * Scroll down and click **Delete Project**
