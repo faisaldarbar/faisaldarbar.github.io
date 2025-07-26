@@ -18,6 +18,8 @@ cover:
 
 Let’s be honest: the tools we _want_ to use as developers rarely match what the rest of the world actually wants. Or needs.
 
+🎥 Watch the video version:
+
 ---
 
 {{< youtube NJwWlLss52o >}}
