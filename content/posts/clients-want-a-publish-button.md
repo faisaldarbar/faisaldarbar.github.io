@@ -8,7 +8,7 @@ tags: [wordpress, jamstack, ghost, hugo, cms, developer-tools]
 cover:
   image: "/images/clients-want-a-publish-button.jpg"
   alt: "Developers Want Clean Code. Clients Want a Publish Button."
-  caption: "Photo by Martin Martz on Unsplash"
+  caption: "Photo by Faisal Darbar on faisaldarbar.com"
 
 ---
 
@@ -18,9 +18,9 @@ cover:
 
 Let’s be honest: the tools we _want_ to use as developers rarely match what the rest of the world actually wants. Or needs.
 
-🎥 Watch the video version:
-
 ---
+
+🎥 Watch the video version:
 
 {{< youtube NJwWlLss52o >}}
 
