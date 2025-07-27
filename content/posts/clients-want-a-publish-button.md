@@ -6,7 +6,7 @@ categories: ["Dev Thoughts"]
 tags: [wordpress, jamstack, ghost, hugo, cms, developer-tools]
 
 cover:
-  image: "/images/clients-want-a-publish-button.jpg"
+  image: "/images/clients-want-a-publish-button.png"
   alt: "Developers Want Clean Code. Clients Want a Publish Button."
   caption: "Photo by Faisal Darbar on faisaldarbar.com"
 
