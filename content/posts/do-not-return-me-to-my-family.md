@@ -101,6 +101,6 @@ It’s a **qissah** — a story.
 It’s a **khabar** — a report that moves the soul.  
 It’s an **athar** — a trace of what faith feels like when it’s real.  
 
-That’s why we don’t limit ourselves to be Ahl al-Qur’an or Ahl al-Hadith.  
-We become **Ahl al-ʿIlm** — people of true knowledge.  
+That’s why we don’t limit ourselves to be Ahl al-Qur’an or Ahl al-Hadith.
+We wish to become **Ahl al-ʿIlm** — people of true knowledge.
 Knowledge that breathes, walks, limps — and still reaches Jannah.
