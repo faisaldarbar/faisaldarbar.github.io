@@ -18,7 +18,7 @@ The best of you are those who are best to their family. We hear this authentic h
 
 One Sahabi’s dua — *‘O Allah, don’t return me to my family disappointed’* — holds a mirror up to how we understand Islam today.  
 
-Here’s why we need more than sahih Hadith.  
+Here’s why we need more than just sahih hadith.  
 
 ---
 
@@ -54,7 +54,7 @@ Seerah explains what came first, what was abrogated, and what was circumstantial
 
 ---
 
-## 🔷 The Sahaba’s Lives Are Living Tafsīr
+## 🔷 The Sahaba’s Lives Are Living Tafsir
 
 **1. They asked questions we don’t even think to ask**  
 They brought their emotions, doubts, and desires to the Prophet ﷺ.
@@ -85,8 +85,8 @@ He was martyred in Uhud — and the Prophet ﷺ later said, the gist of which is
 
 > **“I see him walking in Paradise with his (formerly) lame leg.”**
 
-His dua is not an aayat. This isn’t Qur’an.  
-Not a hadith with isnad. It isn’t an authentic Hadith.  
+His dua is not an aayat. It isn’t Qur’an.  
+His dua is not a hadith with isnad. It isn’t an authentic hadith.  
 But it’s unforgettable — because it’s our Fitrah and Islam, *embodied*.
 
 It’s a **qissah** — a story.  
