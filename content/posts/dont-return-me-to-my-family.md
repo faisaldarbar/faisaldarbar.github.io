@@ -87,7 +87,7 @@ He made this dua just before joining the battle:
 
 He was martyred in Uhud — and the Prophet ﷺ later said, the gist of which is:
 
-> **“I see him walking in Paradise with his (formerly) lame leg.”**
+> **“I see him walking in Paradise with his (formerly lame) leg.”**
 
 His dua is not an aayat. It isn’t Qur’an.  
 His dua is not a hadith with isnad. It isn’t an authentic hadith.  
