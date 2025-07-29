@@ -18,21 +18,24 @@ The best of you are those who are best to their family. We hear this authentic h
 
 One Sahabi’s dua — *‘O Allah, don’t return me to my family disappointed’* — holds a mirror up to how we understand Islam today.  
 
-Here’s why we need more than just sahih hadith.  
+Here’s why we need more than sahih hadith.  
 
 ---
 
 ## 🔷 Qur’an and Hadith
 
-**1. The Qur’an doesn’t give detailed rulings without the Prophet ﷺ**  
+**1. The Qur’an doesn’t give detailed rulings without the Prophet ﷺ**
+
 For example, the Qur’an commands prayer — but never says how many rakaʿat, or what to recite.
 Without the Prophet ﷺ, even basic acts of worship remain undefined.
 
 **2. Ahaadith are often situational — context matters**  
+
 Many ahaadith are responses of the prophet to real events: someone asked a question, something happened, or a need arose.
 Reading hadith in isolation — without knowing why and when it was said — can mislead.
 
 **3. The lives of the Prophet ﷺ and Sahaba explain how to live Islam**  
+
 The Qur’an and Hadith give guidance, but the Sahaba lived it.
 Their decisions, sacrifices, and judgments interpret the deen in action.
 
@@ -41,14 +44,17 @@ Their decisions, sacrifices, and judgments interpret the deen in action.
 ## 🔷 Seerah Is the Bridge
 
 **1. Seerah brings the heart into learning — it’s the soul of the knowledge**  
+
 Without it, learning can become dry or academic.
 Seerah reminds us this was a real journey, led by a real man, with real companions.
 
 **2. It shows how Islam unfolded in real life**  
+
 Islam wasn’t revealed all at once — it unfolded gradually, with wisdom, loss, and struggle.
 Seerah gives that timeline an emotional backdrop to Qur’anic verses and ahaadith.
 
 **3. It resolves apparent contradictions between sources**  
+
 Why did rulings change over time? Why do two ahaadith seem to conflict?
 Seerah explains what came first, what was abrogated, and what was circumstantial.
 
@@ -57,14 +63,17 @@ Seerah explains what came first, what was abrogated, and what was circumstantial
 ## 🔷 The Sahaba’s Lives Are Tafsir
 
 **1. They asked questions we don’t even think to ask**  
+
 They brought their emotions, doubts, and desires to the Prophet ﷺ.
 Their questions gave rise to revelation and rulings — they helped shape Islamic knowledge.
 
 **2. Their actions were often endorsed by the Prophet ﷺ**  
+
 Sometimes a Sahabi acted without asking — and the Prophet ﷺ approved, making it a lesson.
 That practical trust shows their deep understanding of his mission.
 
 **3. Stories like Amr ibn al-Jamuh’s dua show a spiritual clarity**  
+
 May Allah be pleased with him. His yearning for martyrdom wasn’t from law or theology — it was from faith.
 That kind of clarity can’t be extracted from texts alone — it comes from presence and companionship.
 
@@ -77,9 +86,8 @@ The Prophet ﷺ tried to excuse him from battle.
 But Amr begged to go, saying he longed for Paradise.
 He made this dua just before joining the battle:
 
-> **“O Allah, don’t return me to my family disappointed.”**
-
 > **اللَّهُمَّ لَا تَرُدَّنِي إِلَى أَهْلِي خَائِبًا**
+> **“O Allah, don’t return me to my family disappointed.”**
 
 He was martyred in Uhud — and the Prophet ﷺ later said, the gist of which is:
 
