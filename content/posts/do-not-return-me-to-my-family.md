@@ -6,7 +6,7 @@ categories: ["Deen Docs"]
 tags: [amr bin jamuh, dua, seerah, sahaba, athar, qissah, khabar]
 
 cover:
-  image: "/images/amr_bin_jamuh_thumbnail.png"
+  image: "/images/amr_bin_jamuh.png"
   alt: "Do Not Return Me To My Family"
   caption: "Photo by Faisal Darbar on faisaldarbar.com"
 
