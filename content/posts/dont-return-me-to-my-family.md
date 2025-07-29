@@ -1,5 +1,5 @@
 ---
-title: "Do Not Return Me To My Family"
+title: "Don't Return Me To My Family"
 date: 2025-07-28T02:30:00Z
 description: "One Sahabi’s dua — ‘O Allah, don’t return me to my family disappointed’ — holds a mirror up to how we understand Islam today."
 categories: ["Deen Docs"]
