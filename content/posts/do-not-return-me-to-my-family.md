@@ -60,7 +60,7 @@ Seerah explains what came first, what was abrogated, and what was circumstantial
 
 ---
 
-## 🔷 The Sahaba’s Lives Are Tafsir
+## 🔷 The Sahaba’s Lives
 
 **1. They asked questions we don’t even think to ask**  
 
@@ -79,7 +79,7 @@ That kind of clarity can’t be extracted from texts alone — it comes from pre
 
 ---
 
-## 📖 The Story of Amr ibn al-Jamuh
+## 📖 Amr ibn al-Jamuh (RA)
 
 Amr had a severe limp — a physical disability.
 The Prophet ﷺ tried to excuse him from battle.
