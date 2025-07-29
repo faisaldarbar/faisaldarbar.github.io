@@ -22,7 +22,7 @@ Here’s why we need more than just sahih hadith.
 
 ---
 
-## 🔷 Islam Is More Than Qur’an and Hadith
+## 🔷 Qur’an and Hadith
 
 **1. The Qur’an doesn’t give detailed rulings without the Prophet ﷺ**  
 For example, the Qur’an commands prayer — but never says how many rakaʿat, or what to recite.
@@ -38,7 +38,7 @@ Their decisions, sacrifices, and judgments interpret the deen in action.
 
 ---
 
-## 🔷 Seerah Is the Bridge That Connects
+## 🔷 Seerah Is the Bridge
 
 **1. Seerah brings the heart into learning — it’s the soul of the knowledge**  
 Without it, learning can become dry or academic.
@@ -54,7 +54,7 @@ Seerah explains what came first, what was abrogated, and what was circumstantial
 
 ---
 
-## 🔷 The Sahaba’s Lives Are Living Tafsir
+## 🔷 The Sahaba’s Lives Are Tafsir
 
 **1. They asked questions we don’t even think to ask**  
 They brought their emotions, doubts, and desires to the Prophet ﷺ.
@@ -70,7 +70,7 @@ That kind of clarity can’t be extracted from texts alone — it comes from pre
 
 ---
 
-## The Story of Amr ibn al-Jamuh
+## 📖 The Story of Amr ibn al-Jamuh
 
 Amr had a severe limp — a physical disability.
 The Prophet ﷺ tried to excuse him from battle.
