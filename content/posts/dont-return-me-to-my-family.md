@@ -14,11 +14,7 @@ cover:
 
 ## 🤲 The Dua
 
-The best of you are those who are best to their family. We hear this authentic hadith everyday.  
-
-One Sahabi’s dua — *‘O Allah, don’t return me to my family disappointed’* — holds a mirror up to how we understand Islam today.  
-
-Here’s why we need more than just hadith.  
+The best of you are those who are best to their family. We hear this authentic hadith everyday. One Sahabi’s dua — *‘O Allah, don’t return me to my family disappointed’* — holds a mirror up to how we understand Islam today. Here’s why we need more than just hadith.
 
 ---
 
