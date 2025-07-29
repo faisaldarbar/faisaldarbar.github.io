@@ -51,7 +51,7 @@ Seerah reminds us this was a real journey, led by a real man, with real companio
 **2. It shows how Islam unfolded in real life**  
 
 Islam wasn’t revealed all at once — it unfolded gradually, with wisdom, loss, and struggle.
-Seerah gives that timeline an emotional backdrop to Qur’anic verses and ahaadith.
+Seerah gives that timeline and an emotional backdrop to Qur’anic verses and ahaadith.
 
 **3. It resolves apparent contradictions between sources**  
 
