@@ -18,7 +18,7 @@ The best of you are those who are best to their family. We hear this authentic h
 
 One Sahabi’s dua — *‘O Allah, don’t return me to my family disappointed’* — holds a mirror up to how we understand Islam today.  
 
-Here’s why we need more than sahih hadith.  
+Here’s why we need more than just hadith.  
 
 ---
 
@@ -86,7 +86,7 @@ The Prophet ﷺ tried to excuse him from battle.
 But Amr begged to go, saying he longed for Paradise.
 He made this dua just before joining the battle:
 
-> **اللَّهُمَّ لَا تَرُدَّنِي إِلَى أَهْلِي خَائِبًا**
+> **اللَّهُمَّ لَا تَرُدَّنِي إِلَى أَهْلِي خَائِبًا**  
 > **“O Allah, don’t return me to my family disappointed.”**
 
 He was martyred in Uhud — and the Prophet ﷺ later said, the gist of which is:
