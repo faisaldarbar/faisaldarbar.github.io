@@ -130,7 +130,7 @@ Before we move forward with building our own SaaS from scratch, here’s how I c
 
 ### 🔗 GitHub: Repository Removal
 
-* I had granted Vercel access to all my GitHub repositories — I’ve decided to leave that as-is for now since it’s not harmful
+* I had granted Vercel access to all my GitHub repositories — (Faisal Darbar from the future, NetworkChuck style) Removed that..
 * Deleted the repo directly from GitHub by visiting the repo page and navigating to:
   **Settings** → **Danger Zone** → **Delete this repository**
 
