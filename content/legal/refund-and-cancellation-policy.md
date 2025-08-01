@@ -9,23 +9,18 @@ permalink: /legal/terms-of-use/
 
 **Effective Date: June 30, 2025**
 
-This Refund and Cancellation Policy outlines our practices regarding any potential paid services, digital products, or subscriptions in the future. As of the effective date, **faisaldarbar.com** does **not** sell any digital or physical products, offer paid memberships, or accept payments of any kind.
+This Refund and Cancellation Policy outlines our practices regarding paid services and digital products, or subscriptions. 
 
-## 1. Free Content & Email Subscriptions
+## 1. Development Services
 
-All content provided on faisaldarbar.com, including blog posts and email newsletters, is free of charge.
+All development services provided by faisaldarbar.com are delivered with professionalism and care.
 
-- If you have subscribed to receive email updates, you may **unsubscribe at any time** by clicking the link provided in the footer of any email we send.  
-- There is **no fee for subscribing or unsubscribing**, and therefore, **no refund or cancellation policy is required** for these services.
+- Once a service has been initiated or delivered, it is considered final.
+- We **do not offer refunds or cancellations** for any development services.
+- By engaging our services, you acknowledge and agree to this no refund and no cancellation policy.
 
-## 2. Future Paid Products or Services
 
-Should we introduce any paid products or services in the future:
-
-- Full details, including refund and cancellation terms, will be clearly stated at the point of purchase.  
-- We will provide contact information and a reasonable timeframe for refund or cancellation requests, in line with standard consumer protection laws.
-
-## 3. Contact
+## 2. Contact
 
 If you have any questions or concerns regarding this policy, feel free to contact us at:  
 **faisal@faisaldarbar.com**
