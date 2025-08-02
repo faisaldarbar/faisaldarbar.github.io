@@ -9,7 +9,7 @@ tags: [proxmox, self-hosted, paas, coolify, ubuntu server, next.js, devops, home
 cover:
   image: "/images/dev-infra-assessment-and-action-plan.webp"
   alt: "Dev Infra Assessment and Action Plan"
-  caption: "AI Generated Photo by ChatGPT"
+  caption: "Photo by Faisal Darbar on faisaldarbar.com"
 ---
 
 ## 🧭 Purpose
