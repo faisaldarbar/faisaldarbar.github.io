@@ -81,6 +81,13 @@ This shared-use model avoids the risk of filling root (`/`) and provides easy se
 
 ---
 
+🧮 CPU Plan
+Ubuntu VM currently allocated 4 vCPUs
+Can be increased to 6–8 vCPUs as app workload grows
+Ensure pfSense (2 vCPUs) always has headroom for reliable routing
+
+---
+
 ## 🐳 Docker Setup
 
 Docker's default storage location will be moved to `/data/docker` for safety and scalability.
@@ -138,6 +145,7 @@ Ubuntu VM uses default swapfile behavior. No custom changes are made for now. Sw
 | Area | Action |
 |------|--------|
 | RAM  | Allocate 12GB to Ubuntu VM |
+| CPU  | Scale Ubuntu VM to 6–8 vCPUs as needed |
 | Docker | Move Docker volumes to `/data/docker` |
 | PBS | Set up root-only backups for Ubuntu VM |
 | `/data` | Organize folders for DB, Docker, and media content |
