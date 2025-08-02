@@ -81,10 +81,11 @@ This shared-use model avoids the risk of filling root (`/`) and provides easy se
 
 ---
 
-🧮 CPU Plan
-Ubuntu VM currently allocated 4 vCPUs
-Can be increased to 6–8 vCPUs as app workload grows
-Ensure pfSense (2 vCPUs) always has headroom for reliable routing
+## 🧮 CPU Plan
+
+- Ubuntu VM currently allocated 4 vCPUs
+- Can be increased to 6–8 vCPUs as app workload grows
+- Ensure pfSense (2 vCPUs) always has headroom for reliable routing
 
 ---
 
