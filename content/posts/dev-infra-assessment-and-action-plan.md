@@ -22,6 +22,12 @@ In the future, I may even scale this setup to offer private cloud services to se
 
 ---
 
+🎥 Watch the video version:
+
+{{< youtube UItxEA5PUNo >}}
+
+---
+
 ## 🖥️ Host System Overview
 
 **Device**: Lenovo ThinkStation P3 Tiny  
