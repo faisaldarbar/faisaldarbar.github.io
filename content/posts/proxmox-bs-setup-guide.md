@@ -6,7 +6,7 @@ categories: ["Homelab Docs"]
 tags: [proxmox, backup, server]
 
 cover:
-  image: "/images/proxmox-backup-server.jpg"
+  image: "/images/proxmox-backup-server.webp"
   alt: "Proxmox Backup Server"
   caption: "Photo by Scott Rodgerson on Unsplash"
 

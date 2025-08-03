@@ -6,7 +6,7 @@ categories: ["Homelab Docs"]
 tags: [pfsense, firewall, proxmox]
 
 cover:
-  image: "/images/pfsense-vm.png"
+  image: "/images/pfsense-vm.webp"
   alt: "pfSense Virtual Machine"
   caption: "Photo by Faisal Darbar on faisaldarbar.com"
 

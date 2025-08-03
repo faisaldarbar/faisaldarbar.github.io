@@ -6,7 +6,7 @@ categories: ["Homelab Docs"]
 tags: [samba, ubuntu, server, lvm]
 
 cover:
-  image: "/images/samba-setup-guide.jpg"
+  image: "/images/samba-setup-guide.webp"
   alt: "Picture of a Floppy Disk"
   caption: "Photo by benjamin lehman on Unsplash"
 

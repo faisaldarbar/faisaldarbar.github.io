@@ -7,7 +7,7 @@ tags: [hugo, papermod, papermodest, wsl, static-site, theme-development, git-sub
 
 
 cover:
-  image: "/images/hugo-site-setup-using-papermodest-theme.png"
+  image: "/images/hugo-site-setup-using-papermodest-theme.webp"
   alt: "Hugo Site Setup using PaperModest Theme"
   caption: "Logo by Steve Francia from Wikimedia Commons, licensed under Apache 2.0"
 

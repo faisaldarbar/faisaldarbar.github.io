@@ -6,7 +6,7 @@ categories: ["Windows Docs"]
 tags: [windows, diskpart, format, cleanup]
 
 cover:
-  image: "/images/diskpart.jpg"
+  image: "/images/diskpart.webp"
   alt: "Diskpart Disk Cleanup"
   caption: "Photo by amt8u on Unsplash"
 

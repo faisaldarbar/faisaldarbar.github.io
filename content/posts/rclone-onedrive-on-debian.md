@@ -6,7 +6,7 @@ categories: ["Linux Docs"]
 tags: [linux, debian, rclone, onedrive]
 
 cover:
-  image: "/images/rclone.png"
+  image: "/images/rclone.webp"
   alt: "Rclone OneDrive on Debian"
   caption: "Photo by Faisal Darbar on faisaldarbar.com"
 

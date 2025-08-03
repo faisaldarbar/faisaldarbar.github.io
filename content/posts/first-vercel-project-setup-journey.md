@@ -6,7 +6,7 @@ categories: ["Dev Docs"]
 tags: [vercel, nextjs, saas, deployment, stripe, neon, supabase, github, environment-variables, troubleshooting, india, project-setup]
 
 cover:
-  image: "/images/first-vercel-project-setup-journey.png"
+  image: "/images/first-vercel-project-setup-journey.webp"
   alt: "First Vercel Project Setup Journey"
   caption: "Photo by Faisal Darbar on faisaldarbar.com"
 

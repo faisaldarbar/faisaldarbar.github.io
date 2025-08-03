@@ -6,7 +6,7 @@ categories: ["Linux Docs"]
 tags: [linux, debian, security, desktop, flatpak, ufw, firewall, clamav]
 
 cover:
-  image: "/images/debian12.png"
+  image: "/images/debian12.webp"
   alt: "Debian 12 Setup Guide"
   caption: "Photo by Faisal Darbar on faisaldarbar.com"
 

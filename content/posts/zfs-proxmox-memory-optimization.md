@@ -6,7 +6,7 @@ categories: ["Homelab Docs"]
 tags: [zfs, memory, proxmox]
 
 cover:
-  image: "/images/zfs-proxmox-memory-issue.png"
+  image: "/images/zfs-proxmox-memory-issue.webp"
   alt: "ZFS Proxmox Memory Optimization"
   caption: "Photo by Faisal Darbar on faisaldarbar.com"
 

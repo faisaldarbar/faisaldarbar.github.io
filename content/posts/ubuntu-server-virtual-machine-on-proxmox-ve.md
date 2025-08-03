@@ -6,7 +6,7 @@ categories: ["Homelab Docs"]
 tags: [ubuntu, server, vm, proxmox]
 
 cover:
-  image: "/images/ubuntu-server-virtual-machine.jpg"
+  image: "/images/ubuntu-server-virtual-machine.webp"
   alt: "Ubuntu Server Virtual Machine on Proxmox VE"
   caption: "Photo by Florian Krumm on Unsplash"
 

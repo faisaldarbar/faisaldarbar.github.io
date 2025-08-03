@@ -6,7 +6,7 @@ categories: ["Dev Docs"]
 tags: [cloudflare-workers, recaptcha-v3, brevo-api, contact-form, serverless]
 
 cover:
-  image: "/images/contact-form-setup-with-cloudflare-workers.jpg"
+  image: "/images/contact-form-setup-with-cloudflare-workers.webp"
   alt: "Contact Form Setup with Cloudflare Workers"
   caption: "Photo by Miles Burke on Unsplash"
 

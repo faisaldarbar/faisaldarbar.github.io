@@ -6,7 +6,7 @@ categories: ["Dev Docs"]
 tags: [cs50, library, vscode, cs50.h]
 
 cover:
-  image: "/images/libcs50.jpg"
+  image: "/images/libcs50.webp"
   alt: "CS50 Libraries in VS Code"
   caption: "Photo by Rubaitul Azad on Unsplash"
 

@@ -6,7 +6,7 @@ categories: ["Homelab Docs"]
 tags: [proxmox, zfs, ext4]
 
 cover:
-  image: "/images/pve-zfs-to-ext4.jpg"
+  image: "/images/pve-zfs-to-ext4.webp"
   alt: "Proxmox VE ZFS to EXT4"
   caption: "Photo by Samsung Memory on Unsplash"
 

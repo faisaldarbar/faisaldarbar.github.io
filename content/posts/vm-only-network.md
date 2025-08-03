@@ -6,7 +6,7 @@ categories: ["Homelab Docs"]
 tags: [network, vm, vmbr]
 
 cover:
-  image: "/images/vm-only-network.jpg"
+  image: "/images/vm-only-network.webp"
   alt: "VM-Only Network"
   caption: "Photo by Jordan Harrison on Unsplash"
 

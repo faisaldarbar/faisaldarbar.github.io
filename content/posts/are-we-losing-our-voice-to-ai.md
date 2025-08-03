@@ -6,7 +6,7 @@ categories: ["Writing"]
 tags: [writing, ai, voice]
 
 cover:
-  image: "/images/are-we-losing-our-voice-to-ai.jpg"
+  image: "/images/are-we-losing-our-voice-to-ai.webp"
   alt: "Are We Losing Our Voice to AI?"
   caption: "Photo by Sigmund on Unsplash"
 

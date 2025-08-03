@@ -6,7 +6,7 @@ categories: ["Homelab Docs"]
 tags: [ubuntu, docker, portainer]
 
 cover:
-  image: "/images/ubuntu-docker-portainer.png"
+  image: "/images/ubuntu-docker-portainer.webp"
   alt: "Ubuntu Docker Portainer Setup Guide"
   caption: "Photo by Faisal Darbar on faisaldarbar.com"
 

@@ -6,7 +6,7 @@ categories: ["Dev Docs"]
 tags: [hugo, up business theme, github pages]
 
 cover:
-  image: "/images/hugo-site-setup-using-up-business-theme.png"
+  image: "/images/hugo-site-setup-using-up-business-theme.webp"
   alt: "Hugo Site Setup using Up Business Theme"
   caption: "Photo by Faisal Darbar on faisaldarbar.com"
 

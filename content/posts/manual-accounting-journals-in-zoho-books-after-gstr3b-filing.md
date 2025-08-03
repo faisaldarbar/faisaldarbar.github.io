@@ -6,7 +6,7 @@ categories: ["Accounting Docs"]
 tags: [gst, gstr-3b, accounting, zoho books, input tax credit, reverse charge, rounding adjustment, reconciliation]
 
 cover:
-  image: "/images/manual-accounting-journals-in-zoho-books.jpg"
+  image: "/images/manual-accounting-journals-in-zoho-books.webp"
   alt: "Manual Accounting Journals"
   caption: "Photo by Jakub Żerdzicki on Unsplash"
 

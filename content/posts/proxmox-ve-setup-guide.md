@@ -6,7 +6,7 @@ categories: ["Homelab Docs"]
 tags: [proxmox, hypervisor, virtualization]
 
 cover:
-  image: "/images/proxmox-host.png"
+  image: "/images/proxmox-host.webp"
   alt: "Proxmox Virtual Environnment"
   caption: "Photo by Faisal Darbar on faisaldarbar.com"
 

@@ -6,7 +6,7 @@ categories: ["FOSS Docs"]
 tags: [mbox, thunderbird, backups]
 
 cover:
-  image: "/images/mbox-backups-in-thunderbird.jpg"
+  image: "/images/mbox-backups-in-thunderbird.webp"
   alt: "MBOX Backups in Thunderbird"
   caption: "Photo by Martin Robles on Unsplash"
 

@@ -6,7 +6,7 @@ categories: ["Writing"]
 tags: [system, writing, notion]
 
 cover:
-  image: "/images/the-system-behind-the-words.jpg"
+  image: "/images/the-system-behind-the-words.webp"
   alt: "The System Behind the Words"
   caption: "Photo by Andrew Neel on Unsplash"
 

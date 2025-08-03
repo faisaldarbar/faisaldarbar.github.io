@@ -6,7 +6,7 @@ categories: ["Dev Docs"]
 tags: [github, jekyll, chirpy]
 
 cover:
-  image: "/images/github-pages-deploy-v3-depracation.png"
+  image: "/images/github-pages-deploy-v3-depracation.webp"
   alt: "GitHub Pages Deploy Fix after v3 Deprecation"
   caption: "Photo by Faisal Darbar on faisaldarbar.com"
 

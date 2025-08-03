@@ -6,7 +6,7 @@ categories: ["Windows Docs"]
 tags: [windows, linux, dual-boot, bcedit]
 
 cover:
-  image: "/images/ubuntu-dual-boot-bcedit-fix.jpg"
+  image: "/images/ubuntu-dual-boot-bcedit-fix.webp"
   alt: "Ubuntu Dual Boot: BCDEDIT Fix"
   caption: "Photo by Faisal Darbar on faisaldarbar.com"
 
