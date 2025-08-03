@@ -7,7 +7,7 @@ title: "About"
 
 ## 👋 Welcome
 
-I'm Faisal — an Expat turned Entrepreneur, Author-in-Progress, YouTuber, and Frontend Developer. I help creators build fast, no-nonsense websites. From servers to storytelling, this space is where all my passions meet...
+I'm Faisal — a Full-Stack JavaScript Developer, Author-in-Progress, Aspiring YouTuber, and Expat Turned Entrepreneur. I help creators build fast, no-nonsense websites. From servers to storytelling, this space is where all my passions meet.
 
 Here, you’ll find my thoughts, experiments, and experiences across:
 
