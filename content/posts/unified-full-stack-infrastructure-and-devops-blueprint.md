@@ -26,19 +26,19 @@ cover:
 
 ## 2. 🧱 Virtual Machine Layout (Proxmox)
 
-### 2.1 `dev-main` VM (Core App Backend & Services)
+### 2.1 `dev-ubuntu` VM (Core App Backend & Services)
 
 | Attribute    | Value                                       |
 | ------------ | ------------------------------------------- |
 | OS           | Ubuntu Server (LTS)                         |
 | vCPU         | 6 cores                                     |
-| RAM          | 12–14 GB                                    |
+| RAM          | 8–10 GB                                     |
 | Disk         | 350 GB (NVMe SSD)                           |
 | Network      | VMLAN (10.0.1.x)                            |
 | Purpose      | Full-stack app backend, Docker Compose, DBs |
-| DNS Hostname | `dev-main.local`                            |
+| DNS Hostname | Use real domains/subdomains                 |
 
-### Disk Breakdown for `dev-main`:
+### Disk Breakdown for `dev-ubuntu`:
 
 ```
 / (root)               → 50 GB      # OS, Docker, binaries
@@ -46,7 +46,6 @@ cover:
 ├── docker/            → 20 GB      # Docker volumes & overlay
 ├── postgres/          → 25 GB      # Persistent DB storage
 ├── redis/             → 5 GB       # Redis volume (optional persistence)
-├── content/           → 0 GB       # Moved to Huawei, no allocation
 ├── backups/           → 50 GB      # Compressed backups, DB dumps
 ```
 
@@ -54,19 +53,19 @@ cover:
 
 ---
 
-### 2.2 `coolify` VM (Isolated PaaS Deployment)
+### 2.2 `coolify-ubuntu` VM (Isolated PaaS Deployment)
 
 | Attribute    | Value                                      |
 | ------------ | ------------------------------------------ |
 | OS           | Ubuntu Server (LTS)                        |
 | vCPU         | 2–4 cores                                  |
-| RAM          | 6 GB                                       |
+| RAM          | 4 GB                                       |
 | Disk         | 50 GB                                      |
 | Network      | VMLAN (10.0.1.x)                           |
 | Purpose      | GUI deploy PaaS, optional frontend deploys |
-| DNS Hostname | `coolify.local`                            |
+| DNS Hostname | Use real domains/subdomains                |
 
-> Will run as **root**, self-contained. It will not deploy containers to `dev-main`.
+> Will run as **root**, self-contained. It will not deploy containers to `dev-ubuntu`.
 
 ---
 
@@ -78,25 +77,25 @@ cover:
 
 ---
 
-## 3. 🖥️ Bare Metal Huawei Laptop (Storage Node)
+## 3. 🖥️ Bare Metal FD-HUAWEI Laptop (Storage Node)
 
 | Role   | Media storage, NFS/Samba host |
 | ------ | ----------------------------- |
 | OS     | Ubuntu Server (headless)      |
 | RAM    | 8 GB                          |
-| Disk   | 95 GB SSD (full usable)       |
+| Disk   | 240 GB SSD (full usable)      |
 | Access | SSH + Samba (LAN)             |
 
 ### Mount Plan:
 
-* Mount `/mnt/video_share/` on HP laptop or edit directly via LAN.
-* No need to mount on `dev-main` unless media assets are used in app (optional SSHFS).
+* Mount `/mnt/digital_assets/` on HP laptop or edit directly via LAN.
+* No need to mount on `dev-ubuntu` unless media assets are used in app (optional SSHFS).
 
 ---
 
 ## 4. ⚙️ Services & Tools Stack
 
-### 4.1 Inside `dev-main` (via Docker Compose)
+### 4.1 Inside `dev-ubuntu` (via Docker Compose)
 
 | Service      | Image / Stack         | Description                               |
 | ------------ | --------------------- | ----------------------------------------- |
@@ -108,24 +107,24 @@ cover:
 
 > Docker Compose manages build, startup, networking, volumes.
 
-### 4.2 On HP Laptop
+### 4.2 On FD-HP Laptop
 
 * React Native + Expo for Android apps
-* Connects to `dev-main` backend via Cloudflare Tunnel or VPN
+* Connects to `dev-ubuntu` backend via Cloudflare Tunnel or VPN
 
 ---
 
 ## 5. 🔒 Security & Networking
 
-| Feature           | Status / Plan                                 |
-| ----------------- | --------------------------------------------- |
-| VLAN Isolation    | `dev-main` and `coolify` on 10.0.1.0/24       |
-| pfSense           | Firewall/DHCP/DNS for VMs                     |
-| SSH Keys          | No password login across all Linux hosts      |
-| Cloudflare Tunnel | One per major app or subdomain (bypass CGNAT) |
-| DNS Routing       | Cloudflare-managed custom domains             |
-| Fail2ban + ufw    | Will be added to all VMs                      |
-| No exposed ports  | Everything behind tunnels                     |
+| Feature           | Status / Plan                                          |
+| ----------------- | ------------------------------------------------------ |
+| VLAN Isolation    | `dev-ubuntu` and `coolify-ubuntu` on 10.0.1.0/24       |
+| pfSense           | Firewall/DHCP/DNS for VMs                              |
+| SSH Keys          | No password login across all Linux hosts               |
+| Cloudflare Tunnel | One per major app or subdomain (bypass CGNAT)          |
+| DNS Routing       | Cloudflare-managed custom domains                      |
+| Fail2ban + ufw    | Will be added to all VMs                               |
+| No exposed ports  | Everything behind tunnels                              |
 
 ---
 
@@ -145,20 +144,20 @@ Use **dedicated rclone remotes** for each major source, or prefix inside one.
 
 ## 7. 🧠 Notes for Future Reference
 
-* Docker containers in `dev-main` do **not auto-update** unless you configure watchtower or manually pull.
+* Docker containers in `dev-ubuntu` do **not auto-update** unless you configure watchtower or manually pull.
 * Use `docker-compose down && up -d` after edits to restart cleanly.
 * Avoid using `latest` tags in production; pin image versions.
-* If running heavy Postgres queries, monitor memory pressure on `dev-main`.
+* If running heavy Postgres queries, monitor memory pressure on `dev-ubuntu`.
 * If future resource strain is noticed, consider:
 
   * Moving Postgres to its own VM
   * Separating frontend/backend across VMs
-* Coolify should not be allowed to control `dev-main` containers unless deliberate.
+* Coolify should not be allowed to control `dev-ubuntu` containers unless deliberate.
 * You can run small test apps in Coolify to evaluate it or deploy personal sites.
 
 ---
 
-## 8. 📘 Suggested Dev Folder Structure (inside `dev-main`)
+## 8. 📘 Suggested Dev Folder Structure (inside `dev-ubuntu`)
 
 ```
 /srv/dev/
@@ -181,12 +180,11 @@ Use **dedicated rclone remotes** for each major source, or prefix inside one.
 
 ### After Building the VMs:
 
-* Install Docker and Compose in `dev-main`
+* Install Docker and Compose in `dev-ubuntu`
 * Write `docker-compose.yml` with pinned images
 * Setup volumes under `/data/...`
 * Create rclone config with encrypted remotes (optional)
-* Install Coolify in `coolify` VM as root
+* Install Coolify in `coolify-ubuntu` VM as root
 * Create and run Cloudflare tunnels via CLI or GUI
-* Configure DaVinci and HP to access Huawei over Samba/SSH
-
+* Configure DaVinci and FD-HP to access Huawei over Samba/SSH
 
