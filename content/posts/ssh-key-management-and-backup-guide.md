@@ -22,13 +22,13 @@ cover:
   ```
 * Keys are stored in:
 
-  ```
+  ```bash
   ~/.ssh/
   ```
 
   Example key filenames:
 
-  ```
+  ```bash
   id_ssh_wsl_fd-hp_to_fd-huawei
   id_ssh_wsl_fd-hp_to_ubuntu-server_pve
   ```
@@ -44,7 +44,7 @@ cover:
   ```
 * This creates `.gpg` files like:
 
-  ```
+  ```bash
   id_ssh_wsl_fd-hp_to_fd-huawei.gpg
   ```
 * The `.gpg` files are password-protected with a **separate GPG passphrase**.
@@ -57,7 +57,7 @@ cover:
 * Encrypted `.gpg` files are manually backed up to a **OneDrive-synced Windows folder**.
 * Path on Windows:
 
-  ```
+  ```bash
   C:\Users\faisa\OneDrive - Faisal Darbar\Documents\Business\Faisal Darbar\Homelab\SSH-Key-Backups
   ```
 * Path from WSL:
