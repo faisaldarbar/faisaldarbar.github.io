@@ -1,6 +1,6 @@
 ---
 title: "Samba Setup on Bare Metal (fd-huawei)"
-date: 2025-08-05T02:40:00Z
+date: 2025-08-04T02:40:00Z
 description: "Setting Up a Samba Share on Bare Metal (fd-huawei) Ubuntu Server with Windows Access"
 categories: ["Homelab Docs"]
 tags: [samba, ubuntu, server]
