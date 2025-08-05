@@ -12,6 +12,12 @@ cover:
   caption: "Photo by Faisal Darbar on faisaldarbar.com"
 ---
 
+## Note
+
+Faisal Darbar from the future here. This action plan has been superseded with the following plan.
+
+[Unified Full-Stack Infrastructure & DevOps Blueprint](/posts/unified-full-stack-infrastructure-and-devops-blueprint)
+
 ## 🧭 Purpose
 
 This document outlines the current state, design decisions, and action plan for my personal developer infrastructure.
