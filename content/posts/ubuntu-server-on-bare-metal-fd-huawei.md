@@ -31,7 +31,7 @@ This machine runs Ubuntu Server 24.04 directly on hardware (not virtualized). It
 * **OS:** Ubuntu Server 24.04.2 LTS
 * **Filesystem Layout:**
 
-  ```
+  ```bash
   /         → 30 GB
   /boot     → 1 GB
   /boot/efi → 1 GB
