@@ -181,10 +181,6 @@ sudo ufw allow 'Samba'
   - Username: `faisal`
   - Password: [Your Samba password]
 
-You're right — Markdown blocks should be formatted clearly **without mixing** triple backticks (\`\`\`) with normal text unless you're including **code inside the Markdown**.
-
-Here's a **clean and correct `.md` snippet** for your documentation, with proper formatting:
-
 ---
 
 ## 🫥 Optional: Fully Hide `lost+found` from Windows Clients via Samba
