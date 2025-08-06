@@ -101,4 +101,4 @@ Blank the screen after **1 minute**, then **power down the display after 2 minut
 
 ### ✅ Final Thoughts
 
-This is a clean, GUI-free solution for reducing display wear and power usage on servers with local screens. Great for headless setups or servers with rarely-used displays.
+This is a clean, GUI-free solution for reducing display wear and power usage on servers with local screens. Great for headless setups, especially laptops, or servers with rarely-used displays.
