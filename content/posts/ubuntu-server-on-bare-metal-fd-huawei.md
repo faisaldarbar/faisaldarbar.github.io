@@ -115,6 +115,53 @@ sudo systemctl restart ssh
 
 ✅ SSH key-only login is now enforced.
 
+
+### 📦 `5. Remove Cloud-Init SSH Override`
+
+After setup, SSH password login was still enabled — despite disabling it in `sshd_config`.
+
+Upon inspection, the following file existed:
+
+```bash
+/etc/ssh/sshd_config.d/50-cloud-init.conf
+```
+
+It contained this line:
+
+```bash
+PasswordAuthentication yes
+```
+
+✅ To ensure password-based SSH login remains disabled:
+
+```bash
+sudo rm /etc/ssh/sshd_config.d/50-cloud-init.conf
+```
+
+Then verify:
+
+```bash
+sudo sshd -T | grep password
+```
+
+Expected:
+
+```
+passwordauthentication no
+```
+
+Finally, restart the SSH service:
+
+```bash
+sudo systemctl restart ssh
+```
+
+This ensures `sshd_config` is not silently overridden by leftover cloud-init configs after reboot.
+
+🎥 Watch the video version:
+
+{{< youtube jtW8UoX06Mw >}}
+
 ---
 
 ## 🔥 UFW Firewall Configuration
