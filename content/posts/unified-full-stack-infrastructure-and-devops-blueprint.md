@@ -4,6 +4,7 @@ date: 2025-08-03T02:30:00Z
 description: "Scope: This document outlines the setup, architecture, service layout, VM roles, storage division, backup plan, and DevOps tools for a modern self-hosted app development and deployment environment, based on Docker, Linux VMs, and modern JS full-stack tools (React, Next.js, Express, etc.)."
 categories: ["Dev Docs"]
 tags: [full-stack, devops, infrastructure, react, next.js, node.js, express, docker, docker-compose, coolify, postgres, redis, self-hosted, cloudflare-tunnel, react-native, expo, proxmox, pfSense, rclone, ubuntu-server, microservices, digital-products, solo-developer, backend, frontend, vm-architecture, developer-tools]
+weight: 1
 
 cover:
   image: "/images/unified-full-stack-infrastructure-and-devops-blueprint.webp"
