@@ -116,11 +116,13 @@ sudo systemctl restart ssh
 ✅ SSH key-only login is now enforced.
 
 
-### 📦 `5. Remove Cloud-Init SSH Override`
+### 5. Remove Cloud-Init SSH Override
 
 After setup, SSH password login was still enabled — despite disabling it in `sshd_config`.
 
-Upon inspection, the following file existed:
+This was detected when using another system where the SSH private key was not present.
+
+Upon inspection, the following file existed on the server:
 
 ```bash
 /etc/ssh/sshd_config.d/50-cloud-init.conf
