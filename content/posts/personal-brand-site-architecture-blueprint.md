@@ -1,5 +1,6 @@
 ---
-title: "Personal Brand Site Architecture Blueprint"
+title: "📌 Personal Brand Site Architecture Blueprint"
+weight: 3
 date: 2025-07-30T02:30:00Z
 description: "This document outlines the finalized and future-proof architecture for Faisal Darbar's personal brand ecosystem, comprising modular services across subdomains, using a self-hosted and cost-effective stack."
 categories: ["Dev Docs"]

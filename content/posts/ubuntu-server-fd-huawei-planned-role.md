@@ -1,5 +1,6 @@
 ---
-title: "Ubuntu Server (fd-huawei) Planned Role"
+title: "📌 Ubuntu Server (fd-huawei) Planned Role"
+weight: 2
 date: 2025-08-04T03:30:00Z
 description: "A multi-role utility planning and service map for this Ubuntu-based bare metal support node in my self-hosted infrastructure."
 categories: ["Homelab Docs"]

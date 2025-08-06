@@ -1,5 +1,6 @@
 ---
-title: "Linky Blueprint"
+title: "📌 Linky Blueprint"
+weight: 4
 date: 2025-07-30T02:40:00Z
 description: "A self-hosted URL shortener and analytics tool built with Next.js — designed for creators, marketers, and indie founders."
 categories: ["Dev Docs"]
