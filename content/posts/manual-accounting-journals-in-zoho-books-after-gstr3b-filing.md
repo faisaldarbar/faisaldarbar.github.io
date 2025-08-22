@@ -14,7 +14,7 @@ cover:
 
 ## 🌟 Purpose
 
-This checklist is for use **after filing GSTR-3B** to create manual journals in **Zoho Books**. These journals ensure your books reflect the actual GSTR-3B return filed — especially handling **reverse charge**, **input credit availability**, and **GSTN rounding adjustments**.
+This checklist is for use **after filing GSTR-3B** to create manual journals in **Zoho Books**. These journals ensure your books reflect the actual GSTR-3B return filed — especially handling **reverse charge**, **input credit availability**, and **GSTN rounding adjustments**!
 
 ---
 
