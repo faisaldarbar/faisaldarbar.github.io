@@ -42,6 +42,12 @@ This checklist is for use **after filing GSTR-3B** to create manual journals in 
 - **Date:** Last day of the previous month  
 - **Narration:** "Reverse Charge for Previous Month"
 
+**Note:** Although this journal is usually created for the current month right after filing GSTR-3B for the previous month, it is preferable to defer creating it until the end of the current month because:
+
+- There may be additional Reverse Charge Tax Input but not due transactions during the month.
+- If the entry is created earlier under the assumption that no further such transactions will occur, the reports and balance sheet will still reflect the amount as on the date of creation.
+- Additional effort may be required to edit the journal if any such transactions arise later.
+
 ---
 
 ### 🔹 3. Input Tax Moved to Not Due  
