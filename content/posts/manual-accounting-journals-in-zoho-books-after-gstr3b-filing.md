@@ -4,6 +4,12 @@ date: 2025-07-19T02:30:00Z
 description: "Maintained by: A small business owner"
 categories: ["Accounting Docs"]
 tags: [gst, gstr-3b, accounting, zoho books, input tax credit, reverse charge, rounding adjustment, reconciliation]
+draft: false
+showBreadCrumbs: true
+showReadingTime: true
+author: "Faisal Darbar"
+showToc: true
+tocopen: true
 
 cover:
   image: "/images/manual-accounting-journals-in-zoho-books.webp"
@@ -102,20 +108,7 @@ This checklist is for use **after filing GSTR-3B** to create manual journals in 
 
 ### 🔹 9. Other Journals  
 As per my current scenario, the above are the only required entries.  
-> Additional journals may be required if new scenarios arise (e.g., credit notes, advances, corrections, etc.)
 
----
+Additional journals may be required if new scenarios arise (e.g., credit notes, advances, corrections, etc.)
 
-## 📋 Quick Reference Journal Table
-
-| S.No | Journal Purpose | From Account | To Account | Date | Narration |
-|------|------------------|---------------|-------------|------|-----------|
-| 1 | Output Tax Offset (Auto) | Input Taxes / Cash | Output Taxes | GSTR-3B Filing Date | Auto-created |
-| 2 | RCM ITC Claim | Reverse Charge Tax Input but not due Account | Input CGST/SGST/IGST | Last Day of Month | Reverse Charge for Previous Month |
-| 3 | ITC Deferred | Input CGST/SGST/IGST | Input CGST/SGST/IGST but not due | Last Day of Month | Deferred ITC – Vendor Not Filed or GSTR-2B Missing |
-| 4 | ITC Restored | Input CGST/SGST/IGST but not due | Input CGST/SGST/IGST | Last Day of Month | Deferred ITC Claimed – Now Available in GSTR-2B |
-| 5 | Round-Off Input CGST/SGST | Input CGST/SGST ↔ Round-off Input CGST/SGST | As Needed | Last Day of Month | Input tax round-off adjustment (GSTR-3B) |
-| 6 | Round-Off Input IGST | Input IGST ↔ Round-off Input IGST | As Needed | Last Day of Month | Input tax round-off adjustment (GSTR-3B) |
-| 7 | Round-Off Output CGST/SGST | Round-off Output CGST/SGST ↔ Output CGST/SGST | As Needed | Last Day of Month | Output tax round-off adjustment (GSTR-3B) |
-| 8 | Round-Off Output IGST | Round-off Output IGST ↔ Output IGST | As Needed | Last Day of Month | Output tax round-off adjustment (GSTR-3B) |
 

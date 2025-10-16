@@ -26,9 +26,9 @@ In addition to consulting and content creation, I’ve founded and currently man
 
 Ahlan Bags is a retail brand offering high-quality handbags, backpacks, laptop bags, wallets, and accessories in Aurangabad.
 
-### 💻 {{< aptxlabslink >}}
+### 💻 {{< e8elink >}}
 
-Aptxlabs is my tech business and services brand. Helping businesses grow through smart, scalable technology.
+e8e is my tech business and services brand. Helping businesses grow through smart, scalable technology.
 
 ## Certifications & Badges
 

@@ -4,6 +4,12 @@ date: 2025-06-03T02:30:00Z
 description: "Documentation needs a system. Writing needs your voice."
 categories: ["Writing"]
 tags: [system, writing, notion]
+draft: false
+showBreadCrumbs: true
+showReadingTime: true
+author: "Faisal Darbar"
+showToc: true
+tocopen: true
 
 cover:
   image: "/images/the-system-behind-the-words.webp"

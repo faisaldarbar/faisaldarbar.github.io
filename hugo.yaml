@@ -23,14 +23,9 @@ outputs:
 
 params:
   env: "production"
-  author: "Faisal Darbar"
   defaultTheme: "auto"
-  showReadingTime: true
   showCodeCopyButtons: true
   ShowPostNavLinks: true
-  showBreadCrumbs: true
-  showToc: true
-  tocopen: true
   mainSections: ["posts"]
   ShowSearch: true
   ShowSocialIcons: true
@@ -53,6 +48,8 @@ params:
       url: "https://www.instagram.com/faisaldarbar_"
     - name: "x-twitter"
       url: "https://x.com/faisaldarbar"
+    - name: "linkedin"
+      url: "https://www.linkedin.com/in/faisaldarbar/"
     - name: "at"
       url: "mailto:faisal@faisaldarbar.com"
 
