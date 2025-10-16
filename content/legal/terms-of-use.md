@@ -9,7 +9,7 @@ showBreadCrumbs: true
 showReadingTime: true
 author: "Faisal Darbar"
 showToc: true
-tocopen: false
+tocopen: true
 ---
 
 **Effective Date: June 30, 2025**
