@@ -5,6 +5,11 @@ draft: false
 layout: page
 type: page
 permalink: /legal/terms-of-use/
+showBreadCrumbs: true
+showReadingTime: true
+author: "e8e"
+showToc: true
+tocopen: false
 ---
 
 **Effective Date: June 30, 2025**
@@ -33,6 +38,6 @@ This site may contain links to other websites or services, including including t
 
 These Terms may change over time. Updates will appear here with the new effective date.
 
-## Contact
+## 6. Contact
 
 If you have any questions about these terms, email us at: [faisal@faisaldarbar.com](mailto:faisal@faisaldarbar.com)
