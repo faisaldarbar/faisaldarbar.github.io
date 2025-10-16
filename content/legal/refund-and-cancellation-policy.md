@@ -7,7 +7,7 @@ type: page
 permalink: /legal/terms-of-use/
 showBreadCrumbs: true
 showReadingTime: true
-author: "e8e"
+author: "Faisal Darbar"
 showToc: true
 tocopen: false
 ---
