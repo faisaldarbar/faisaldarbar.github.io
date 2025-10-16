@@ -2,7 +2,7 @@
 title: "Manual Accounting Journals in Zoho Books after GSTR-3B Filing"
 date: 2025-07-19T02:30:00Z
 description: "Maintained by: A small business owner"
-categories: ["Accounting Docs"]
+categories: ["Accounting"]
 tags: [gst, gstr-3b, accounting, zoho books, input tax credit, reverse charge, rounding adjustment, reconciliation]
 draft: false
 showBreadCrumbs: true
