@@ -44,8 +44,6 @@ params:
       url: "https://facebook.com/faisaldarbar"
     - name: "youtube"
       url: "https://www.youtube.com/@FaisalDarbar"
-    - name: "instagram"
-      url: "https://www.instagram.com/faisaldarbar_"
     - name: "x-twitter"
       url: "https://x.com/faisaldarbar"
     - name: "linkedin"
