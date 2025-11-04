@@ -5,20 +5,15 @@ title: "About"
 
 {{< homeimage >}}
 
-I'm Faisal — a Full-Stack JavaScript Developer, Author-in-Progress, Aspiring YouTuber, and Expat Turned Entrepreneur. I help build fast, no-nonsense websites. From servers to storytelling, this space is where all my passions meet.
+{{< welcome >}}
 
-Here, you’ll find my thoughts, experiments, and experiences across:
+I'm Faisal — a Full-Stack JavaScript Developer, Author-in-Progress, Aspiring YouTuber, and Expat Turned Entrepreneur. From servers to storytelling, this space is where all my passions meet.
 
-- 🖥 **IT Infrastructure and Cybersecurity**
-- 💻 **Software and Web Development**
-- ☁️ **Cloud Computing and Automation**
-- 📊 **Business Accounting and Taxation**
-- 📚 **Writing and the Author Journey**
-- 🎥 **Content Creation and Videography**
+Here, you’ll find my thoughts, experiments, and experiences across IT Infrastructure and Cybersecurity, Software and Web Development, Cloud Computing and Automation, Business Accounting and Taxation, Writing and the Author Journey and finally Content Creation and Videography.
 
-## 🧩 My Ventures
+## My Ventures
 
-In addition to consulting and content creation, I’ve founded and currently manage the following businesses:
+I’ve founded and currently manage the following businesses:
 
 ### 👜 {{< ahlanbagslink >}}
 
@@ -29,6 +24,8 @@ Ahlan Bags is a retail brand offering high-quality handbags, backpacks, laptop b
 e8e is my tech business and services brand. Helping businesses grow through smart, scalable technology.
 
 ## Certifications & Badges
+
+Here are a couple of verifiable badges that have been issued to me.
 
 {{< certifications >}}
 
