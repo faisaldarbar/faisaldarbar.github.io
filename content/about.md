@@ -5,8 +5,6 @@ title: "About"
 
 {{< homeimage >}}
 
-{{< welcome >}}
-
 I'm Faisal — a Full-Stack JavaScript Developer, Author-in-Progress, Aspiring YouTuber, and Expat Turned Entrepreneur. From servers to storytelling, this space is where all my passions meet.
 
 Here, you’ll find my thoughts, experiments, and experiences across IT Infrastructure and Cybersecurity, Software and Web Development, Cloud Computing and Automation, Business Accounting and Taxation, Writing and the Author Journey and finally Content Creation and Videography.
