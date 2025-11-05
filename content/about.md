@@ -9,8 +9,6 @@ I'm Faisal — a Full-Stack JavaScript Developer, Author-in-Progress, Aspiring Y
 
 Here, you’ll find my thoughts, experiments, and experiences across IT Infrastructure and Cybersecurity, Software and Web Development, Cloud Computing and Automation, Business Accounting and Taxation, Writing and the Author Journey and finally Content Creation and Videography.
 
-## My Ventures
-
 I’ve founded and currently manage the following businesses:
 
 ### 👜 {{< ahlanbagslink >}}
@@ -21,12 +19,10 @@ Ahlan Bags is a retail brand offering high-quality handbags, backpacks, laptop b
 
 e8e is my tech business and services brand. Helping businesses grow through smart, scalable technology.
 
-## Certifications & Badges
-
 Here are a couple of verifiable badges that have been issued to me.
 
 {{< certifications >}}
 
-Want more insights, stories, and updates?
+Want more insights and updates?
 
 {{< blogbutton >}}
