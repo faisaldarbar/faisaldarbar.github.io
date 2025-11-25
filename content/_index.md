@@ -8,10 +8,4 @@ hideTitle: true
 
 {{< homemattertop >}}
 
-{{< aboutbutton >}}
-
-{{< convertkit >}}
-
-{{< homematterbottom >}}
-
 {{< blogbutton >}}

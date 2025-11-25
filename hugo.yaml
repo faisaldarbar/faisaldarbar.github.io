@@ -44,10 +44,6 @@ params:
       url: "https://facebook.com/faisaldarbar"
     - name: "youtube"
       url: "https://www.youtube.com/@FaisalDarbar"
-    - name: "x-twitter"
-      url: "https://x.com/faisaldarbar"
-    - name: "linkedin"
-      url: "https://www.linkedin.com/in/faisaldarbar/"
     - name: "at"
       url: "mailto:faisal@faisaldarbar.com"
 
@@ -57,8 +53,6 @@ params:
         url: /legal/privacy-policy/
       - name: Terms of Use
         url: /legal/terms-of-use/
-      - name: Refund Policy
-        url: /legal/refund-and-cancellation-policy/
 
 menu:
   main:

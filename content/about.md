@@ -5,24 +5,12 @@ title: "About"
 
 {{< homeimage >}}
 
-I'm Faisal — a Full-Stack JavaScript Developer, Author-in-Progress, Aspiring YouTuber, and Expat Turned Entrepreneur. From servers to storytelling, this space is where all my passions meet.
+I’m Faisal. I share reflections from life — small moments, quiet thoughts, and experiences that help make things a little clearer.
 
-Here, you’ll find my thoughts, experiments, and experiences across IT Infrastructure and Cybersecurity, Software and Web Development, Cloud Computing and Automation, Business Accounting and Taxation, Writing and the Author Journey and finally Content Creation and Videography.
+Over the years I’ve lived in different places, worked in different fields, and seen enough of life to know that clarity matters more than complexity. I write and create content to explore balance, meaning, and the simple lessons that stay with us.
 
-I’ve founded and currently manage the following businesses:
+My background includes work in technology, infrastructure, and small business — but this space is not about my résumé. It’s simply a place where I share what I’m learning, noticing, or thinking about.
 
-### 👜 {{< ahlanbagslink >}}
-
-Ahlan Bags is a retail brand offering high-quality handbags, backpacks, laptop bags, wallets, and accessories in Aurangabad.
-
-### 💻 {{< e8elink >}}
-
-e8e is my tech business and services brand. Helping businesses grow through smart, scalable technology.
-
-Here are a couple of verifiable badges that have been issued to me.
-
-{{< certifications >}}
-
-Want more insights and updates?
+If any of it brings clarity or calmness to your own life, then I’m grateful.
 
 {{< blogbutton >}}

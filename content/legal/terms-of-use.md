@@ -14,30 +14,51 @@ tocopen: true
 
 **Effective Date: June 30, 2025**
 
-Welcome to <a href="https://faisaldarbar.com" target="_blank" rel="noopener">faisaldarbar.com</a>, a personal blog owned and operated by **Faisal Darbar**. By accessing this site, you agree to the following terms:
+Welcome to <a href="https://faisaldarbar.com" target="_blank" rel="noopener">faisaldarbar.com</a>, a personal website by **Faisal Darbar**.  
+By using this site, you agree to the terms below.
 
-## 1. Content
+## 1. Purpose of This Site
 
-All content on this site, including blog posts, images, and code snippets, is for informational and personal use only. Do not reproduce, distribute, or reuse content without permission.
+This website shares personal reflections, notes, and experiences.  
+Everything here represents my own views and thoughts at the time of writing.
 
-## 2. Email Subscriptions
+Nothing on this site should be considered:
+- professional advice  
+- legal advice  
+- medical advice  
+- financial advice  
+- religious instruction  
 
-By subscribing to our email list, you agree to receive periodic emails from us. You can unsubscribe at any time via the link in each email.
+## 2. Content Usage
 
-We use a third-party service **Kit** to manage and deliver emails. Your information is handled according to their Privacy Policy and Terms of Use.
+All writing, images, and content are for your personal reading.  
+Please do not reproduce or republish content without permission.
 
-## 3. No Guarantees
+## 3. Email Subscriptions
 
-We make no guarantees about the accuracy, completeness, or usefulness of the content.
+If you subscribe using your email:
+- you’ll occasionally receive new posts  
+- you can unsubscribe anytime  
+
+Email delivery is handled through **Kit (ConvertKit)**.
 
 ## 4. External Links
 
-This site may contain links to other websites or services, including including tools like Google Analytics used to improve site performance and user experience.
+Posts may contain links to other sites or tools.  
+I’m not responsible for the content or policies of those third-party websites.
 
-## 5. Changes
+## 5. Accuracy & Updates
 
-These Terms may change over time. Updates will appear here with the new effective date.
+This site is a personal space.  
+I do my best to share honestly, but I cannot guarantee accuracy, completeness, or timeliness.
 
-## 6. Contact
+Content may be updated, edited, or removed without notice.
 
-If you have any questions about these terms, email us at: [faisal@faisaldarbar.com](mailto:faisal@faisaldarbar.com)
+## 6. Changes to These Terms
+
+These terms may be updated in the future.  
+The effective date above will always show when the last update occurred.
+
+## 7. Contact
+
+If you have questions, email me at: **faisal@faisaldarbar.com**
