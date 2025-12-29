@@ -5,12 +5,19 @@ title: "About"
 
 {{< homeimage >}}
 
-I’m Faisal. I share reflections from life — small moments, quiet thoughts, and experiences that help make things a little clearer.
 
-Over the years I’ve lived in different places, worked in different fields, and seen enough of life to know that clarity matters more than complexity. I write and create content to explore balance, meaning, and the simple lessons that stay with us.
+I'm Faisal. 48 years old. From India.
 
-My background includes work in technology, infrastructure, and small business — but this space is not about my résumé. It’s simply a place where I share what I’m learning, noticing, or thinking about.
+For around 12 years, I've lived and worked in Saudi Arabia as an expat—long enough to learn that most of what we stress about doesn't matter, and the things that do are simpler than we think. I own and run a couple of businesses as follows.
 
-If any of it brings clarity or calmness to your own life, then I’m grateful.
+<a href="https://e8e.dev" target="_blank" rel="noopener noreferrer">e8e.dev</a> – A zero-maintenance website development business using static architecture. Fast, secure, reliable websites that don't require maintenance.
+
+<a href="https://ahlanbags.com" target="_blank" rel="noopener noreferrer">Ahlan Bags</a> – The Exquisite Bag Store. A local business and a trusted destination for stylish, high-quality imported bags in Aurangabad, Maharashtra.
+
+This is my personal brand's home on the internet where I share things that interest me. 
+
+No schedule, no niche, just honest perspectives when something seems worth it.
+
+Thanks for stopping by.
 
 {{< blogbutton >}}

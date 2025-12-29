@@ -44,6 +44,10 @@ params:
       url: "https://facebook.com/faisaldarbar"
     - name: "youtube"
       url: "https://www.youtube.com/@FaisalDarbar"
+    - name: "twitter"
+      url: "https://x.com/faisaldarbar"
+    - name: "linkedin"
+      url: "https://www.linkedin.com/in/faisaldarbar"
     - name: "at"
       url: "mailto:faisal@faisaldarbar.com"
 
